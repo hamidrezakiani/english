@@ -78,8 +78,8 @@ class WordController extends Controller
 
     public function swap(Request $request)
     {
-        $word = Word::find($request->wordId);
-        $targetWord = Word::find($request->targetWordId);
+        $word = Word::find($request->id);
+        $targetWord = Word::where('orderIndex',$request->targetIndex)->first();
         $wordIndex = $word->orderIndex;
         $word->orderIndex = $targetWord->orderIndex;
         $word->save();
@@ -91,7 +91,7 @@ class WordController extends Controller
     public function jump(Request $request)
     {
         $word = Word::find($request->id);
-        $wordIndex = $word->index;
+        $wordIndex = $word->orderIndex;
         $targetIndex = $request->targetIndex;
         $dif = $targetIndex - $wordIndex;
         if($dif > 0)

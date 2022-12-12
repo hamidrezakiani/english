@@ -7,6 +7,7 @@
 active
 @endsection
 @section('content')
+
   <div class="modal fade" id="new-word-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -31,11 +32,81 @@ active
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" id="close-save-modal" data-dismiss="modal">بستن</button>
-        <button type="button" class="btn btn-primary" id="save-button">ذخیره</button>
+        <button type="button" class="btn btn-primary mr-4" id="save-button">ذخیره</button>
       </div>
     </div>
   </div>
-</div>
+  </div>
+
+
+
+  <div class="modal fade" id="jump-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">انتقال</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">انتقال به:</label>
+            <input type="number" value="1" class="form-control" id="jump-index-input">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="close-jump-modal" data-dismiss="modal">بستن</button>
+        <button type="button" class="btn btn-primary mr-4" id="jump-button">ذخیره</button>
+      </div>
+    </div>
+   </div>
+  </div>
+
+
+  <div class="modal fade" id="swap-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">جا به جایی</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"> جا به جایی با:</label>
+            <input type="number" value="1" class="form-control" id="swap-index-input">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="close-swap-modal" data-dismiss="modal">بستن</button>
+        <button type="button" class="btn btn-primary mr-4" id="swap-button">ذخیره</button>
+      </div>
+    </div>
+   </div>
+  </div>
+
+
+  <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">حذف</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">آیا میخواهید لغت <i id="delete-word"></i> را حذف کنید؟</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="close-delete-modal" data-dismiss="modal">خیر</button>
+        <button type="button" class="btn btn-danger mr-4" id="delete-button">بله</button>
+      </div>
+    </div>
+   </div>
+  </div>
+
  <div class="row mb-3">
     <div class="col-lg-2 col-md-3 col-sm-4 mt-1">
        <button class="btn btn-success" data-toggle="modal" data-target="#new-word-modal">کلمه جدید</button>
@@ -78,6 +149,9 @@ active
     var per_page = 0;
     var current_page = 1;
     var pendiing = false;
+    var jumpId = null;
+    var swapId = null;
+    var deleteId = null;
     loadData('{{env('API_URL')}}/words?');
     // $(window).scroll(function() {
     // if($(window).scrollTop() == $(document).height() - $(window).height()) {
@@ -134,9 +208,13 @@ active
           td.innerHTML = index;
           tr.appendChild(td);
           td = document.createElement('TD');
+          td.className = 'word-cell';
+          td.setAttribute('data-id',word.id);
           td.innerHTML = word.word;
           tr.appendChild(td);
           td = document.createElement('TD');
+          td.className = 'translation-cell';
+          td.setAttribute('data-id',word.id);
           td.innerHTML = word.translation;
           tr.appendChild(td);
           td = document.createElement('TD');
@@ -153,12 +231,23 @@ active
           if(!(key == words.length - 1 && nextPageUrl == null))
           td.appendChild(i);
           i = document.createElement('I');
-          i.className = 'fa fa-arrows text-dark mr-1 jump';
+          i.className = 'fa fa-mail-forward text-dark mr-1 jump';
+          i.setAttribute('data-toggle','modal');
+          i.setAttribute('data-target','#jump-modal');
           i.style.fontSize = '15px';
           i.setAttribute('data-id',word.id);
           td.appendChild(i);
           i = document.createElement('I');
-          i.className = 'fa fa-mail-forward text-dark mr-1 swap';
+          i.className = 'fa fa-arrows text-dark mr-1 swap';
+          i.setAttribute('data-toggle','modal');
+          i.setAttribute('data-target','#swap-modal');
+          i.style.fontSize = '15px';
+          i.setAttribute('data-id',word.id);
+          td.appendChild(i);
+          i = document.createElement('I');
+          i.className = 'fa fa-trash-o text-danger mr-1 delete';
+          i.setAttribute('data-toggle','modal');
+          i.setAttribute('data-target','#delete-modal');
           i.style.fontSize = '15px';
           i.setAttribute('data-id',word.id);
           td.appendChild(i);
@@ -173,6 +262,8 @@ active
           pendiing = true;
           $('.move-up').toggleClass('disable');
           $('.move-down').toggleClass('disable');
+          $('.jump').toggleClass('disable');
+          $('.swap').toggleClass('disable');
          var currentTr = this.parentElement.parentElement;
           var id = $(this).attr('data-id');
            $.ajax({
@@ -182,6 +273,8 @@ active
         }).done(function(response){
             $('.move-up').toggleClass('disable');
             $('.move-down').toggleClass('disable');
+            $('.jump').toggleClass('disable');
+            $('.swap').toggleClass('disable');
             pendiing = false;
             loadData(`{{env('API_URL')}}/words?page=${current_page}`);
         });
@@ -194,6 +287,8 @@ active
           pendiing = true;
           $('.move-up').toggleClass('disable');
           $('.move-down').toggleClass('disable');
+          $('.jump').toggleClass('disable');
+          $('.swap').toggleClass('disable');
          var currentTr = this.parentElement.parentElement;
           var id = $(this).attr('data-id');
            $.ajax({
@@ -203,11 +298,72 @@ active
         }).done(function(response){
             $('.move-up').toggleClass('disable');
             $('.move-down').toggleClass('disable');
+            $('.jump').toggleClass('disable');
+            $('.swap').toggleClass('disable');
             pendiing = false;
             loadData(`{{env('API_URL')}}/words?page=${current_page}`);
         });
     }
     });
+
+    $(document).on('click','.jump',function(){
+        jumpId = this.getAttribute('data-id');
+    });
+
+    $(document).on('click','#jump-button',function(){
+        $('.move-up').toggleClass('disable');
+        $('.move-down').toggleClass('disable');
+        $('.jump').toggleClass('disable');
+        $('.swap').toggleClass('disable');
+        var targetIndex = document.getElementById('jump-index-input').value;
+        $.ajax({
+            'url':`{{env('API_URL')}}/word-jump`,
+            'data':{
+              'id':jumpId,
+              'targetIndex':targetIndex,
+            },
+            'method':'POST',
+            'timeout':0,
+        }).done(function(response){
+            $('.move-up').toggleClass('disable');
+            $('.move-down').toggleClass('disable');
+            $('.jump').toggleClass('disable');
+            $('.swap').toggleClass('disable');
+            document.getElementById('close-jump-modal').click();
+            pendiing = false;
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
+        });
+    });
+
+    $(document).on('click','.swap',function(){
+        swapId = this.getAttribute('data-id');
+    });
+
+    $(document).on('click','#swap-button',function(){
+        $('.move-up').toggleClass('disable');
+        $('.move-down').toggleClass('disable');
+        $('.jump').toggleClass('disable');
+        $('.swap').toggleClass('disable');
+        var targetIndex = document.getElementById('swap-index-input').value;
+        $.ajax({
+            'url':`{{env('API_URL')}}/word-swap`,
+            'data':{
+              'id':swapId,
+              'targetIndex':targetIndex,
+            },
+            'method':'POST',
+            'timeout':0,
+        }).done(function(response){
+            $('.move-up').toggleClass('disable');
+            $('.move-down').toggleClass('disable');
+            $('.jump').toggleClass('disable');
+            $('.swap').toggleClass('disable');
+            document.getElementById('close-swap-modal').click();
+            pendiing = false;
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
+        });
+    });
+
     $(document).on('keyup','#search',function(){
         var searchQuery = this.value;
         $.ajax({
@@ -236,6 +392,68 @@ active
         }).done(function(response){
             loadData(`{{env('API_URL')}}/words?page=${current_page}`);
             document.getElementById('close-save-modal').click();
+        });
+    });
+
+    $(document).on('dblclick','.word-cell',function(){
+        var input = document.createElement('INPUT');
+        input.setAttribute('type','text');
+        input.className = 'form-control input-word';
+        input.value = this.innerHTML;
+        input.setAttribute('data-id',this.getAttribute('data-id'));
+        this.innerHTML = '';
+        this.appendChild(input);
+    });
+
+    $(document).on('focusout','.input-word',function(){
+        var word = this.value;
+        var id = this.getAttribute('data-id');
+         $.ajax({
+            'url':`{{env('API_URL')}}/words/${id}?word=${word}`,
+            'method':'PUT',
+            'timeout':0,
+        }).done(function(response){
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
+        });
+    });
+
+    $(document).on('dblclick','.translation-cell',function(){
+        var input = document.createElement('INPUT');
+        input.setAttribute('type','text');
+        input.className = 'form-control input-translation';
+        input.value = this.innerHTML;
+        input.setAttribute('data-id',this.getAttribute('data-id'));
+        this.innerHTML = '';
+        this.appendChild(input);
+    });
+
+    $(document).on('focusout','.input-translation',function(){
+        var translation = this.value;
+        var id = this.getAttribute('data-id');
+         $.ajax({
+            'url':`{{env('API_URL')}}/words/${id}?translation=${translation}`,
+            'method':'PUT',
+            'timeout':0,
+        }).done(function(response){
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
+        });
+    });
+
+    $(document).on('click','.delete',function(){
+        var tr = this.parentElement.parentElement;
+        deleteId = this.getAttribute('data-id');
+        var tdWord = tr.getElementsByTagName('td')[1];
+        document.getElementById('delete-word').innerHTML = tdWord.innerHTML;
+    });
+
+    $(document).on('click','#delete-button',function(){
+         $.ajax({
+            'url':`{{env('API_URL')}}/words/${deleteId}`,
+            'method':'DELETE',
+            'timeout':0,
+        }).done(function(response){
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
+            document.getElementById('close-delete-modal').click();
         });
     });
 
