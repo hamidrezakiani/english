@@ -174,7 +174,7 @@
             <img src="https://www.gravatar.com/avatar/52f0fbcbedee04a121cba8dad1174462?s=200&d=mm&r=g" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">حسام موسوی</a>
+            <a href="#" class="d-block">امیر آقایی</a>
           </div>
         </div>
 
@@ -184,7 +184,7 @@
             <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
             <li class="nav-item has-treeview active">
-              <a href="#" class="nav-link @yield('words')">
+              <a href="{{url('/words')}}" class="nav-link @yield('words')">
                 <i class="nav-icon fa fa-book"></i>
                 <p>
                   کلمات
@@ -192,7 +192,7 @@
               </a>
             </li>
             <li class="nav-item has-treeview">
-              <a href="#" class="nav-link @yield('test')">
+              <a href="{{url('/tests')}}" class="nav-link @yield('test')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   تست ها

@@ -37,10 +37,10 @@ active
   </div>
 </div>
  <div class="row mb-3">
-    <div class="col-2">
+    <div class="col-lg-2 col-md-3 col-sm-4 mt-1">
        <button class="btn btn-success" data-toggle="modal" data-target="#new-word-modal">کلمه جدید</button>
     </div>
-    <div class="col-4">
+    <div class="col-lg-2 col-md-3 col-sm-5 mt-1">
        <input type="text" id="search" class="form-control" placeholder="جستجو">
     </div>
  </div>
@@ -58,31 +58,45 @@ active
       </tbody>
    </table>
  </div>
+ <div class="row">
+    <div class="col-lg-4 col-md-3 col-sm-1"></div>
+    <div class="col-lg-4 col-md-6 col-sm-10" style="display: flex">
+      <button class="btn btn-info mt-1 page-link" id="next-page-button">صفحه بعد</button>
+     <select name="example1_length" id="select-page"  aria-controls="example1" class="form-control form-control-sm mt-2 mr-2">
+
+     </select>
+   <button class="btn btn-info mt-1 mr-2 page-link" id="prev-page-button">صفحه قیل</button>
+   </div>
+   <div class="col-lg-4 col-md-3 col-sm-1"></div>
+   </div>
 @endsection
 
 @section('js')
 <script>
-    var nextPageUrl = `{{env('API_URL')}}/words?`;
+    var nextPageUrl = null;
+    var lastPageUrl = null;
     var per_page = 0;
-    var current_page = 0;
+    var current_page = 1;
     var pendiing = false;
-    loadData();
-    $(window).scroll(function() {
-    if($(window).scrollTop() == $(document).height() - $(window).height()) {
-        if(nextPageUrl != null && !pendiing)
-          loadData();
-     }
-    });
+    loadData('{{env('API_URL')}}/words?');
+    // $(window).scroll(function() {
+    // if($(window).scrollTop() == $(document).height() - $(window).height()) {
+    //     if(nextPageUrl != null && !pendiing)
+    //       loadData();
+    //  }
+    // });
 
-    function loadData(){
+    function loadData(url){
         pendiing = true;
         $.ajax({
-            'url':`${nextPageUrl}&per_page=100`,
+            'url':`${url}&per_page=100`,
             'method':'GET',
             'timeout':0,
         }).done(function(response){
             pendiing = false;
             nextPageUrl = response.data.next_page_url;
+            prevPageUrl = response.data.prev_page_url;
+            last_page = response.data.last_page;
             per_page = response.data.per_page;
             current_page = response.data.current_page;
             console.log(response);
@@ -91,8 +105,22 @@ active
     }
 
     function insertData(words,clear = 0){
+       document.getElementById('next-page-button').setAttribute('data-url',nextPageUrl);
+       document.getElementById('prev-page-button').setAttribute('data-url',prevPageUrl);
+       var selectPageElement = document.getElementById('select-page');
+       selectPageElement.innerHTML = '';
+       for(i=1;i<=last_page;i++)
+       {
+          var option = document.createElement('OPTION');
+          option.innerHTML = i;
+          option.value=`{{env('API_URL')}}/words?page=${i}`;
+          if(current_page == i)
+            option.selected = true;
 
+           selectPageElement.appendChild(option);
+       }
        var tbody = document.getElementById('tbody-word');
+       tbody.innerHTML = '';
        if(clear)
          tbody.innerHTML = '';
        for(key in words)
@@ -260,6 +288,15 @@ active
            document.getElementById('close-save-modal').click();
         });
     });
+
+    $(document).on('click','.page-link',function(){
+       var url = this.getAttribute('data-url');
+       loadData(url);
+    });
+
+    $(document).on('change','#select-page',function(){
+       loadData(this.value);
+    })
 </script>
 @endsection
 
