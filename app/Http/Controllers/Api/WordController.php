@@ -21,7 +21,7 @@ class WordController extends Controller
         }
         else
         {
-            $words = Word::orderBy('orderIndex', 'ASC')->paginate($request->per_page);
+            $words = Word::orderBy('orderIndex', 'ASC')->paginate(100);
         }
         $this->setData($words);
         return $this->response();

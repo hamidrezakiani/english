@@ -144,12 +144,26 @@ active
           i.className = 'fa fa-arrow-circle-o-up text-success mr-2 move-up';
           i.style.fontSize = '30px';
           i.setAttribute('data-id',word.id);
+          if(word.orderIndex != 1)
           td.appendChild(i);
           i = document.createElement('I');
           i.className = 'fa fa-arrow-circle-o-down text-danger mr-2 move-down';
           i.style.fontSize = '30px';
           i.setAttribute('data-id',word.id);
+          if(!(key == words.length - 1 && nextPageUrl == null))
           td.appendChild(i);
+          var button = document.createElement('BUTTON');
+          button.className = 'btn btn-primary pt-0 pb-0 pr-2 pl-2 mr-1 jump';
+          button.innerHTML = "پرش";
+          button.style.fontSize = '15px';
+          button.setAttribute('data-id',word.id);
+          td.appendChild(button);
+          var button = document.createElement('BUTTON');
+          button.className = 'btn btn-warning pt-0 pb-0 pr-2 pl-2 mr-1 swap';
+          button.innerHTML = "جا";
+          button.style.fontSize = '15px';
+          button.setAttribute('data-id',word.id);
+          td.appendChild(button);
           tr.appendChild(td);
           tbody.appendChild(tr);
        }
@@ -171,15 +185,7 @@ active
             $('.move-up').toggleClass('disable');
             $('.move-down').toggleClass('disable');
             pendiing = false;
-            var currentIndex = parseInt(currentTr.getAttribute('data-index'));
-            var targetIndex = currentIndex - 1;
-            var tbody = document.getElementById('tbody-word');
-            tbody.insertBefore(currentTr,tbody.children[currentIndex-2]);
-            var targetTr = document.querySelector(`[data-index="${targetIndex}"]`);
-            targetTr.firstChild.innerHTML = currentIndex;
-            currentTr.firstChild.innerHTML = targetIndex;
-            targetTr.setAttribute('data-index',currentIndex);
-            currentTr.setAttribute('data-index',targetIndex);
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
         });
     }
     });
@@ -200,15 +206,7 @@ active
             $('.move-up').toggleClass('disable');
             $('.move-down').toggleClass('disable');
             pendiing = false;
-            var currentIndex = parseInt(currentTr.getAttribute('data-index'));
-            var targetIndex = currentIndex + 1;
-            var tbody = document.getElementById('tbody-word');
-            var targetTr = document.querySelector(`[data-index="${targetIndex}"]`);
-            tbody.insertBefore(targetTr,tbody.children[currentIndex - 1]);
-            targetTr.firstChild.innerHTML = currentIndex;
-            currentTr.firstChild.innerHTML = targetIndex;
-            targetTr.setAttribute('data-index',currentIndex);
-            currentTr.setAttribute('data-index',targetIndex);
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
         });
     }
     });
@@ -238,54 +236,8 @@ active
             },
             'timeout':0,
         }).done(function(response){
-            var orderIndex = response.data.orderIndex;
-           var words = document.getElementsByClassName('words');
-           for(key in words)
-           {
-              if(key < words.length)
-              {
-              var word = words[key];
-              var wordIndex = parseInt(word.getAttribute('data-index'));
-              if(wordIndex >= orderIndex)
-              {
-                 word.setAttribute('data-index',wordIndex+1);
-                 word.firstChild.innerHTML = wordIndex+1;
-              }
-
-              }
-           }
-          var word = response.data;
-          var tr = document.createElement('TR');
-          var td  = document.createElement('TD');
-          var index = orderIndex;
-          tr.setAttribute('data-index',index);
-          tr.className = 'words';
-          td.innerHTML = index;
-          tr.appendChild(td);
-          td = document.createElement('TD');
-          td.innerHTML = word.word;
-          tr.appendChild(td);
-          td = document.createElement('TD');
-          td.innerHTML = word.translation;
-          tr.appendChild(td);
-          td = document.createElement('TD');
-          var i = document.createElement('I');
-          i.className = 'fa fa-arrow-circle-o-up text-success mr-2 move-up';
-          i.style.fontSize = '30px';
-          i.setAttribute('data-id',word.id);
-          td.appendChild(i);
-          i = document.createElement('I');
-          i.className = 'fa fa-arrow-circle-o-down text-danger mr-2 move-down';
-          i.style.fontSize = '30px';
-          i.setAttribute('data-id',word.id);
-          td.appendChild(i);
-          tr.appendChild(td);
-          var tbody = document.getElementById('tbody-word');
-           if(orderIndex <= words.length + 1)
-           tbody.insertBefore(tr,tbody.children[orderIndex - 1]);
-           if(nextPageUrl != null)
-             tbody.lastChild.remove();
-           document.getElementById('close-save-modal').click();
+            loadData(`{{env('API_URL')}}/words?page=${current_page}`);
+            document.getElementById('close-save-modal').click();
         });
     });
 
