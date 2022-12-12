@@ -141,29 +141,27 @@ active
           tr.appendChild(td);
           td = document.createElement('TD');
           var i = document.createElement('I');
-          i.className = 'fa fa-arrow-circle-o-up text-success mr-2 move-up';
-          i.style.fontSize = '30px';
+          i.className = 'fa fa-arrow-circle-o-up text-success mr-1 move-up';
+          i.style.fontSize = '25px';
           i.setAttribute('data-id',word.id);
           if(word.orderIndex != 1)
           td.appendChild(i);
           i = document.createElement('I');
-          i.className = 'fa fa-arrow-circle-o-down text-danger mr-2 move-down';
-          i.style.fontSize = '30px';
+          i.className = 'fa fa-arrow-circle-o-down text-danger mr-1 move-down';
+          i.style.fontSize = '25px';
           i.setAttribute('data-id',word.id);
           if(!(key == words.length - 1 && nextPageUrl == null))
           td.appendChild(i);
-          var button = document.createElement('BUTTON');
-          button.className = 'btn btn-primary pt-0 pb-0 pr-2 pl-2 mr-1 jump';
-          button.innerHTML = "پرش";
-          button.style.fontSize = '15px';
-          button.setAttribute('data-id',word.id);
-          td.appendChild(button);
-          var button = document.createElement('BUTTON');
-          button.className = 'btn btn-warning pt-0 pb-0 pr-2 pl-2 mr-1 swap';
-          button.innerHTML = "جا";
-          button.style.fontSize = '15px';
-          button.setAttribute('data-id',word.id);
-          td.appendChild(button);
+          i = document.createElement('I');
+          i.className = 'fa fa-arrows text-dark mr-1 jump';
+          i.style.fontSize = '15px';
+          i.setAttribute('data-id',word.id);
+          td.appendChild(i);
+          i = document.createElement('I');
+          i.className = 'fa fa-mail-forward text-dark mr-1 swap';
+          i.style.fontSize = '15px';
+          i.setAttribute('data-id',word.id);
+          td.appendChild(i);
           tr.appendChild(td);
           tbody.appendChild(tr);
        }
