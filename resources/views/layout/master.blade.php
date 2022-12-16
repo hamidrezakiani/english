@@ -192,13 +192,23 @@
               </a>
             </li>
             <li class="nav-item has-treeview">
-              <a href="{{url('/tests')}}" class="nav-link @yield('test')">
+              <a href="{{url('/word-tests')}}" class="nav-link @yield('wordTests')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
-                  تست ها
+                  تست های کلمه
                 </p>
               </a>
             </li>
+
+            <li class="nav-item has-treeview">
+              <a href="{{url('/reading-tests')}}" class="nav-link @yield('readingTests')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  تست های متن
+                </p>
+              </a>
+            </li>
+
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
