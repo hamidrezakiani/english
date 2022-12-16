@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('pageTitle')
- تست ها
+ تست های متن
 @endsection
 
 @section('readingTests')
