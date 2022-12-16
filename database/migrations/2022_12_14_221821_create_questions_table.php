@@ -18,7 +18,7 @@ class CreateQuestionsTable extends Migration
             $table->unsignedBigInteger('test_id');
             $table->foreign('test_id')->references('id')->on('tests')->onDelete('cascade');
             $table->string('question');
-            $table->string('index');
+            $table->string('orderIndex');
             $table->softDeletes();
             $table->timestamps();
         });

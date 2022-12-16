@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('pageTitle')
-  تست کلمه شماره {{$test->index}}
+  تست کلمه شماره {{$test->orderIndex}}
 @endsection
 
 @section('word-tests')
@@ -142,7 +142,7 @@ active
     $(document).on('click','#edit-title-btn',function(){
        document.getElementById('form-edit-title').style.display = 'block';
        document.getElementById('div-title').style.display = 'none';
-       document.getElementById('index-input').value = {{$test->index}};
+       document.getElementById('index-input').value = {{$test->orderIndex}};
        document.getElementById('title-input').value = '{{$test->title}}';
        document.getElementById('reading-input').value = '{{$test->reading}}';
     });

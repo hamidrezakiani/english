@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Panel;
 use App\Http\Controllers\Controller;
 use App\Models\Test;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class WordTestController extends Controller
 {
@@ -15,7 +16,7 @@ class WordTestController extends Controller
      */
     public function index()
     {
-        $tests = Test::wordTests()->orderBy('index','ASC')->get();
+        $tests = Test::wordTests()->orderBy('orderIndex','ASC')->get();
         return view('wordTest.index',compact(['tests']));
     }
 
@@ -37,11 +38,11 @@ class WordTestController extends Controller
      */
     public function store(Request $request)
     {
-        $latsIndex = Test::wordTests()->orderBy('index', 'DESC')->first()->index ?? 0;
+        $latsIndex = Test::wordTests()->orderBy('orderIndex', 'DESC')->first()->orderIndex ?? 0;
         Test::create([
             'title' => $request->title,
             'type' => 'WORD',
-            'index' => $latsIndex+1
+            'orderIndex' => $latsIndex+1
         ]);
         return redirect()->back();
     }
@@ -90,6 +91,15 @@ class WordTestController extends Controller
      */
     public function destroy($id)
     {
-        dd('destroy');
+        $test = Test::find($id);
+        $questions = $test->questions;
+        foreach($questions as $question)
+        {
+            $question->answers()->delete();
+        }
+        $test->questions()->delete();
+        Test::wordTests()->where('orderIndex','>',$test->orderIndex)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
+        $test->delete();
+        return redirect()->back();
     }
 }

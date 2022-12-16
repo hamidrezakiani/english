@@ -15,7 +15,7 @@ class ReadingTestController extends Controller
      */
     public function index()
     {
-        $tests = Test::readingTests()->orderBy('index', 'ASC')->get();
+        $tests = Test::readingTests()->orderBy('orderIndex', 'ASC')->get();
         return view('readingTest.index', compact(['tests']));
     }
 
@@ -37,11 +37,11 @@ class ReadingTestController extends Controller
      */
     public function store(Request $request)
     {
-        $latsIndex = Test::readingTests()->orderBy('index', 'DESC')->first()->index ?? 0;
+        $latsIndex = Test::readingTests()->orderBy('orderIndex', 'DESC')->first()->orderIndex ?? 0;
         Test::create([
             'title' => $request->title,
             'type' => 'READING',
-            'index' => $latsIndex + 1
+            'orderIndex' => $latsIndex + 1
         ]);
         return redirect()->back();
     }
@@ -90,6 +90,14 @@ class ReadingTestController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $test = Test::find($id);
+        $questions = $test->questions;
+        foreach ($questions as $question) {
+            $question->answers()->delete();
+        }
+        $test->questions()->delete();
+        Test::readingTests()->where('orderIndex', '>', $test->orderIndex)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
+        $test->delete();
+        return redirect()->back();
     }
 }

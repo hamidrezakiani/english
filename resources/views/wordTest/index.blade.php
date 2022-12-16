@@ -70,7 +70,7 @@ active
         <tbody>
             @foreach ($tests as $test)
                 <tr>
-                    <td>{{$test->index}}</td>
+                    <td>{{$test->orderIndex}}</td>
                     <td>{{$test->title}}</td>
                     <td>
                         <a class="fa fa-eye" href="{{url('word-tests/'.$test->id)}}"></a>

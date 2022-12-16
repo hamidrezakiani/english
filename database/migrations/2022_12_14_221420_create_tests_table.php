@@ -18,7 +18,7 @@ class CreateTestsTable extends Migration
             $table->string('title');
             $table->text('reading')->nullable();
             $table->enum('type', ['WORD', 'READING']);
-            $table->unsignedInteger('index');
+            $table->unsignedInteger('orderIndex');
             $table->softDeletes();
             $table->timestamps();
         });

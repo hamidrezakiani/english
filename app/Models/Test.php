@@ -11,7 +11,7 @@ class Test extends Model
     use HasFactory,SoftDeletes;
 
     protected $fillable = [
-        'title','type','index','reading',
+        'title','type','orderIndex','reading',
     ];
 
     public function questions()
