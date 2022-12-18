@@ -97,7 +97,12 @@ active
    <div class="row" style="direction: ltr !important">
       @foreach ($test->questions as $item)
           <div class="col-12 bg-white question-box mb-4" data-id="{{$item->id}}" style="direction: ltr !important;text-align:left !important">
-             <label for="" class="col-form-label-lg" style="display: block">{{$item->orderIndex}}.{{$item->question}}<a class="fa fa-edit text-primary ml-3 edit-question" data-id="{{$item->id}}" style="cursor: pointer;font-size: 20px"></a><a class="fa fa-trash text-danger ml-3 delete-question" data-toggle="modal" data-target="#delete-modal" data-id="{{$item->id}}" style="cursor: pointer;font-size: 20px"></a></label>
+             <label for="" class="col-form-label-lg" style="display: block">
+                {{$item->orderIndex}}.{{$item->question}}
+                <a class="fa fa-edit text-primary ml-2 edit-question" data-id="{{$item->id}}" style="cursor: pointer;font-size: 20px"></a>
+                <a class="fa fa-tumblr-square ml-2 edit-translate text-success" data-id="{{$item->id}}" style="cursor: pointer;font-size: 20px"></a>
+                <a class="fa fa-trash text-danger ml-2 delete-question" data-toggle="modal" data-target="#delete-modal" data-id="{{$item->id}}" style="cursor: pointer;font-size: 20px"></a>
+            </label>
              @foreach ($item->answers as $key => $answer)
                  <label for="" class="col-form-label @if($answer->status) text-success @endif" style="display: block">{{$key+1}}.{{$answer->text}}</label>
              @endforeach
@@ -111,7 +116,7 @@ active
               </div>
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">number</label>
-                <input type="number" value="{{$item->orderIndex}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="index">
+                <input type="number" value="{{$item->orderIndex}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="orderIndex">
               </div>
               <div class="form-group">
                 @foreach($item->answers as $key => $answer)
@@ -125,6 +130,32 @@ active
               <div class="form-group">
                 <button type="submit" class="btn btn-success">ثبت تغییرات</button>
                 <i class="btn btn-danger edit-cancel-btn" data-id="{{$item->id}}">انصراف</i>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12 bg-white form-translate-box" data-id="{{$item->id}}" style="text-align:left;display:none">
+             <form action="{{url('questions/'.$item->id)}}" method="POST">
+              @csrf
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">ترجمه سوال</label>
+                <input type="text" value="{{$item->translate}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="translate">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">جواب تشریحی</label>
+                <textarea class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" name="solve" id="" cols="15" rows="6">{{$item->solve}}</textarea>
+            </div>
+              <div class="form-group">
+                @foreach($item->answers as $key => $answer)
+                    <label for="recipient-name" class="col-form-label">ترجمه گزینه {{$key+1}}</label>
+                    <input type="hidden" name="answer[{{$key}}][id]" value="{{$answer->id}}">
+                    <input type="text" value="{{$answer->translate}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="answer[{{$key}}][translate]">
+                @endforeach
+
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success">ثبت تغییرات</button>
+                <i class="btn btn-danger edit-translate-cancel-btn" data-id="{{$item->id}}">انصراف</i>
               </div>
             </form>
           </div>
@@ -154,6 +185,17 @@ active
     $(document).on('click','.edit-cancel-btn',function(){
         var id = $(this).data('id');
         document.querySelector(`.form-question-box[data-id="${id}"]`).style.display = 'none';
+        document.querySelector(`.question-box[data-id="${id}"]`).style.display = 'block';
+    })
+
+    $(document).on('click','.edit-translate',function(){
+        var id = $(this).data('id');
+        document.querySelector(`.form-translate-box[data-id="${id}"]`).style.display = 'block';
+        document.querySelector(`.question-box[data-id="${id}"]`).style.display = 'none';
+    });
+    $(document).on('click','.edit-translate-cancel-btn',function(){
+        var id = $(this).data('id');
+        document.querySelector(`.form-translate-box[data-id="${id}"]`).style.display = 'none';
         document.querySelector(`.question-box[data-id="${id}"]`).style.display = 'block';
     })
 

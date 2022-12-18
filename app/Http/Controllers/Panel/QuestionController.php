@@ -34,17 +34,24 @@ class QuestionController extends Controller
 
     public function update($id,Request $request)
     {
-        Question::find($id)->update([
-            'orderIndex' => $request->index,
-            'question' => $request->question
+        $question = Question::find($id);
+        $question->update([
+            'orderIndex' => $request->orderIndex ?? $question->orderIndex,
+            'question'   => $request->question ?? $question->question,
+            'translate'  => $request->translate ?? $question->translate,
+            'solve'      => $request->solve ?? $question->solve,
         ]);
 
         foreach($request->answer as $answer)
         {
-            $status = $request->trueAnswer == $answer['id'];
-            Answer::find($answer['id'])->update([
-                'text' => $answer['text'],
-                'status' => $status
+            if($request->trueAnswer)
+              $status = $request->trueAnswer == $answer['id'];
+
+            $row = Answer::find($answer['id']);
+            $row->update([
+                'text'      => $answer['text'] ?? $row->text,
+                'translate' => $answer['translate'] ?? $row->translate,
+                'status'    => $status ?? $row->status,
             ]);
         }
 

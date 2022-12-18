@@ -5,6 +5,7 @@ use App\Http\Controllers\Panel\ReadingTestController;
 use App\Http\Controllers\Panel\WordController;
 use App\Http\Controllers\Panel\WordTestController;
 use App\Models\Word;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*

@@ -11,7 +11,7 @@ class Answer extends Model
     use HasFactory,SoftDeletes;
 
     protected $fillable = [
-        'question_id','text','status',
+        'question_id','text','translate','status',
     ];
 
     public function question()
