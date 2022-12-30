@@ -17,7 +17,6 @@ class AuthController extends Controller
     use ResponseTemplate;
     public function verificationCode(Request $request)
     {
-        return response()->json(['mobile' => $request->mobile,'ip'=>$request->ip()]);
         $user = User::where('mobile',$request->mobile)->first();
         if(!$user)
           $user = User::create([
