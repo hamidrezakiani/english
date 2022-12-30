@@ -21,6 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);
+Route::get('excel', [AuthController::class, 'excel']);
 Route::resource('words',WordController::class);
 Route::post('word-move-up/{id}',[WordController::class,'moveUp']);
 Route::post('word-move-down/{id}',[WordController::class,'moveDown']);

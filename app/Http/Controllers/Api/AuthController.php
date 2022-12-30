@@ -6,15 +6,19 @@ use App\Http\Controllers\Controller;
 use App\Lib\ResponseTemplate;
 use App\Models\SmsVerification;
 use App\Models\User;
+use App\Models\Word;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Cryptommer\Smsir\Smsir;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Maatwebsite\Excel\Facades\Excel;
 class AuthController extends Controller
 {
     use ResponseTemplate;
     public function verificationCode(Request $request)
     {
+        dd($request->mobile,$request->ip());
         $user = User::where('mobile',$request->mobile)->first();
         if(!$user)
           $user = User::create([
@@ -64,5 +68,23 @@ class AuthController extends Controller
             $this->setStatus(403);
             return $this->response();
         }
+    }
+
+    public function excel(Request $request)
+    {
+        $file = file_get_contents('463104.csv');
+        $words = explode("\n",$file);
+        $data = [];
+        foreach($words as $key => $word)
+        {
+            $word = explode(',',$word);
+            if(sizeof($word) == 2)
+             $data[$key] = [
+                'word' => $word[0],
+                'translation'=> $word[1],
+                'orderIndex' => $key+1
+             ];
+        }
+        Word::insert($data);
     }
 }
