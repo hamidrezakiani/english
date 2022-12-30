@@ -17,7 +17,6 @@ class CreateSmsVerificationsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('mobile');
             $table->integer('code');
             $table->enum('status', ['NOT_USED', 'VERIFIED', 'TIME_LEFT', 'FAILED_ATTEMPT'])->default('NOT_USED');
             $table->timestamp('expired_at')->nullable();
