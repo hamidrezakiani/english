@@ -20,7 +20,8 @@ active
       <div class="modal-body" style="direction: ltr !important;text-align: left">
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">question</label>
-                <input type="hidden" name="test_id" value="{{$test->id}}">
+                <input type="hidden" name="foreign_id" value="{{$test->id}}">
+                <input type="hidden" name="type" value="WORD_TEST">
                 <input type="text" value="" class="form-control col-12" style="min-width: max-content" name="question">
               </div>
               <div class="form-group">
@@ -51,9 +52,9 @@ active
    <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">سوال جدید</h5>
+        <h5 class="modal-title">حذف سوال</h5>
       </div>
-      <form action="}" method="POST" id="delete-form">
+      <form action="" method="POST" id="delete-form">
         @csrf
       <div class="modal-body">
               آیا میخواهید این سوال را حذف کنید؟
@@ -149,7 +150,7 @@ active
                 @foreach($item->answers as $key => $answer)
                     <label for="recipient-name" class="col-form-label">ترجمه گزینه {{$key+1}}</label>
                     <input type="hidden" name="answer[{{$key}}][id]" value="{{$answer->id}}">
-                    <input type="text" value="{{$answer->translate}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="answer[{{$key}}][translate]">
+                    <input type="text" value="{{$answer->translate}}" class="form-control @if($answer->status) bg-success @endif col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="answer[{{$key}}][translate]">
                 @endforeach
 
               </div>

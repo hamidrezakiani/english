@@ -10,7 +10,7 @@ class Question extends Model
 {
     use HasFactory,SoftDeletes;
     protected $fillable = [
-        'test_id','question','translate','solve','orderIndex','type',
+        'foreign_id','question','translate','solve','orderIndex','type',
     ];
 
     public function test()

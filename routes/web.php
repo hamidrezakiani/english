@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Panel\GrammarController;
+use App\Http\Controllers\Panel\OtherController;
 use App\Http\Controllers\Panel\QuestionController;
 use App\Http\Controllers\Panel\ReadingTestController;
 use App\Http\Controllers\Panel\WordController;
@@ -36,3 +38,11 @@ Route::get('reading-tests/delete/{id}', [ReadingTestController::class, 'destroy'
 Route::post('questions', [QuestionController::class, 'store']);
 Route::post('questions/{id}',[QuestionController::class,'update']);
 Route::post('questions/delete/{id}',[QuestionController::class,'destroy']);
+Route::get('grammars', [GrammarController::class, 'index']);
+Route::post('grammars', [GrammarController::class, 'store']);
+Route::post('grammars/{id}', [GrammarController::class, 'update']);
+Route::post('grammars/delete/{id}', [GrammarController::class, 'destroy']);
+Route::get('wordTestHelp', [OtherController::class, 'wordTestHelp']);
+Route::post('updateWordTestHelp', [OtherController::class, 'updateWordTestHelp']);
+Route::get('readingTestHelp', [OtherController::class, 'readingTestHelp']);
+Route::post('updateReadingTestHelp', [OtherController::class, 'updateReadingTestHelp']);

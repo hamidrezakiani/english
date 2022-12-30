@@ -209,6 +209,33 @@
               </a>
             </li>
 
+            <li class="nav-item has-treeview">
+              <a href="{{url('/grammars')}}" class="nav-link @yield('grammars')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  گرامر
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item has-treeview">
+              <a href="{{url('/wordTestHelp')}}" class="nav-link @yield('wordTestHelp')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  آموزش تست کلمه
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item has-treeview">
+              <a href="{{url('/readingTestHelp')}}" class="nav-link @yield('readingTestHelp')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  آموزش تست متن
+                </p>
+              </a>
+            </li>
+
           </ul>
         </nav>
         <!-- /.sidebar-menu -->

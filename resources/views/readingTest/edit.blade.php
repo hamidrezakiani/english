@@ -80,10 +80,6 @@ active
             <textarea class="form-control" name="title" id="title-input"></textarea>
           </div>
           <div class="form-group">
-            <label for="message-text" class="col-form-label">متن:</label>
-            <textarea class="form-control" rows="10" name="reading" id="reading-input"></textarea>
-          </div>
-          <div class="form-group">
             <button type="submit" class="btn btn-success" id="edit-save-btn">ثبت تغییرات</button>
             <i class="btn btn-danger" id="edit-cancel-btn">انصراف</i>
           </div>
@@ -91,16 +87,28 @@ active
           <div class="col-12" id="div-title">
             <label for="message-text" class="col-form-label mb-5"> <h4 style="display:inline">عنوان :</h4> {{$test->title}}</label>
             <a class="fa fa-edit text-primary" id="edit-title-btn" style="font-size: 25px;cursor: pointer;"></a>
-            <p class="text-dark mt-3"><h3>متن :</h3>{{$test->reading}}</p>
           </div>
    </div>
    <div class="row mb-3">
-    <button class="btn btn-success" data-toggle="modal" data-target="#save-modal">سوال جدید</button>
+    <button class="btn btn-success" data-toggle="modal" data-target="#save-modal">متن جدید</button>
    </div>
 
-
-   <div class="row" style="direction: ltr !important">
-      @foreach ($test->questions as $item)
+   @foreach ($test->readings as $reading)
+       <div class="row" style="direction: rtl !important">
+        <div class="col-12">
+             <label for="" class="col-form-label-lg" style="display: block">
+                متن شماره {{$reading->orderIndex}}
+                <a class="fa fa-edit text-primary ml-2 edit-grammar" data-id="{{$reading->id}}" style="cursor: pointer;font-size: 20px"></a>
+                <a class="fa fa-trash text-danger ml-2 delete-grammar" data-toggle="modal" data-target="#delete-modal" data-id="{{$reading->id}}" style="cursor: pointer;font-size: 20px"></a>
+            </label>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <textarea class="form-control" disabled cols="30" rows="10">{{$reading->text}}</textarea>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <textarea class="form-control" disabled cols="30" rows="10">{{$reading->translate}}</textarea>
+        </div>
+      @foreach ($reading->questions as $item)
           <div class="col-12 bg-white question-box mb-4" data-id="{{$item->id}}" style="direction: ltr !important;text-align:left !important">
              <label for="" class="col-form-label-lg" style="display: block">
                 {{$item->orderIndex}}.{{$item->question}}
@@ -154,7 +162,7 @@ active
                 @foreach($item->answers as $key => $answer)
                     <label for="recipient-name" class="col-form-label">ترجمه گزینه {{$key+1}}</label>
                     <input type="hidden" name="answer[{{$key}}][id]" value="{{$answer->id}}">
-                    <input type="text" value="{{$answer->translate}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="answer[{{$key}}][translate]">
+                    <input type="text" value="{{$answer->translate}}" class="form-control @if($answer->status) bg-success @endif col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="answer[{{$key}}][translate]">
                 @endforeach
 
               </div>
@@ -166,6 +174,10 @@ active
           </div>
       @endforeach
    </div>
+   @endforeach
+
+
+
 @endsection
 
 @section('js')

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\WordController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -18,9 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+Route::post('verificationCode', [AuthController::class, 'verificationCode']);
+Route::post('verify', [AuthController::class, 'verify']);
 Route::resource('words',WordController::class);
 Route::post('word-move-up/{id}',[WordController::class,'moveUp']);
 Route::post('word-move-down/{id}',[WordController::class,'moveDown']);
 Route::post('word-swap', [WordController::class, 'swap']);
 Route::post('word-jump', [WordController::class, 'jump']);
+

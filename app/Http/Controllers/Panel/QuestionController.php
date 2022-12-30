@@ -13,9 +13,10 @@ class QuestionController extends Controller
 
     public function store(Request $request)
     {
-        $lastQuestionIndex = Question::where('test_id',$request->test_id)->count();
+        $lastQuestionIndex = Question::where('type',$request->type)->where('foreign_id',$request->foreign_id)->count();
         $question = Question::create([
-            'test_id' =>  $request->test_id,
+            'foreign_id' =>  $request->foreign_id,
+            'type' =>  $request->type,
             'question' => $request->question,
             'orderIndex' => $lastQuestionIndex+1
         ]);
@@ -62,7 +63,7 @@ class QuestionController extends Controller
     {
         $question = Question::find($id);
         $question->answers()->delete();
-        Question::where('orderIndex','>',$question->orderIndex)->where('test_id',$question->test_id)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
+        Question::where('type',$question->type)->where('orderIndex','>',$question->orderIndex)->where('test_id',$question->test_id)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
         $question->delete();
         return redirect()->back();
     }

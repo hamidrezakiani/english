@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Panel;
 
 use App\Http\Controllers\Controller;
-use App\Models\Test;
+use App\Models\ReadingTest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -16,7 +16,7 @@ class ReadingTestController extends Controller
      */
     public function index()
     {
-        $tests = Test::readingTests()->orderBy('orderIndex', 'ASC')->get();
+        $tests = ReadingTest::orderBy('orderIndex', 'ASC')->get();
         return view('readingTest.index', compact(['tests']));
     }
 
@@ -38,10 +38,9 @@ class ReadingTestController extends Controller
      */
     public function store(Request $request)
     {
-        $latsIndex = Test::readingTests()->orderBy('orderIndex', 'DESC')->first()->orderIndex ?? 0;
-        Test::create([
+        $latsIndex = ReadingTest::orderBy('orderIndex', 'DESC')->first()->orderIndex ?? 0;
+        ReadingTest::create([
             'title' => $request->title,
-            'type' => 'READING',
             'orderIndex' => $latsIndex + 1
         ]);
         return redirect()->back();
@@ -66,7 +65,9 @@ class ReadingTestController extends Controller
      */
     public function edit($id)
     {
-        $test = Test::with(['questions'])->find($id);
+        $test = ReadingTest::with(['readings' => function($query){
+            $query->with(['questions']);
+        }])->find($id);
         return view('readingTest.edit',compact(['test']));
     }
 
@@ -79,7 +80,7 @@ class ReadingTestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Test::find($id)->update($request->all());
+        ReadingTest::find($id)->update($request->all());
         return redirect()->back();
     }
 
@@ -91,13 +92,13 @@ class ReadingTestController extends Controller
      */
     public function destroy($id)
     {
-        $test = Test::find($id);
+        $test = ReadingTest::find($id);
         $questions = $test->questions;
         foreach ($questions as $question) {
             $question->answers()->delete();
         }
         $test->questions()->delete();
-        Test::readingTests()->where('orderIndex', '>', $test->orderIndex)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
+        ReadingTest::where('orderIndex', '>', $test->orderIndex)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
         $test->delete();
         return redirect()->back();
     }

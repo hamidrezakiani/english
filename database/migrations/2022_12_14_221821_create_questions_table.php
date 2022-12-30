@@ -15,8 +15,10 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('test_id');
-            $table->foreign('test_id')->references('id')->on('tests')->onDelete('cascade');
+            $table->unsignedBigInteger('foreign_id');
+           // $table->foreign('foreign_id')->references('id')->on('word_tests')->onDelete('cascade');
+           // $table->foreign('foreign_id')->references('id')->on('readings')->onDelete('cascade');
+            $table->enum('type',['WORD_TEST','READING_TEST']);
             $table->text('question');
             $table->text('translate')->nullable();
             $table->text('solve')->nullable();
