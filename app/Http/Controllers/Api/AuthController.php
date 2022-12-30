@@ -12,7 +12,6 @@ use Illuminate\Http\Request;
 use Cryptommer\Smsir\Smsir;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use Maatwebsite\Excel\Facades\Excel;
 class AuthController extends Controller
 {
     use ResponseTemplate;
@@ -69,21 +68,21 @@ class AuthController extends Controller
         }
     }
 
-    public function excel(Request $request)
-    {
-        $file = file_get_contents('463104.csv');
-        $words = explode("\n",$file);
-        $data = [];
-        foreach($words as $key => $word)
-        {
-            $word = explode(',',$word);
-            if(sizeof($word) == 2)
-             $data[$key] = [
-                'word' => $word[0],
-                'translation'=> $word[1],
-                'orderIndex' => $key+1
-             ];
-        }
-        Word::insert($data);
-    }
+    // public function excel(Request $request)
+    // {
+    //     $file = file_get_contents('463104.csv');
+    //     $words = explode("\n",$file);
+    //     $data = [];
+    //     foreach($words as $key => $word)
+    //     {
+    //         $word = explode(',',$word);
+    //         if(sizeof($word) == 2)
+    //          $data[$key] = [
+    //             'word' => $word[0],
+    //             'translation'=> $word[1],
+    //             'orderIndex' => $key+1
+    //          ];
+    //     }
+    //     Word::insert($data);
+    // }
 }
