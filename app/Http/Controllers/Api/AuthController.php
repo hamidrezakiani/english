@@ -36,8 +36,8 @@ class AuthController extends Controller
 
     public function verify(Request $request)
     {
-        $verifyCode = User::where('mobile', $request->mobile)->first()
-            ->smsVerifications()
+        $user = User::where('mobile',$request->mobile)->first();
+        $verifyCode = SmsVerification::where('user_id', $user->id)
             ->where('expired_at', null)
             ->where('status', 'NOT_USED')->first();
 
