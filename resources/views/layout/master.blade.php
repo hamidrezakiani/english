@@ -236,6 +236,15 @@
               </a>
             </li>
 
+            <li class="nav-item has-treeview">
+              <a href="{{url('/readingTestHelp')}}" class="nav-link @yield('readingTestHelp')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  برنامه ریزی
+                </p>
+              </a>
+            </li>
+
           </ul>
         </nav>
         <!-- /.sidebar-menu -->

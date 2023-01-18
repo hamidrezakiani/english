@@ -46,3 +46,5 @@ Route::get('wordTestHelp', [OtherController::class, 'wordTestHelp']);
 Route::post('updateWordTestHelp', [OtherController::class, 'updateWordTestHelp']);
 Route::get('readingTestHelp', [OtherController::class, 'readingTestHelp']);
 Route::post('updateReadingTestHelp', [OtherController::class, 'updateReadingTestHelp']);
+Route::get('planning', [OtherController::class, 'planning']);
+Route::post('updatePlanning', [OtherController::class, 'updatePlanning']);

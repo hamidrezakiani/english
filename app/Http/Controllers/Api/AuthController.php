@@ -40,13 +40,21 @@ class AuthController extends Controller
         $verifyCode = SmsVerification::where('user_id', $user->id)
             ->where('expired_at', null)
             ->where('status', 'NOT_USED')->first();
-
+        $invited_by = NULL;
+        if($request->invitationCode)
+        {
+            $inviter = User::where('invitation_code',$request->invitationCode)->first();
+            if($inviter)
+              $invited_by = $inviter->id;
+        }
         if ($verifyCode && $verifyCode->created_at->gt(Carbon::now()->subMinute(2))) {
             $verifyCode->expired_at = Carbon::now();
             if ($verifyCode->code == $request->code) {
                 $verifyCode->status = 'VERIFIED';
                 $user = User::where('mobile', $request->mobile)->first();
                 $user->api_token = Str::random(80);
+                $user->name = $request->name;
+                $user->invited_by = $invited_by;
                 $user->mobileVerify = 1;
                 $user->save();
                 $this->setData(['api_token' => $user->api_token]);

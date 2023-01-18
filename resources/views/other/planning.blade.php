@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('pageTitle')
-  آموزش تست متن
+  برنامه ریزی
 @endsection
 
 @section('wordTestHelp')
@@ -9,7 +9,7 @@ active
 
 @section('content')
   <div class="row">
-    <form action="{{url('/updateReadingTestHelp')}}" method="POST">
+    <form action="{{url('/planning')}}" method="POST">
         @csrf
         <textarea name="text" id="editor1" rows="10" cols="80">
                 {{$value->value}}

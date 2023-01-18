@@ -28,4 +28,27 @@ class OtherController extends Controller
         $value = Other::where('key', 'ReadingTestHelp')->first();
         return view('other.readingTestHelp', compact(['value']));
     }
+
+    public function updateReadingTestHelp(Request $request)
+    {
+        $value = Other::where('key', 'ReadingTestHelp')->first();
+        $value->update([
+            'value' => $request->text
+        ]);
+        return redirect()->back();
+    }
+
+    public function planning()
+    {
+        $value = Other::where('key','Planning')->first();
+        return view('other.planning',compact(['value']));
+    }
+
+    public function updatePlanning(Request $request)
+    {
+        $value = Other::where('key', 'Planning')->update([
+            'value'=> $request->value
+        ]);
+        return view('other.planning', compact(['value']));
+    }
 }

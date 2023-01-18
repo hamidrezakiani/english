@@ -16,6 +16,9 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('mobile')->unique();
+            $table->string('name');
+            $table->boolean('new_user')->default(1);
+            $table->string('invited_by');
             $table->string('ip');
             $table->boolean('mobileVerify')->default(0);
             $table->string('api_token', 80);
