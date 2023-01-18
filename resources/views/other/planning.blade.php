@@ -12,7 +12,7 @@ active
     <form action="{{url('/updatePlanning')}}" method="POST">
         @csrf
         <textarea name="text" id="editor1" rows="10" cols="80">
-                {{$value->value}}
+                {{$value}}
         </textarea>
         <button class="btn btn-success">ذخیره</button>
     </form>
