@@ -47,6 +47,12 @@ class AuthController extends Controller
             $inviter = User::where('invitation_code',$request->invitationCode)->first();
             if($inviter)
               $invited_by = $inviter->id;
+            else
+            {
+                $this->setErrors(['invitationCode' => ['کد معرف صحیح نمیباشد']]);
+                $this->setStatus(422);
+                return $this->response();
+            }
         }
         if ($verifyCode && $verifyCode->created_at->gt(Carbon::now()->subMinute(2))) {
             $verifyCode->expired_at = Carbon::now();
