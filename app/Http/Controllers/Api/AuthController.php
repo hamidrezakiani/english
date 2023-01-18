@@ -49,7 +49,7 @@ class AuthController extends Controller
               $invited_by = $inviter->id;
             else
             {
-                $this->setErrors(['invitationCode' => ['کد معرف صحیح نمیباشد']]);
+                $this->setErrors(['invitationCode' => [$request->invitationCode]]);
                 $this->setStatus(422);
                 return $this->response();
             }
