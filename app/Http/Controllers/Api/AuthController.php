@@ -31,6 +31,7 @@ class AuthController extends Controller
         $parameter = new \Cryptommer\Smsir\Objects\Parameters('Code', $code);
         $parameters = array($parameter);
         $send->Verify($user->mobile, 100000, $parameters);
+        $this->setData(['mobileVerify' => $user->mobileVerify]);
         return $this->response();
     }
 
