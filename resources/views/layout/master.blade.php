@@ -237,7 +237,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/readingTestHelp')}}" class="nav-link @yield('readingTestHelp')">
+              <a href="{{url('/planning')}}" class="nav-link @yield('planning')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   برنامه ریزی

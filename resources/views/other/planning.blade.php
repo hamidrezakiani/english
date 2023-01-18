@@ -3,7 +3,7 @@
   برنامه ریزی
 @endsection
 
-@section('wordTestHelp')
+@section('planning')
 active
 @endsection
 
