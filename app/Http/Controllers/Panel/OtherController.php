@@ -31,8 +31,8 @@ class OtherController extends Controller
 
     public function updateReadingTestHelp(Request $request)
     {
-        $value = Other::where('key', 'ReadingTestHelp')->first();
-        $value->update([
+        dd($request->text);
+        Other::where('key', 'ReadingTestHelp')->update([
             'value' => $request->text
         ]);
         return redirect()->back();
