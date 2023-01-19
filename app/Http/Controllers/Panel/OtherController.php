@@ -48,6 +48,7 @@ class OtherController extends Controller
     {
         $value = Other::where('key', 'Planning')->first();
         $value->value = $request->text;
+        $value->save();
         return view('other.planning', compact(['value']));
     }
 }
