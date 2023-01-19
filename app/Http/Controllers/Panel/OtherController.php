@@ -31,8 +31,8 @@ class OtherController extends Controller
 
     public function updateReadingTestHelp(Request $request)
     {
-        dd($request->text);
-        Other::where('key', 'ReadingTestHelp')->update([
+        $value = Other::where('key', 'ReadingTestHelp')->first();
+        $value->update([
             'value' => $request->text
         ]);
         return redirect()->back();
@@ -46,9 +46,8 @@ class OtherController extends Controller
 
     public function updatePlanning(Request $request)
     {
-        $value = Other::where('key', 'Planning')->update([
-            'value'=> $request->value
-        ]);
+        $value = Other::where('key', 'Planning')->first();
+        $value->value = $request->text;
         return view('other.planning', compact(['value']));
     }
 }
