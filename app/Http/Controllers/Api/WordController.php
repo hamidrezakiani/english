@@ -19,7 +19,7 @@ class WordController extends Controller
                 ->orWhere('translation', 'like', '%' . $request->q . '%')->paginate(100);
         } else {
             if ($request->flag == 'all') {
-                $words = Word::all()->orderBy('orderIndex', 'ASC');
+                $words = Word::orderBy('orderIndex', 'ASC');
             } else {
                 $words = Word::orderBy('orderIndex', 'ASC')->paginate(100);
             }
