@@ -20,7 +20,7 @@ class WordController extends Controller
         } else {
             if ($request->flag == 'all') {
                 $words =
-                Word::orderBy('orderIndex', 'ASC')->all();
+                Word::orderBy('orderIndex', 'ASC')->get();
             } else {
                 $words = Word::orderBy('orderIndex', 'ASC')->paginate(100);
             }
