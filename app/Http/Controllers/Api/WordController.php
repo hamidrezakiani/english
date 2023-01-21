@@ -14,14 +14,15 @@ class WordController extends Controller
     use ResponseTemplate;
     public function index(Request $request)
     {
-        if($request->flag == 'search'&& $request->q != "")
-        {
-            $words = Word::where('word','like',$request->q.'%')
-                           ->orWhere('translation','like','%'.$request->q.'%')->paginate(100);
-        }
-        else
-        {
-            $words = Word::orderBy('orderIndex', 'ASC')->paginate(100);
+        if ($request->flag == 'search' && $request->q != "") {
+            $words = Word::where('word', 'like', $request->q . '%')
+                ->orWhere('translation', 'like', '%' . $request->q . '%')->paginate(100);
+        } else {
+            if ($request->flag == 'all') {
+                $words = Word::all()->orderBy('orderIndex', 'ASC');
+            } else {
+                $words = Word::orderBy('orderIndex', 'ASC')->paginate(100);
+            }
         }
         $this->setData($words);
         return $this->response();
