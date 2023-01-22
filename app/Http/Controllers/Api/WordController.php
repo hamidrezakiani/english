@@ -22,7 +22,7 @@ class WordController extends Controller
                 $words =
                 Word::orderBy('orderIndex', 'ASC')->get();
             } else {
-                $words = Word::orderBy('orderIndex', 'ASC')->paginate(100);
+                $words = Word::orderBy('orderIndex', 'ASC')->paginate($request->paginate);
             }
         }
         $this->setData($words);
