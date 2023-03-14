@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\OtherController;
+use App\Http\Controllers\Api\SimilarWordController;
 use App\Http\Controllers\Api\WordController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,4 +30,9 @@ Route::post('word-move-up/{id}',[WordController::class,'moveUp']);
 Route::post('word-move-down/{id}',[WordController::class,'moveDown']);
 Route::post('word-swap', [WordController::class, 'swap']);
 Route::post('word-jump', [WordController::class, 'jump']);
+Route::resource('similar-words', SimilarWordController::class);
+Route::post('similar-word-move-up/{id}', [SimilarWordController::class, 'moveUp']);
+Route::post('similar-word-move-down/{id}', [SimilarWordController::class, 'moveDown']);
+Route::post('similar-word-swap', [SimilarWordController::class, 'swap']);
+Route::post('similar-word-jump', [SimilarWordController::class, 'jump']);
 

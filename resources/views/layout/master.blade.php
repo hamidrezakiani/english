@@ -191,6 +191,14 @@
                 </p>
               </a>
             </li>
+            <li class="nav-item has-treeview active">
+              <a href="{{url('/similar-words')}}" class="nav-link @yield('similar-words')">
+                <i class="nav-icon fa fa-book"></i>
+                <p>
+                  کلمات مشابه
+                </p>
+              </a>
+            </li>
             <li class="nav-item has-treeview">
               <a href="{{url('/word-tests')}}" class="nav-link @yield('wordTests')">
                 <i class="nav-icon fa fa-edit"></i>

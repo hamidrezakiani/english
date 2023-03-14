@@ -4,6 +4,7 @@ use App\Http\Controllers\Panel\GrammarController;
 use App\Http\Controllers\Panel\OtherController;
 use App\Http\Controllers\Panel\QuestionController;
 use App\Http\Controllers\Panel\ReadingTestController;
+use App\Http\Controllers\Panel\SimilarWordController;
 use App\Http\Controllers\Panel\WordController;
 use App\Http\Controllers\Panel\WordTestController;
 use App\Models\Word;
@@ -25,6 +26,7 @@ Route::get('/',function(){
     return view('dashboard');
 });
 Route::get('words',[WordController::class,'index']);
+Route::get('similar-words', [SimilarWordController::class, 'index']);
 Route::get('word-tests',[WordTestController::class,'index']);
 Route::post('word-tests', [WordTestController::class, 'store']);
 Route::get('word-tests/{id}',[WordTestController::class,'edit']);
