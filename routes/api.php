@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\OtherController;
 use App\Http\Controllers\Api\SimilarWordController;
 use App\Http\Controllers\Api\WordController;
+use App\Http\Controllers\Api\WordTestController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -35,4 +36,5 @@ Route::post('similar-word-move-up/{id}', [SimilarWordController::class, 'moveUp'
 Route::post('similar-word-move-down/{id}', [SimilarWordController::class, 'moveDown']);
 Route::post('similar-word-swap', [SimilarWordController::class, 'swap']);
 Route::post('similar-word-jump', [SimilarWordController::class, 'jump']);
+Route::get('word-tests',[WordTestController::class,'index']);
 
