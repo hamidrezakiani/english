@@ -78,7 +78,7 @@ class WordTestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Test::find($id)->update($request->all());
+        WordTest::find($id)->update($request->all());
         return redirect()->back();
     }
 
