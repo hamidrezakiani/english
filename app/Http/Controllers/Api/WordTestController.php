@@ -13,7 +13,9 @@ class WordTestController extends Controller
 
     public function index(Request $request)
     {
-        $tests = WordTest::with(['questions'])->orderBy('orderIndex', 'ASC')->get();
+        $tests = WordTest::with(['questions' => function($query){
+            return $query->with(['answers']);
+        }])->orderBy('orderIndex', 'ASC')->get();
         $this->setData($tests);
         return $this->response();
     }
