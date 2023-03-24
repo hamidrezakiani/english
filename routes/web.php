@@ -3,6 +3,7 @@
 use App\Http\Controllers\Panel\GrammarController;
 use App\Http\Controllers\Panel\OtherController;
 use App\Http\Controllers\Panel\QuestionController;
+use App\Http\Controllers\Panel\ReadingController;
 use App\Http\Controllers\Panel\ReadingTestController;
 use App\Http\Controllers\Panel\SimilarWordController;
 use App\Http\Controllers\Panel\WordController;
@@ -37,6 +38,9 @@ Route::post('reading-tests', [ReadingTestController::class, 'store']);
 Route::get('reading-tests/{id}', [ReadingTestController::class, 'edit']);
 Route::post('reading-tests/{id}', [ReadingTestController::class, 'update']);
 Route::get('reading-tests/delete/{id}', [ReadingTestController::class, 'destroy']);
+Route::post('readings',[ReadingController::class,'store']);
+Route::post('readings/{id}',[ReadingController::class,'update']);
+Route::post('readings/delete/{id}',[ReadingController::class,'update']);
 Route::post('questions', [QuestionController::class, 'store']);
 Route::post('questions/{id}',[QuestionController::class,'update']);
 Route::post('questions/delete/{id}',[QuestionController::class,'destroy']);

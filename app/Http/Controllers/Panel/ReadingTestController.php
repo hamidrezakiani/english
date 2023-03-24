@@ -66,7 +66,9 @@ class ReadingTestController extends Controller
     public function edit($id)
     {
         $test = ReadingTest::with(['readings' => function($query){
-            $query->with(['questions']);
+            $query->with(['questions' => function($query){
+                return $query->orderBy('orderIndex');
+            }]);
         }])->find($id);
         return view('readingTest.edit',compact(['test']));
     }

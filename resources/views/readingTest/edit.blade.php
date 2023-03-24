@@ -8,8 +8,38 @@ active
 @endsection
 
 @section('content')
+    {{-- add passage modal --}}
+   <div class="modal fade" id="save-passage-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">متن جدید</h5>
+      </div>
+      <form action="{{url('readings')}}" method="POST">
+        @csrf
+      <div class="modal-body" style="direction: ltr !important;text-align: left">
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">reading</label>
+                <input type="hidden" name="test_id" value="{{$test->id}}">
+                <textarea name="text" class="form-control" rows="15" cols="20"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">translate</label>
+                <textarea style="text-align: right;direction: rtl" name="translate" class="form-control" rows="15" cols="20"></textarea>
+              </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="close-delete-modal" data-dismiss="modal">انصراف</button>
+        <button type="submit" class="btn btn-success mr-4">ذخیره</a>
+      </div>
+      </form>
+    </div>
+   </div>
+  </div>
+   {{-- end add passage modal --}}
 
-   <div class="modal fade" id="save-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   {{-- add question modal --}}
+        <div class="modal fade" id="save-question-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -20,7 +50,8 @@ active
       <div class="modal-body" style="direction: ltr !important;text-align: left">
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">question</label>
-                <input type="hidden" name="test_id" value="{{$test->id}}">
+                <input type="hidden" name="foreign_id" id="foreign-id" value="">
+                <input type="hidden" name="type" value="READING_TEST">
                 <input type="text" value="" class="form-control col-12" style="min-width: max-content" name="question">
               </div>
               <div class="form-group">
@@ -46,7 +77,7 @@ active
     </div>
    </div>
   </div>
-
+   {{-- end add question modal --}}
   <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -90,11 +121,11 @@ active
           </div>
    </div>
    <div class="row mb-3">
-    <button class="btn btn-success" data-toggle="modal" data-target="#save-modal">متن جدید</button>
+    <button class="btn btn-success" data-toggle="modal" data-target="#save-passage-modal">متن جدید</button>
    </div>
 
    @foreach ($test->readings as $reading)
-       <div class="row" style="direction: rtl !important">
+       <div class="row" style="direction: ltr !important">
         <div class="col-12">
              <label for="" class="col-form-label-lg" style="display: block">
                 متن شماره {{$reading->orderIndex}}
@@ -103,11 +134,12 @@ active
             </label>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <textarea class="form-control" disabled cols="30" rows="10">{{$reading->text}}</textarea>
+            <textarea class="form-control" disabled cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <textarea class="form-control" disabled cols="30" rows="10">{{$reading->translate}}</textarea>
+            <textarea class="form-control" disabled cols="30" rows="15">{{$reading->text}}</textarea>
         </div>
+
       @foreach ($reading->questions as $item)
           <div class="col-12 bg-white question-box mb-4" data-id="{{$item->id}}" style="direction: ltr !important;text-align:left !important">
              <label for="" class="col-form-label-lg" style="display: block">
@@ -148,31 +180,36 @@ active
           </div>
 
           <div class="col-12 bg-white form-translate-box" data-id="{{$item->id}}" style="text-align:left;display:none">
-             <form action="{{url('questions/'.$item->id)}}" method="POST">
+             <form action="{{url('questions/'.$item->id)}}" style="direction: rtl" method="POST">
               @csrf
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">ترجمه سوال</label>
-                <input type="text" value="{{$item->translate}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="translate">
+                <label for="recipient-name" style="width: 100%;text-align: right"  class="col-form-label">ترجمه سوال</label>
+                <input type="text" value="{{$item->translate}}" class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content;direction: rtl;text-align: right" name="translate">
               </div>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">جواب تشریحی</label>
-                <textarea class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" name="solve" id="" cols="15" rows="6">{{$item->solve}}</textarea>
+                <label for="recipient-name" style="width: 100%;text-align: right" class="col-form-label">جواب تشریحی</label>
+                <textarea class="form-control col-xl-4 col-lg-5 col-md-7 col-sm-10" style="direction: rtl;text-align: right" name="solve" id="" cols="15" rows="6">{{$item->solve}}</textarea>
             </div>
               <div class="form-group">
                 @foreach($item->answers as $key => $answer)
-                    <label for="recipient-name" class="col-form-label">ترجمه گزینه {{$key+1}}</label>
+                    <label for="recipient-name" style="width: 100%;text-align: right" class="col-form-label">ترجمه گزینه {{$key+1}}</label>
                     <input type="hidden" name="answer[{{$key}}][id]" value="{{$answer->id}}">
-                    <input type="text" value="{{$answer->translate}}" class="form-control @if($answer->status) bg-success @endif col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content" name="answer[{{$key}}][translate]">
+                    <input type="text"  value="{{$answer->translate}}" class="form-control @if($answer->status) bg-success @endif col-xl-4 col-lg-5 col-md-7 col-sm-10" style="min-width: max-content;direction: rtl;text-align: right" name="answer[{{$key}}][translate]">
                 @endforeach
 
               </div>
-              <div class="form-group">
+              <div class="form-group" style="text-align: right">
                 <button type="submit" class="btn btn-success">ثبت تغییرات</button>
                 <i class="btn btn-danger edit-translate-cancel-btn" data-id="{{$item->id}}">انصراف</i>
               </div>
             </form>
           </div>
       @endforeach
+   </div>
+   <div class="row">
+      @if(sizeOf($reading->questions) < 20)
+      <button class="btn btn-success mt-3 mr-2 add-question-btn" data-id="{{$reading->id}}" data-toggle="modal" data-target="#save-question-modal">افزودن سوال</button>
+      @endif
    </div>
    @endforeach
 
@@ -189,6 +226,11 @@ active
        document.getElementById('title-input').value = '{{$test->title}}';
        document.getElementById('reading-input').value = '{{$test->reading}}';
     });
+    $(document).on('click','.add-question-btn',function(){
+       document.getElementById('foreign-id').value = `${$(this).data('id')}`;
+    });
+
+
 
     $(document).on('click','#edit-cancel-btn',function(){
        document.getElementById('form-edit-title').style.display = 'none';
