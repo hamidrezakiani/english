@@ -16,7 +16,7 @@ class PaymentController extends Controller
         ->description('transaction info') // توضیحات تراکنش
         ->callbackUrl('http://mscenglish.ir/verifyPeyment')
         ->send();
-
+         dd($response);
         if (!$response->success()) {
             return $response->error()->message();
         }
