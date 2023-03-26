@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\MessageController;
 use App\Http\Controllers\Api\OtherController;
+use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\ReadingTestController;
 use App\Http\Controllers\Api\SimilarWordController;
 use App\Http\Controllers\Api\WordController;
@@ -41,4 +42,9 @@ Route::post('similar-word-jump', [SimilarWordController::class, 'jump']);
 Route::get('word-tests',[WordTestController::class,'index']);
 Route::get('reading-tests', [ReadingTestController::class, 'index']);
 Route::get('messages',[MessageController::class,'index']);
+
+// payment routes
+
+Route::get('payment',[PaymentController::class,'pay']);
+Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
 
