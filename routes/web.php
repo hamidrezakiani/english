@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Panel\GrammarController;
+use App\Http\Controllers\Panel\MessageController;
 use App\Http\Controllers\Panel\OtherController;
 use App\Http\Controllers\Panel\QuestionController;
 use App\Http\Controllers\Panel\ReadingController;
@@ -54,3 +55,7 @@ Route::get('readingTestHelp', [OtherController::class, 'readingTestHelp']);
 Route::post('updateReadingTestHelp', [OtherController::class, 'updateReadingTestHelp']);
 Route::get('planning', [OtherController::class, 'planning']);
 Route::post('updatePlanning', [OtherController::class, 'updatePlanning']);
+Route::get('messages',[MessageController::class,'index']);
+Route::post('messages',[MessageController::class,'store']);
+Route::post('messages/{id}',[MessageController::class,'update']);
+Route::post('messages/delete/{id}',[MessageController::class,'destroy']);

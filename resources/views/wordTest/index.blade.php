@@ -36,7 +36,7 @@ active
    <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">حذف</h5>
+        <h5 class="modal-title">تست جدید</h5>
       </div>
      <form action="{{url('/word-tests')}}" method="POST">
       @csrf

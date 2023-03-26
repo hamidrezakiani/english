@@ -253,6 +253,15 @@
               </a>
             </li>
 
+            <li class="nav-item has-treeview">
+              <a href="{{url('/messages')}}" class="nav-link @yield('messages')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                   پیام ها
+                </p>
+              </a>
+            </li>
+
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
