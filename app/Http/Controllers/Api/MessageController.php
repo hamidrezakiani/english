@@ -12,7 +12,7 @@ class MessageController extends Controller
     use ResponseTemplate;
     public function index()
     {
-        $messages = Message::orderBy('created_at', 'DESC')->get(['id','title','text','deleted_at']);
+        $messages = Message::withTrashed()->orderBy('created_at', 'DESC')->get(['id','title','text','deleted_at']);
         $this->setData($messages);
         return $this->response();
     }
