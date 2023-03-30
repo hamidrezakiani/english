@@ -16,4 +16,17 @@ class OtherController extends Controller
         $this->setData($planning);
         return $this->response();
     }
+
+    public function wordTestTutorial()
+    {
+        $tutorial = Other::where('key','WordTestHelp')->first()->value;
+        $this->setData($tutorial);
+        return $this->response();
+    }
+    public function readingTestTutorial()
+    {
+        $tutorial = Other::where('key', 'ReadingTestHelp')->first()->value;
+        $this->setData($tutorial);
+        return $this->response();
+    }
 }

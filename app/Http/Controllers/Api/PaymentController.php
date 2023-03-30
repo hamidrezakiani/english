@@ -14,7 +14,9 @@ class PaymentController extends Controller
         ->amount(500000) // مبلغ تراکنش
         ->request()
         ->description('transaction info') // توضیحات تراکنش
-        ->callbackUrl('http://mscenglish.ir/verifyPeyment')
+        ->mobile('09369422072')
+        ->email('hamidreza.behrad96@gmail.com')
+        ->callbackUrl('http://mscenglish.ir/api/verifyPeyment')
         ->send();
          dd($response);
         if (!$response->success()) {

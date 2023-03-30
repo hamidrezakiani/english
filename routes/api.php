@@ -43,6 +43,8 @@ Route::get('word-tests',[WordTestController::class,'index']);
 Route::get('reading-tests', [ReadingTestController::class, 'index']);
 Route::get('messages',[MessageController::class,'index']);
 
+Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
+Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);
 // payment routes
 
 Route::get('payment',[PaymentController::class,'pay']);
