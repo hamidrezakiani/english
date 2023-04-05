@@ -17,7 +17,6 @@ class CreateGrammarsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('text');
-            $table->boolean('free')->default(1);
             $table->softDeletes();
             $table->timestamps();
         });

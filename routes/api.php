@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\GrammarController;
 use App\Http\Controllers\Api\MessageController;
 use App\Http\Controllers\Api\OtherController;
 use App\Http\Controllers\Api\PaymentController;
@@ -42,6 +43,7 @@ Route::post('similar-word-jump', [SimilarWordController::class, 'jump']);
 Route::get('word-tests',[WordTestController::class,'index']);
 Route::get('reading-tests', [ReadingTestController::class, 'index']);
 Route::get('messages',[MessageController::class,'index']);
+Route::get('grammars',[GrammarController::class,'index']);
 
 Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
 Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);

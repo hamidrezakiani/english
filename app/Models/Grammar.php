@@ -11,6 +11,6 @@ class Grammar extends Model
     use HasFactory,SoftDeletes;
 
     protected $fillable = [
-        'title','text','free'
+        'title','text'
     ];
 }
