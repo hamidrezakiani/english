@@ -131,7 +131,8 @@ active
 {{-- <script src="{{asset('dist/js/demo.js')}}"></script>
 <script src="{{asset('plugins/ckeditor/ckeditor.js')}}"></script>
 <script src="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script> --}}
-<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/super-build/ckeditor.js"></script>
+{{-- <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/super-build/ckeditor.js"></script> --}}
+<script src="{{asset('plugins/ckeditor5/index.js')}}"></script>
 
 <script>
    $(function () {
