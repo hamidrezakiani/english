@@ -254,6 +254,24 @@
             </li>
 
             <li class="nav-item has-treeview">
+              <a href="{{url('/support')}}" class="nav-link @yield('support')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  پشتیبانی
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item has-treeview">
+              <a href="{{url('/about')}}" class="nav-link @yield('about')">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  درباره ما
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item has-treeview">
               <a href="{{url('/messages')}}" class="nav-link @yield('messages')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>

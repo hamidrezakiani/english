@@ -29,4 +29,18 @@ class OtherController extends Controller
         $this->setData($tutorial);
         return $this->response();
     }
+
+    public function support()
+    {
+        $support = Other::where('key','Support')->first()->value;
+        $this->setData($support);
+        return $this->response();
+    }
+
+    public function about()
+    {
+        $about = Other::where('key','About')->first()->value;
+        $this->setData($about);
+        return $this->response();
+    }
 }

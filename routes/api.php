@@ -47,6 +47,8 @@ Route::get('grammars',[GrammarController::class,'index']);
 
 Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
 Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);
+Route::get('support',[OtherController::class,'support']);
+Route::get('about',[OtherController::class,'about']);
 // payment routes
 
 Route::get('payment',[PaymentController::class,'pay']);

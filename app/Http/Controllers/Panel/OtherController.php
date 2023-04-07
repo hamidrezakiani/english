@@ -51,4 +51,32 @@ class OtherController extends Controller
         $value->save();
         return view('other.planning', compact(['value']));
     }
+
+    public function support()
+    {
+        $value = Other::where('key','Support')->first();
+        return view('other.support',compact('value'));
+    }
+
+    public function updateSupport(Request $request)
+    {
+        $value = Other::where('key', 'Support')->first();
+        $value->value = $request->text;
+        $value->save();
+        return redirect()->back();
+    }
+
+    public function about()
+    {
+        $value = Other::where('key', 'About')->first();
+        return view('other.about', compact('value'));
+    }
+
+    public function updateAbout(Request $request)
+    {
+        $value = Other::where('key', 'About')->first();
+        $value->value = $request->text;
+        $value->save();
+        return redirect()->back();
+    }
 }
