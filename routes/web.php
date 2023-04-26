@@ -24,9 +24,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',function(){
-    return view('dashboard');
-});
+Route::group(['prefix' => 'panel'],function(){
+    Route::get('/',function(){
+       return view('dashboard');
+    });
 Route::get('words',[WordController::class,'index']);
 Route::get('similar-words', [SimilarWordController::class, 'index']);
 Route::get('word-tests',[WordTestController::class,'index']);
@@ -63,3 +64,8 @@ Route::get('messages',[MessageController::class,'index']);
 Route::post('messages',[MessageController::class,'store']);
 Route::post('messages/{id}',[MessageController::class,'update']);
 Route::post('messages/delete/{id}',[MessageController::class,'destroy']);
+});
+
+Route::get('/',function(){
+    return view('landing.home');
+});
