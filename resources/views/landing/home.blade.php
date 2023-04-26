@@ -129,7 +129,7 @@
       <a href="privacy-policy.html">قوانین</a>
     </li> --}}
     <li class="list-inline-item">
-      <a href="{{url('team')}}">توسعه دهنگان</a>
+      <a href="{{url('team')}}">توسعه دهندگان</a>
     </li>
     <li class="list-inline-item">
       <a href="{{ url('contact') }}">تماس با ما</a>
