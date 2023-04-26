@@ -13,7 +13,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Small Apps | Bootstrap App Landing Template</title>
+  <title>MSC English</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -58,7 +58,7 @@
                     <div class="block">
                         <div class="logo" style="display: flex;flex-direction: row;align-items: center">
                             <img src="{{asset('landing/images/logo.png')}}" width="70px" alt="logo">
-                            <h3 style="color: #5c2172;font-size: 40px;padding-left: 10px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">msc english</h3>
+                            <h3 style="color: #5c2172;font-size: 40px;padding-left: 10px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">MSC english</h3>
                         </div>
                         <h1 style="color:#222;text-align: right">برنامه آموزش زبان انگلیسی
                             <br>
