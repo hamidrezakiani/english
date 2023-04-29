@@ -57,8 +57,8 @@
                 <div class="col-lg-7 align-self-center">
                     <div class="block">
                         <div class="logo" style="display: flex;flex-direction: row;align-items: center">
-                            <img src="{{asset('landing/images/logo.png')}}" width="70px" alt="logo">
-                            <h3 style="color: #5c2172;font-size: 40px;padding-left: 10px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">MSC english</h3>
+                            <img src="{{asset('landing/images/logo-2.png')}}" height="140" alt="logo">
+                            {{-- <h3 style="color: #5c2172;font-size: 40px;padding-left: 10px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">MSC english</h3> --}}
                         </div>
                         <h1 style="color:#222;text-align: right">برنامه آموزش زبان انگلیسی
                             <br>
