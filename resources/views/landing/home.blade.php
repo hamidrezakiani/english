@@ -104,40 +104,49 @@
 =============================-->
 
 <footer class="footer-classic">
-  <ul class="social-icons list-inline">
-    <li class="list-inline-item">
-      <a  style="cursor: pointer"><i class="ti-facebook"></i></a>
-    </li>
-    <li class="list-inline-item">
-      <a  style="cursor: pointer"><i class="ti-twitter"></i></a>
-    </li>
-    <li class="list-inline-item">
-      <a  style="cursor: pointer"><i class="ti-instagram"></i></a>
-    </li>
-    <li class="list-inline-item">
-      <a style="cursor: pointer"><i class="ti-dribbble"></i></a>
-    </li>
-  </ul>
-  <ul class="footer-links list-inline">
-    <li class="list-inline-item">
-      <a href="#download" style="cursor: pointer;opacity: 0.5;" id="download">دانلود مستقیم</a>
-    </li>
-    <li class="list-inline-item">
-      <a href="{{url('blog')}}">وبلاگ</a>
-    </li>
-    {{-- <li class="list-inline-item">
-      <a href="privacy-policy.html">قوانین</a>
-    </li> --}}
-    <li class="list-inline-item">
-      <a href="{{url('team')}}">توسعه دهندگان</a>
-    </li>
-    <li class="list-inline-item">
-      <a href="{{ url('contact') }}">تماس با ما</a>
-    </li>
-    <li class="list-inline-item">
-      <a href="{{url('about')}}">درباره ما</a>
-    </li>
-  </ul>
+  <div id="enamad" style="text-align: left;margin-left: 2%">
+    <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=338554&amp;Code=2160ExAQxhyfICEQbt5n">
+      <img referrerpolicy="origin" width="160" src="https://Trustseal.eNamad.ir/logo.aspx?id=338554&amp;Code=2160ExAQxhyfICEQbt5n" alt="" style="cursor:pointer" id="2160ExAQxhyfICEQbt5n"></a>
+  </div>
+  <div style="margin-top: 30px">
+      <ul class="social-icons list-inline">
+        <li class="list-inline-item">
+          <a  style="cursor: pointer"><i class="ti-facebook"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a  style="cursor: pointer"><i class="ti-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a  style="cursor: pointer"><i class="ti-instagram"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a style="cursor: pointer"><i class="ti-dribbble"></i></a>
+        </li>
+      </ul>
+      <ul class="footer-links list-inline">
+        <li class="list-inline-item">
+          <a href="#download" style="cursor: pointer;opacity: 0.5;" id="download">دانلود مستقیم</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{url('blog')}}">وبلاگ</a>
+        </li>
+        {{-- <li class="list-inline-item">
+          <a href="privacy-policy.html">قوانین</a>
+        </li> --}}
+        <li class="list-inline-item">
+          <a href="{{url('team')}}">توسعه دهندگان</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{ url('contact') }}">تماس با ما</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{url('about')}}">درباره ما</a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+  
 </footer>
 
 

@@ -658,10 +658,14 @@ button:focus,
     color: #fff;
 }
 
+#enamad{
+    height: 110px;
+}
+
 .footer-classic {
     background: #fafafa;
     text-align: center;
-    padding: 110px 0;
+    padding: 0 0 110px 0;
 }
 
 .footer-classic ul.social-icons {
@@ -714,6 +718,12 @@ button:focus,
 }
 
 @media (max-width: 768px) {
+    #enamad{
+        height: auto;
+    }
+    .footer-classic {
+        padding: 20px 0;
+    }
     .scroll-top-to {
         bottom: 15px;
         right: 15px;
