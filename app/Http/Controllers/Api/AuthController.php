@@ -31,7 +31,9 @@ class AuthController extends Controller
         $parameter = new \Cryptommer\Smsir\Objects\Parameters('Code', $code);
         $parameters = array($parameter);
         $send->Verify($user->mobile, 100000, $parameters);
-        $this->setData(['mobileVerify' => $user->mobileVerify]);
+        $this->setData([
+            'new_user' => $user->new_user
+        ]);
         return $this->response();
     }
 
@@ -60,11 +62,19 @@ class AuthController extends Controller
                 $verifyCode->status = 'VERIFIED';
                 $user = User::where('mobile', $request->mobile)->first();
                 $user->api_token = Str::random(80);
-                $user->name = $request->name;
-                $user->invited_by = $invited_by;
+                if($user->new_user)
+                {
+                   $user->name = $request->name;
+                   $user->invited_by = $invited_by;
+                   $user->new_user = 0;
+                }
                 $user->mobileVerify = 1;
                 $user->save();
-                $this->setData($user);
+                $this->setData([
+                    'api_token' => $user->api_token,
+                    'payStatus' => $user->payStatus,
+                    'new_user' => $user->new_user,
+                ]);
             } else {
                 $verifyCode->status = 'FAILED_ATTEMPT';
                 $this->setErrors(['code' => ['کد وارد شده صحیح نمیباشد']]);

@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('invited_by');
             $table->string('ip');
             $table->boolean('mobileVerify')->default(0);
+            $table->boolean('payStatus')->default(false);
             $table->string('api_token', 80);
             $table->softDeletes();
             $table->timestamps();
