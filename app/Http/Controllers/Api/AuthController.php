@@ -64,7 +64,7 @@ class AuthController extends Controller
                 $user->invited_by = $invited_by;
                 $user->mobileVerify = 1;
                 $user->save();
-                $this->setData(['api_token' => $user->api_token]);
+                $this->setData($user);
             } else {
                 $verifyCode->status = 'FAILED_ATTEMPT';
                 $this->setErrors(['code' => ['کد وارد شده صحیح نمیباشد']]);
