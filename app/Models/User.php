@@ -26,9 +26,13 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'mobile','ip'
+        'mobile','ip',
     ];
 
+    public function getNewUserAttribute()
+    {
+        return $this->new_user;
+    }
     public function smsVerifications()
     {
         return $this->hasMany(SmsVerification::class);

@@ -32,8 +32,7 @@ class AuthController extends Controller
         $parameters = array($parameter);
         $send->Verify($user->mobile, 100000, $parameters);
         $this->setData([
-            'user' => $user,
-            'new_user' => $user->new_user
+            'new_user' => $user->newUser
         ]);
         return $this->response();
     }
