@@ -66,7 +66,7 @@ class AuthController extends Controller
                 {
                    $user->name = $request->name;
                    $user->invited_by = $invited_by;
-                   $user->new_user = 0;
+                   $user->new_user = false;
                 }
                 $user->mobileVerify = 1;
                 $user->save();
