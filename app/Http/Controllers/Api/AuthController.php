@@ -21,7 +21,8 @@ class AuthController extends Controller
         if(!$user)
           $user = User::create([
             'mobile' => $request->mobile,
-            'ip'     => $request->ip()
+            'ip'     => $request->ip(),
+            'new_user' => true
           ]);
         $code = rand(1000, 9999);
         $user->smsVerifications()->create([
@@ -31,6 +32,7 @@ class AuthController extends Controller
         $parameter = new \Cryptommer\Smsir\Objects\Parameters('Code', $code);
         $parameters = array($parameter);
         $send->Verify($user->mobile, 100000, $parameters);
+
         $this->setData([
             'new_user' => $user->new_user
         ]);
