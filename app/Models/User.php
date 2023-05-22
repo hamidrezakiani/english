@@ -26,13 +26,9 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'mobile','ip',
+        'mobile','name','invitation_code','invited_by','ip','mobileVerify','new_user','payStatus','api_token'
     ];
 
-    public function getNewUserAttribute()
-    {
-        return $this->new_user;
-    }
     public function smsVerifications()
     {
         return $this->hasMany(SmsVerification::class);
