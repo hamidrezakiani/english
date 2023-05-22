@@ -22,7 +22,7 @@ class AuthController extends Controller
           $user = User::create([
             'mobile' => $request->mobile,
             'ip'     => $request->ip(),
-            'new_user' => true
+            'new_user' => "1"
           ]);
         $code = rand(1000, 9999);
         $user->smsVerifications()->create([
