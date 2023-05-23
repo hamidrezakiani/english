@@ -22,7 +22,6 @@ class AuthController extends Controller
           $user = User::create([
             'mobile' => $request->mobile,
             'ip'     => $request->ip(),
-            'new_user' => "1"
           ]);
         $code = rand(1000, 9999);
         $user->smsVerifications()->create([
@@ -34,7 +33,7 @@ class AuthController extends Controller
         $send->Verify($user->mobile, 100000, $parameters);
 
         $this->setData([
-            'new_user' => $user->new_user
+            // 'new_user' => $user->new_user
         ]);
         return $this->response();
     }
@@ -58,18 +57,18 @@ class AuthController extends Controller
                 return $this->response();
             }
         }
-        if ($verifyCode && $verifyCode->created_at->gt(Carbon::now()->subMinute(2))) {
+        if ($verifyCode && $verifyCode->created_at->gt(Carbon::now()->subMinute(3))) {
             $verifyCode->expired_at = Carbon::now();
             if ($verifyCode->code == $request->code) {
                 $verifyCode->status = 'VERIFIED';
                 $user = User::where('mobile', $request->mobile)->first();
                 $user->api_token = Str::random(80);
-                if($user->new_user)
-                {
-                   $user->name = $request->name;
-                   $user->invited_by = $invited_by;
-                   $user->new_user = 0;
-                }
+                // if($user->new_user)
+                // {
+                //    $user->name = $request->name;
+                //    $user->invited_by = $invited_by;
+                //    $user->new_user = 0;
+                // }
                 $user->mobileVerify = 1;
                 $user->save();
                 $this->setData([
