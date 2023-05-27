@@ -35,7 +35,8 @@ class ProfileController extends Controller
 
         $user->update([
             'name' => $request->name,
-            'invited_by' => $invited_by
+            'invited_by' => $invited_by,
+            'new_user' => 0
         ]);
         return $this->response();
     }
