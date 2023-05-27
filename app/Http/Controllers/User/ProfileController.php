@@ -21,8 +21,8 @@ class ProfileController extends Controller
               $invited_by = $inviter->id;
             else
             {
-               $this->status(422);
-               $this->errors([
+               $this->setStatus(422);
+               $this->setErrors([
                  'invitationCode' => [
                     0 => 'کد معرف اشتباه است',
                  ]
