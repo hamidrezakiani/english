@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::group(['middleware' => ['auth'],'prefix' => 'account'],function(){
+Route::group(['middleware' => ['auth:api'],'prefix' => 'account'],function(){
   Route::post('profile/update',[ProfileController::class,'update']);
 });
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
