@@ -11,6 +11,6 @@ class ProfileController extends Controller
     public function update(Request $request)
     {
         $user = Auth::guard('api')->user();
-        return response()->json(['user' => json_encode($user)],200);
+        return response()->json(['user' => $user],200);
     }
 }
