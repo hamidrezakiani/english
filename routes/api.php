@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\ReadingTestController;
 use App\Http\Controllers\Api\SimilarWordController;
 use App\Http\Controllers\Api\WordController;
 use App\Http\Controllers\Api\WordTestController;
+use App\Http\Controllers\User\ProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+Route::group(['middleware' => ['api'],'prefix' => 'account'],function(){
+  Route::post('profile/update',[ProfileController::class,'update']);
 });
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);
