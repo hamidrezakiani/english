@@ -38,6 +38,7 @@ class ProfileController extends Controller
             'invited_by' => $invited_by,
             'new_user' => 0
         ]);
+        $this->setData($user);
         return $this->response();
     }
 }
