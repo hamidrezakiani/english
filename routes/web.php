@@ -28,6 +28,9 @@ Route::group(['prefix' => 'panel'],function(){
     Route::get('/',function(){
        return view('dashboard');
     });
+Route::get('pay',function(){
+   return view('pay');
+});
 Route::get('words',[WordController::class,'index']);
 Route::get('similar-words', [SimilarWordController::class, 'index']);
 Route::get('word-tests',[WordTestController::class,'index']);
