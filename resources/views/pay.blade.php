@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="Divar://">بازگشت به برنامه</a>
+    <a href="exp://127.0.0.1:19000">بازگشت به برنامه</a>
 </body>
 </html>
