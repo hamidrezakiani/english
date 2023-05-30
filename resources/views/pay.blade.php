@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="myapp://Divar">بازگشت به برنامه</a>
+    <a href="Divar://">بازگشت به برنامه</a>
 </body>
 </html>
