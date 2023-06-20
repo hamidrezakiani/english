@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="exp://192.168.16.137:19000">بازگشت به برنامه</a>
+    <a href="exp://192.168.16.137:19000?pay=success">بازگشت به برنامه</a>
 </body>
 </html>
