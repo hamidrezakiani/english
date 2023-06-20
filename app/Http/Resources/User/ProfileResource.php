@@ -16,7 +16,7 @@ class ProfileResource extends JsonResource
     {
         return [
             'name' => $this->name,
-            'payStatus' => $this->pasStatus
+            'payStatus' => $this->payStatus
         ];
     }
 }
