@@ -29,6 +29,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::group(['middleware' => ['auth:api'],'prefix' => 'account'],function(){
   Route::post('profile/update',[ProfileController::class,'update']);
+  Route::get('profile',[ProfileController::class,'show']);
 });
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);

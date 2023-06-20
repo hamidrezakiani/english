@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\User\ProfileResource;
 use App\Lib\ResponseTemplate;
 use App\Models\User;
 use Auth;
@@ -39,6 +40,13 @@ class ProfileController extends Controller
             'new_user' => 0
         ]);
         $this->setData($user);
+        return $this->response();
+    }
+
+    public function show()
+    {
+        $user = Auth::guard('api')->user();
+        $this->setData(new ProfileResource($user));
         return $this->response();
     }
 }
