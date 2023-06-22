@@ -68,6 +68,14 @@ Route::post('messages/delete/{id}',[MessageController::class,'destroy']);
 Route::get('pay',function(){
     return view('pay');
  });
+
+ Route::get('success-pay',function(){
+    return view('success-pay');
+ });
+ Route::get('failed-pay',function(){
+    return view('failed-pay');
+ });
+
 Route::get('/',function(){
     return view('landing.home');
 });
