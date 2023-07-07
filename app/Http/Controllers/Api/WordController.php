@@ -17,6 +17,9 @@ class WordController extends Controller
         if ($request->flag == 'search' && $request->q != "") {
             $words = Word::where('word', 'like', $request->q . '%')
                 ->orWhere('translation', 'like', '%' . $request->q . '%')->paginate(100);
+        }
+        elseif($request->flag == 'app'){
+            $words = Word::where('updated_at','>=',$request->updated_at)->withTrashed()->orderBy('updated_at','ASC')->get();
         } else {
             if ($request->flag == 'all') {
                 $words =
