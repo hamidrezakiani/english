@@ -19,7 +19,7 @@ class WordController extends Controller
                 ->orWhere('translation', 'like', '%' . $request->q . '%')->paginate(100);
         }
         elseif($request->flag == 'app'){
-            $words = Word::where('updated_at','>=',$request->updated_at)->withTrashed()->orderBy('updated_at','ASC')->get();
+            $words = Word::where('updated_at','>=',$request->updated_at)->withTrashed()->orderBy('updated_at','ASC')->paginate(100)->get();
         } else {
             if ($request->flag == 'all') {
                 $words =
