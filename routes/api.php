@@ -62,5 +62,5 @@ Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
 
 //discount
 
-
+Route::post('check-discount-code',[DiscountController::class,'checkCode']);
 
