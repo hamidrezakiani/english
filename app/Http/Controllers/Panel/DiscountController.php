@@ -15,7 +15,8 @@ class DiscountController extends Controller
      */
     public function index()
     {
-        $discounts = Discount::with(['user','orders'])->get();
+        $discounts = Discount::with(['user','orders','paidOrders'])->get();
+        dd($discounts);
         return view('discount.index',compact('discounts'));
     }
 
