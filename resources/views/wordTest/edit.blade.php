@@ -15,7 +15,7 @@ active
       <div class="modal-header">
         <h5 class="modal-title">سوال جدید</h5>
       </div>
-      <form action="{{url('questions')}}" method="POST">
+      <form action="{{url('panel/questions')}}" method="POST">
         @csrf
       <div class="modal-body" style="direction: ltr !important;text-align: left">
               <div class="form-group">
@@ -69,7 +69,7 @@ active
   </div>
 
    <div class="row mb-3">
-      <form class="col-6" id="form-edit-title" action="{{url('word-tests/'.$test->id)}}" method="POST" style="display: none">
+      <form class="col-6" id="form-edit-title" action="{{url('panel/word-tests/'.$test->id)}}" method="POST" style="display: none">
           @csrf
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">شماره:</label>
@@ -109,7 +109,7 @@ active
              @endforeach
           </div>
           <div class="col-12 bg-white form-question-box" data-id="{{$item->id}}" style="text-align:left;display:none">
-             <form action="{{url('questions/'.$item->id)}}" method="POST">
+             <form action="{{url('panel/questions/'.$item->id)}}" method="POST">
               @csrf
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">question</label>
@@ -136,7 +136,7 @@ active
           </div>
 
           <div class="col-12 bg-white form-translate-box" data-id="{{$item->id}}" style="text-align:left;display:none">
-             <form action="{{url('questions/'.$item->id)}}" method="POST">
+             <form action="{{url('panel/questions/'.$item->id)}}" method="POST">
               @csrf
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">ترجمه سوال</label>
@@ -201,7 +201,7 @@ active
     })
 
     $(document).on('click','.delete-question',function(){
-       document.getElementById('delete-form').setAttribute('action',`{{url('questions/delete')}}/${$(this).data('id')}`);
+       document.getElementById('delete-form').setAttribute('action',`{{url('panel/questions/delete')}}/${$(this).data('id')}`);
     });
 </script>
 @endsection

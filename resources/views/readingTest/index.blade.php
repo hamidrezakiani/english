@@ -38,7 +38,7 @@ active
       <div class="modal-header">
         <h5 class="modal-title">حذف</h5>
       </div>
-     <form action="{{url('/reading-tests')}}" method="POST">
+     <form action="{{url('panel/reading-tests')}}" method="POST">
       @csrf
       <div class="modal-body">
           <div class="form-group">
@@ -74,7 +74,7 @@ active
                     <td>{{$test->orderIndex}}</td>
                     <td>{{$test->title}}</td>
                     <td>
-                        <a class="fa fa-eye" href="{{url('reading-tests/'.$test->id)}}"></a>
+                        <a class="fa fa-eye" href="{{url('panel/reading-tests/'.$test->id)}}"></a>
                         <i class="fa fa-trash mr-3 delete" data-toggle="modal" data-target="#delete-modal" data-id="{{$test->id}}"></i>
                     </td>
                 </tr>
@@ -88,7 +88,7 @@ active
 <script>
     $(document).on('click','.delete',function(){
        var id = this.getAttribute('data-id');
-       document.getElementById('delete-form').setAttribute('action',`{{url('reading-tests/delete')}}/${id}`);
+       document.getElementById('delete-form').setAttribute('action',`{{url('panel/reading-tests/delete')}}/${id}`);
     });
 </script>
 @endsection

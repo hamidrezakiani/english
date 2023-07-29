@@ -9,7 +9,7 @@ active
 
 @section('content')
   <div class="row">
-    <form action="{{url('/updateAbout')}}" method="POST">
+    <form action="{{url('panel/updateAbout')}}" method="POST">
         @csrf
         <textarea name="text" id="editor1" rows="10" cols="80">
                 {{$value->value}}

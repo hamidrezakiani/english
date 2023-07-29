@@ -1,9 +1,9 @@
 @extends('layout.master')
 @section('pageTitle')
-  تست های کلمه
+ کد های تخفیف
 @endsection
 
-@section('wordTests')
+@section('discounts')
 active
 @endsection
 
@@ -36,9 +36,9 @@ active
    <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">تست جدید</h5>
+        <h5 class="modal-title">حذف</h5>
       </div>
-     <form action="{{url('panel/word-tests')}}" method="POST">
+     <form action="{{url('panel/reading-tests')}}" method="POST">
       @csrf
       <div class="modal-body">
           <div class="form-group">
@@ -58,23 +58,30 @@ active
   <div class="row">
     <button class="btn btn-success" data-toggle="modal" data-target="#add-modal">افزودن تست</button>
   </div>
+
    <div class="row">
       <table class="table table-bordered">
         <thead class="table thead-dark">
           <tr>
-            <th>ردیف</th>
-            <th>عنوان تست</th>
+            <th>نام کاربر</th>
+            <th>کد</th>
+            <th>تخفیف</th>
+            <th>استفاده شده</th>
+            <th>استفاده شده موفق</th>
             <th>عملیات</th>
           </tr>
         </thead>
         <tbody>
-            @foreach ($tests as $test)
+            @foreach ($discounts as $discount)
                 <tr>
-                    <td>{{$test->orderIndex}}</td>
-                    <td>{{$test->title}}</td>
+                    <td>{{$discount->user->name}}</td>
+                    <td>{{$discount->code}}</td>
+                    <td>{{$discount->amount}}</td>
+                    <td>{{$discount->orders()->count()}}</td>
+                    <td>{{$discount->paidOrders()->count()}}</td>
                     <td>
-                        <a class="fa fa-eye" href="{{url('panel/word-tests/'.$test->id)}}"></a>
-                        <i class="fa fa-trash mr-3 delete" data-toggle="modal" data-target="#delete-modal" data-id="{{$test->id}}"></i>
+                        <a class="fa fa-eye" href="{{url('panel/discounts/'.$discount->id)}}"></a>
+                        <i class="fa fa-trash mr-3 delete" data-toggle="modal" data-target="#delete-modal" data-id="{{$discount->id}}"></i>
                     </td>
                 </tr>
             @endforeach
@@ -87,7 +94,7 @@ active
 <script>
     $(document).on('click','.delete',function(){
        var id = this.getAttribute('data-id');
-       document.getElementById('delete-form').setAttribute('action',`{{url('panel/word-tests/delete')}}/${id}`);
+       document.getElementById('delete-form').setAttribute('action',`{{url('panel/reading-tests/delete')}}/${id}`);
     });
 </script>
 @endsection

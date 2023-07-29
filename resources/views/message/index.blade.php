@@ -9,7 +9,7 @@
           <div class="modal-header">
              <h4 style="width: 100%;text-align: center">ارسال پیام جدید</h4>
           </div>
-          <form action="{{url('messages')}}" method="POST">
+          <form action="{{url('panel/messages')}}" method="POST">
             @csrf
             <div class="modal-body">
               <div class="form-group">
@@ -121,7 +121,7 @@
        const id = $(this).data('id');
        const index = $(this).data('index');
        $('#message-index').html(index);
-       $('#delete-form').attr('action',`{{url('messages/delete')}}/${id}`);
+       $('#delete-form').attr('action',`{{url('panel/messages/delete')}}/${id}`);
     });
 
     $(document).on('click','.edit',function(){
@@ -130,7 +130,7 @@
         const text = $(this).data('text');
         $('#edit-title').val(title);
         $('#edit-text').html(text);
-        $('#edit-form').attr('action',`{{url('messages')}}/${id}`);
+        $('#edit-form').attr('action',`{{url('panel/messages')}}/${id}`);
     });
   </script>
 @endsection

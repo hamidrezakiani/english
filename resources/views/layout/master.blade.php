@@ -184,7 +184,7 @@
             <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
             <li class="nav-item has-treeview active">
-              <a href="{{url('/words')}}" class="nav-link @yield('words')">
+              <a href="{{url('panel/words')}}" class="nav-link @yield('words')">
                 <i class="nav-icon fa fa-book"></i>
                 <p>
                   کلمات
@@ -192,7 +192,7 @@
               </a>
             </li>
             <li class="nav-item has-treeview active">
-              <a href="{{url('/similar-words')}}" class="nav-link @yield('similar-words')">
+              <a href="{{url('panel/similar-words')}}" class="nav-link @yield('similar-words')">
                 <i class="nav-icon fa fa-book"></i>
                 <p>
                   کلمات مشابه
@@ -200,7 +200,7 @@
               </a>
             </li>
             <li class="nav-item has-treeview">
-              <a href="{{url('/word-tests')}}" class="nav-link @yield('wordTests')">
+              <a href="{{url('panel/word-tests')}}" class="nav-link @yield('wordTests')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   تست های کلمه
@@ -209,7 +209,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/reading-tests')}}" class="nav-link @yield('readingTests')">
+              <a href="{{url('panel/reading-tests')}}" class="nav-link @yield('readingTests')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   تست های متن
@@ -218,7 +218,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/grammars')}}" class="nav-link @yield('grammars')">
+              <a href="{{url('panel/grammars')}}" class="nav-link @yield('grammars')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   گرامر
@@ -227,7 +227,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/wordTestHelp')}}" class="nav-link @yield('wordTestHelp')">
+              <a href="{{url('panel/wordTestHelp')}}" class="nav-link @yield('wordTestHelp')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   آموزش تست کلمه
@@ -236,7 +236,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/readingTestHelp')}}" class="nav-link @yield('readingTestHelp')">
+              <a href="{{url('panel/readingTestHelp')}}" class="nav-link @yield('readingTestHelp')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   آموزش تست متن
@@ -245,7 +245,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/planning')}}" class="nav-link @yield('planning')">
+              <a href="{{url('panel/planning')}}" class="nav-link @yield('planning')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   برنامه ریزی
@@ -254,7 +254,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/support')}}" class="nav-link @yield('support')">
+              <a href="{{url('panel/support')}}" class="nav-link @yield('support')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   پشتیبانی
@@ -263,7 +263,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/about')}}" class="nav-link @yield('about')">
+              <a href="{{url('panel/about')}}" class="nav-link @yield('about')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                   درباره ما
@@ -272,7 +272,7 @@
             </li>
 
             <li class="nav-item has-treeview">
-              <a href="{{url('/messages')}}" class="nav-link @yield('messages')">
+              <a href="{{url('panel/messages')}}" class="nav-link @yield('messages')">
                 <i class="nav-icon fa fa-edit"></i>
                 <p>
                    پیام ها

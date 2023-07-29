@@ -22,7 +22,7 @@ active
       <div class="modal-header">
         <h5 class="modal-title">درس جدید</h5>
       </div>
-      <form action="{{url('grammars')}}" method="POST">
+      <form action="{{url('panel/grammars')}}" method="POST">
         @csrf
       <div class="modal-body">
               <div class="form-group">
@@ -88,7 +88,7 @@ active
             >{!!$item->text!!}</div>
           </div>
           <div class="col-12 bg-white form-grammar-box" data-id="{{$item->id}}" style="display:none">
-             <form action="{{url('grammars/'.$item->id)}}" method="POST">
+             <form action="{{url('panel/grammars/'.$item->id)}}" method="POST">
               @csrf
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">عنوان درس</label>
@@ -125,7 +125,7 @@ active
     })
 
     $(document).on('click','.delete-grammar',function(){
-       document.getElementById('delete-form').setAttribute('action',`{{url('grammars/delete')}}/${$(this).data('id')}`);
+       document.getElementById('delete-form').setAttribute('action',`{{url('panel/grammars/delete')}}/${$(this).data('id')}`);
     });
 </script>
 {{-- <script src="{{asset('dist/js/demo.js')}}"></script>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Panel\DiscountController;
 use App\Http\Controllers\Panel\GrammarController;
 use App\Http\Controllers\Panel\MessageController;
 use App\Http\Controllers\Panel\OtherController;
@@ -64,6 +65,7 @@ Route::get('messages',[MessageController::class,'index']);
 Route::post('messages',[MessageController::class,'store']);
 Route::post('messages/{id}',[MessageController::class,'update']);
 Route::post('messages/delete/{id}',[MessageController::class,'destroy']);
+Route::resource('discounts',DiscountController::class);
 });
 Route::get('pay',function(){
     return view('pay');
