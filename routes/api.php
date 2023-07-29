@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\DiscountController;
 use App\Http\Controllers\Api\GrammarController;
 use App\Http\Controllers\Api\MessageController;
 use App\Http\Controllers\Api\OtherController;
@@ -58,4 +59,8 @@ Route::get('about',[OtherController::class,'about']);
 
 Route::get('payment',[PaymentController::class,'pay']);
 Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
+
+//discount
+
+Route::post('check-discount-code',[DiscountController::class,'checkCode']);
 
