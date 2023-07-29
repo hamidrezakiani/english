@@ -16,16 +16,16 @@ class Discount extends Model
 
     public function user()
     {
-        $this->belongsTo(User::class);
+       return $this->belongsTo(User::class);
     }
 
     public function orders()
     {
-        $this->hasMany(Order::class);
+        return $this->hasMany(Order::class);
     }
 
     public function paidOrders()
     {
-        $this->hasMany(Order::class)->paid();
+       return $this->hasMany(Order::class)->paid();
     }
 }
