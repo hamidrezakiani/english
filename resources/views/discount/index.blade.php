@@ -78,7 +78,7 @@ active
                     <td>{{$discount->code}}</td>
                     <td>{{$discount->amount}}</td>
                     <td>{{$discount->orders()->count()}}</td>
-                    <td>{{$discount->paidOrders()->count()}}</td>
+                    <td>0</td>
                     <td>
                         <a class="fa fa-eye" href="{{url('panel/discounts/'.$discount->id)}}"></a>
                         <i class="fa fa-trash mr-3 delete" data-toggle="modal" data-target="#delete-modal" data-id="{{$discount->id}}"></i>
