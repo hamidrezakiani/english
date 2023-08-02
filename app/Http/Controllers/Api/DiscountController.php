@@ -15,7 +15,7 @@ class DiscountController extends Controller
         $code = Discount::where('code',$request->code)->first();
         if($code)
         {
-            $this->setData(['amount' => intval($code->amount)]);
+            $this->setData(['amount' => intval($code->amount),'code' => $code->code]);
         }
         else
         {
