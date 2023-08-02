@@ -65,8 +65,8 @@ Route::get('services/order',function(){
 
 });
 
-Route::get('order',function(){
-    echo "okkkkk";
+Route::get('order',function(Request $request){
+    dd($request);
 });
 
 //discount
