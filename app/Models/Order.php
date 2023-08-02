@@ -12,7 +12,7 @@ class Order extends Model
     use HasFactory,SoftDeletes;
 
     protected $fillable = [
-        'user_id','type','amount','discount_id','payable'
+        'user_id','type','amount','discount_id'
     ];
 
     public function scopePaid(Builder $query): void
@@ -23,5 +23,15 @@ class Order extends Model
     public function discount()
     {
         return $this->belongsTo(Discount::class);
+    }
+
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
+    }
+
+    public function payments()
+    {
+        return $this->hasMany(Payment::class);
     }
 }

@@ -8,6 +8,7 @@ active
 @endsection
 
 @section('content')
+
 <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -36,14 +37,22 @@ active
    <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">حذف</h5>
+        <h5 class="modal-title">کد تخفیف جدید</h5>
       </div>
-     <form action="{{url('panel/reading-tests')}}" method="POST">
+     <form action="{{url('panel/discounts')}}" method="POST">
       @csrf
       <div class="modal-body">
+        <div class="form-group">
+          <label for="mobile" class="col-form-label">شماره کابر</label>
+          <input type="number" class="form-control" name="mobile" id="mobile">
+        </div>
           <div class="form-group">
-            <label for="title-name" class="col-form-label">عنوان تست:</label>
-            <input type="text" class="form-control" name="title" id="title-name">
+            <label for="code" class="col-form-label">کد</label>
+            <input type="text" class="form-control" name="code" id="code">
+          </div>
+          <div class="form-group">
+            <label for="amount" class="col-form-label">مبلغ تخفیف</label>
+            <input type="number" class="form-control" name="amount" id="amount">
           </div>
       </div>
       <div class="modal-footer">
@@ -54,9 +63,27 @@ active
     </div>
    </div>
   </div>
-
-  <div class="row">
-    <button class="btn btn-success" data-toggle="modal" data-target="#add-modal">افزودن تست</button>
+  <div class="row" style="display: flex;flex-direction: row;justify-content: center">
+    @if(session()->has('status'))
+      @if(session()->get('status') == 'SUCCESS')
+       <div class="alert alert-success" style="position: absolute;display:none;top:35%;" id="success-alert">
+          <div style="display: flex; flex-direction: row;justify-content: center;align-items: center;">
+            <i class="fa fa-check-circle" style="font-size: 50px"></i>
+            <span style="font-size: 20px;margin-right: 10px">کد تخفیف با موفقیت اضافه شد</span>
+          </div>
+       </div>
+      @else
+      <div class="alert alert-danger" style="position: absolute;display:none;top:35%;" id="error-alert">
+        <div style="display: flex; flex-direction: row;justify-content: center;align-items: center;">
+          <i class="fa fa-check-circle" style="font-size: 50px"></i>
+          <span style="font-size: 20px;margin-right: 10px">{{session()->get('message')}}</span>
+        </div>
+     </div>
+      @endif
+    @endif
+  </div>
+  <div class="row mb-2">
+    <button class="btn btn-success" data-toggle="modal" data-target="#add-modal">افزودن کد تخفیف</button>
   </div>
 
    <div class="row">
@@ -76,9 +103,9 @@ active
                 <tr>
                     <td>{{$discount->user->name}}</td>
                     <td>{{$discount->code}}</td>
-                    <td>{{$discount->amount}}</td>
+                    <td>{{number_format($discount->amount)}} تومان</td>
                     <td>{{$discount->orders()->count()}}</td>
-                    <td>0</td>
+                    <td>{{$discount->orders()->paid()->count()}}</td>
                     <td>
                         <a class="fa fa-eye" href="{{url('panel/discounts/'.$discount->id)}}"></a>
                         <i class="fa fa-trash mr-3 delete" data-toggle="modal" data-target="#delete-modal" data-id="{{$discount->id}}"></i>
@@ -96,5 +123,25 @@ active
        var id = this.getAttribute('data-id');
        document.getElementById('delete-form').setAttribute('action',`{{url('panel/reading-tests/delete')}}/${id}`);
     });
+    $("#success-alert").fadeIn(1000,function(){
+        setTimeout(function() {
+          $("#success-alert").fadeOut(1000);
+          }, 3000);
+      });
+      $("#error-alert").fadeIn(1000,function(){
+        setTimeout(function() {
+          $("#error-alert").fadeOut(1000);
+          }, 3000);
+      });
 </script>
+
+@endsection
+
+@section('css')
+    <style>
+      td,th{
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
 @endsection

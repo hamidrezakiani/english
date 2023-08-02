@@ -17,7 +17,8 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->decimal('amount');
+            $table->unsignedBigInteger('service_id');
+            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
             $table->enum('type',['FULL_SUBSCRIPTION'])->default('FULL_SUBSCRIPTION');
             $table->unsignedBigInteger('discount_id');
             $table->foreign('discount_id')->references('id')->on('discounts')->onDelete('cascade');

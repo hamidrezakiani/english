@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Panel;
 
 use App\Http\Controllers\Controller;
 use App\Models\Discount;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DiscountController extends Controller
@@ -37,12 +38,15 @@ class DiscountController extends Controller
      */
     public function store(Request $request)
     {
+        $user = User::where('mobile',$request->mobile)->first();
+        if(!$user)
+           return redirect()->back()->with(['status'=>'ERROR','message' => 'کاربری با این شماره یافت نشد']);
         Discount::create([
-            'user_id' => $request->user_id,
+            'user_id' => $user->id,
             'amount' => $request->amount,
             'code' => $request->code,
         ]);
-        return redirect()->to('panel/discounts');
+        return redirect()->back()->with(['status' => 'SUCCESS']);
     }
 
     /**

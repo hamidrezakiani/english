@@ -7,6 +7,7 @@ use App\Http\Controllers\Panel\OtherController;
 use App\Http\Controllers\Panel\QuestionController;
 use App\Http\Controllers\Panel\ReadingController;
 use App\Http\Controllers\Panel\ReadingTestController;
+use App\Http\Controllers\Panel\ServiceController;
 use App\Http\Controllers\Panel\SimilarWordController;
 use App\Http\Controllers\Panel\WordController;
 use App\Http\Controllers\Panel\WordTestController;
@@ -66,6 +67,7 @@ Route::post('messages',[MessageController::class,'store']);
 Route::post('messages/{id}',[MessageController::class,'update']);
 Route::post('messages/delete/{id}',[MessageController::class,'destroy']);
 Route::resource('discounts',DiscountController::class);
+Route::resource('services',ServiceController::class);
 });
 Route::get('pay',function(){
     return view('pay');

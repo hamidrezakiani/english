@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\MessageController;
 use App\Http\Controllers\Api\OtherController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\ReadingTestController;
+use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\SimilarWordController;
 use App\Http\Controllers\Api\WordController;
 use App\Http\Controllers\Api\WordTestController;
@@ -59,6 +60,7 @@ Route::get('about',[OtherController::class,'about']);
 
 Route::get('payment',[PaymentController::class,'pay']);
 Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
+Route::get('services/amount',[ServiceController::class,'getAmount']);
 
 //discount
 

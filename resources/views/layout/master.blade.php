@@ -244,6 +244,14 @@
               </a>
             </li>
             <li class="nav-item has-treeview">
+              <a href="{{url('panel/services')}}" class="nav-link @yield('services')">
+                <i class="nav-icon fa fa-bell-o"></i>
+                <p>
+                   سرویس ها
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
               <a href="{{url('panel/discounts')}}" class="nav-link @yield('discounts')">
                 <i class="nav-icon fa fa-dollar"></i>
                 <p>
