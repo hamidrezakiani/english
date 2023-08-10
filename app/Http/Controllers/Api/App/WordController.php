@@ -33,6 +33,7 @@ class WordController extends Controller
 
     private function withoutDeleted()
     {
+        dd($this->currentUpdatingAt);
         return Word::where('updated_at','<',$this->currentUpdatingAt)->paginate(100);
     }
 
