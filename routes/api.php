@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\App\WordController;
+use App\Http\Controllers\Api\App\WordController as AppWordController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\DiscountController;
 use App\Http\Controllers\Api\GrammarController;
@@ -10,7 +10,7 @@ use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\ReadingTestController;
 use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\SimilarWordController;
-use App\Http\Controllers\Api\WordController as AppWordController;
+use App\Http\Controllers\Api\WordController;
 use App\Http\Controllers\Api\WordTestController;
 use App\Http\Controllers\User\ProfileController;
 use Illuminate\Http\Request;
