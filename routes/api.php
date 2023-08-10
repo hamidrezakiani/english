@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\App\WordController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\DiscountController;
 use App\Http\Controllers\Api\GrammarController;
@@ -51,7 +52,7 @@ Route::get('word-tests',[WordTestController::class,'index']);
 Route::get('reading-tests', [ReadingTestController::class, 'index']);
 Route::get('messages',[MessageController::class,'index']);
 Route::get('grammars',[GrammarController::class,'index']);
-Route::get('app/words',)
+Route::get('app/words',[WordController::class,'index']);
 Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
 Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);
 Route::get('support',[OtherController::class,'support']);
