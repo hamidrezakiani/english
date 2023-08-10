@@ -51,7 +51,7 @@ Route::get('word-tests',[WordTestController::class,'index']);
 Route::get('reading-tests', [ReadingTestController::class, 'index']);
 Route::get('messages',[MessageController::class,'index']);
 Route::get('grammars',[GrammarController::class,'index']);
-
+Route::get('app/words',)
 Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
 Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);
 Route::get('support',[OtherController::class,'support']);
