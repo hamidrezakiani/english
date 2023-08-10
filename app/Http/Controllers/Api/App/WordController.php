@@ -26,7 +26,7 @@ class WordController extends Controller
          else
            $words = $this->withDeleted();
         
-        $this->setData(['words' => $words,'currentUpdatingAt' => $this->currentUpdatingAt]);
+        // $this->setData(['words' => $words,'currentUpdatingAt' => $this->currentUpdatingAt]);
         return $this->response();
     }
 
