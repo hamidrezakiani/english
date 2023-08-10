@@ -21,7 +21,7 @@ class WordController extends Controller
          {
             $this->currentUpdatingAt = Carbon::now();
          }
-         if($this->lastUpdatedAt)
+         if(!$this->lastUpdatedAt)
            $words = $this->withoutDeleted();
          else
            $words = $this->withDeleted();
@@ -33,13 +33,11 @@ class WordController extends Controller
 
     private function withoutDeleted()
     {
-        dd($this->currentUpdatingAt);
         return Word::where('updated_at','<',$this->currentUpdatingAt)->paginate(100);
     }
 
     private function withDeleted()
     {
-        dd($this->lastUpdatedAt);
         return Word::where('updated_at','>',$this->lastUpdatedAt)
         ->where('updated_at','<',$this->currentUpdatingAt)->withTrashed()->paginate(100);
     }
