@@ -33,13 +33,13 @@ class WordController extends Controller
 
     private function withoutDeleted()
     {
-        return Word::where('updated_at','<',$this->currentUpdatingAt)->paginate(100);
+        return Word::where('updated_at','<=',$this->currentUpdatingAt)->paginate(100);
     }
 
     private function withDeleted()
     {
-        return Word::where('updated_at','>',$this->lastUpdatedAt)
-        ->where('updated_at','<',$this->currentUpdatingAt)->withTrashed()->paginate(100);
+        return Word::where('updated_at','>=',$this->lastUpdatedAt)
+        ->where('updated_at','<=',$this->currentUpdatingAt)->withTrashed()->paginate(100);
     }
 
 }

@@ -43,32 +43,30 @@ class AuthController extends Controller
         $user = User::where('mobile',$request->mobile)->first();
         $verifyCode = SmsVerification::where('user_id', $user->id)
             ->where('expired_at', null)
-            ->where('status', 'NOT_USED')->first();
+            ->where('status', 'NOT_USED')
+            ->where('created_at','>',Carbon::now()->subMinute(2))
+            ->where('failed_attemp','<',2)
+            ->orderBy('created_at','DESC')->first();
         $invited_by = NULL;
-        if($request->invitationCode)
-        {
-            $inviter = User::where('invitation_code',$request->invitationCode)->first();
-            if($inviter)
-              $invited_by = $inviter->id;
-            else
-            {
-                $this->setErrors(['invitationCode' => [$request->invitationCode]]);
-                $this->setStatus(422);
-                return $this->response();
-            }
-        }
-        if ($verifyCode && $verifyCode->created_at->gt(Carbon::now()->subMinute(3))) {
-            $verifyCode->expired_at = Carbon::now();
+        // if($request->invitationCode)
+        // {
+        //     $inviter = User::where('invitation_code',$request->invitationCode)->first();
+        //     if($inviter)
+        //       $invited_by = $inviter->id;
+        //     else
+        //     {
+        //         $this->setErrors(['invitationCode' => [$request->invitationCode]]);
+        //         $this->setStatus(422);
+        //         return $this->response();
+        //     }
+        // }
+        // && $verifyCode->created_at->gt(Carbon::now()->subMinute(2))
+        if ($verifyCode) {
             if ($verifyCode->code == $request->code) {
+                $verifyCode->expired_at = Carbon::now();
                 $verifyCode->status = 'VERIFIED';
                 $user = User::where('mobile', $request->mobile)->first();
                 $user->api_token = Str::random(80);
-                // if($user->new_user)
-                // {
-                //    $user->name = $request->name;
-                //    $user->invited_by = $invited_by;
-                //    $user->new_user = 0;
-                // }
                 $user->mobileVerify = 1;
                 $user->save();
                 $this->setData([
@@ -77,7 +75,9 @@ class AuthController extends Controller
                     'new_user' => $user->new_user,
                 ]);
             } else {
-                $verifyCode->status = 'FAILED_ATTEMPT';
+                $verifyCode->failed_attemp += 1;
+                if($verifyCode->failed_attemp > 2)
+                    $verifyCode->status = 'FAILED_ATTEMPT';
                 $this->setErrors(['code' => ['کد وارد شده صحیح نمیباشد']]);
                 $this->setStatus(401);
             }
