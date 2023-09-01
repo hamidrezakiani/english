@@ -45,7 +45,7 @@ class AuthController extends Controller
             ->where('expired_at', null)
             ->where('status', 'NOT_USED')
             ->where('created_at','>',Carbon::now()->subMinute(2))
-            ->where('failed_attemp','<',2)
+            ->where('failed_attemp','<',3)
             ->orderBy('created_at','DESC')->first();
         $invited_by = NULL;
         // if($request->invitationCode)
