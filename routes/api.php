@@ -61,7 +61,7 @@ Route::get('about',[OtherController::class,'about']);
 
 Route::get('payment',[PaymentController::class,'pay']);
 Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
-Route::get('services/amount',[ServiceController::class,'getAmount']);
+Route::get('services/purchases',[ServiceController::class,'purchases']);
 Route::get('services/order',function(){
 
 });
