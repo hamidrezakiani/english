@@ -13,16 +13,22 @@ class ServiceController extends Controller
     use ResponseTemplate;
     public function purchases(Request $request)
     {
+         $request->validate([
+          'type' => 'required|exists:services,type'
+         ]);
          $service_type = $request->service;
          $service = Service::where('type',$service_type)->first();
-         $order = Order::where('service_id',$service->id)->where('user_id',auth('api')->user()->id)->first();
+         $order = Order::where('service_id',$service->id)
+                  ->where('user_id',auth('api')->user()->id)
+                  ->where('status','NOT_PAID')
+                  ->first();
          if(!$order)
            $order = Order::create([
               'user_id' => auth('api')->user()->id,
               'service_id' => $service->id,
               'payable' => $service->amount
            ]);
-         $this->setData(['amount' => $service->amount,'order_id' => $order->id]);
+         $this->setData(['amount' => $service->amount,'order_id' => $order->id]); 
          return $this->response();
     }
 }

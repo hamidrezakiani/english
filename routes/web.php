@@ -73,10 +73,11 @@ Route::get('pay',function(){
     return view('pay');
  });
 
- Route::get('success-pay',function(){
+ Route::get('success-pay',function(Request $request){
+     
     return view('success-pay');
  });
- Route::get('failed-pay',function(){
+ Route::get('failed-pay',function(Request $request){
     return view('failed-pay');
  });
 

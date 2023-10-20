@@ -23,7 +23,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('discount_id');
             $table->foreign('discount_id')->references('id')->on('discounts')->onDelete('cascade');
             $table->decimal('payable');
-            $table->enum('status',['NOT_PAID','PAYING','PAID','FAILED_PAY'])->default('NOT_PAID');
+            $table->enum('status',['NOT_PAID','PAID'])->default('NOT_PAID');
             $table->softDeletes();
             $table->timestamps();
         });

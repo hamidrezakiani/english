@@ -33,6 +33,20 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::group(['middleware' => ['auth:api'],'prefix' => 'account'],function(){
   Route::post('profile/update',[ProfileController::class,'update']);
   Route::get('profile',[ProfileController::class,'show']);
+  Route::get('word-tests',[WordTestController::class,'index']);
+Route::get('reading-tests', [ReadingTestController::class, 'index']);
+Route::get('messages',[MessageController::class,'index']);
+Route::get('grammars',[GrammarController::class,'index']);
+Route::get('app/words',[AppWordController::class,'index']);
+Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
+Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);
+Route::get('support',[OtherController::class,'support']);
+Route::get('about',[OtherController::class,'about']);
+// payment routes
+
+Route::get('payment',[PaymentController::class,'pay']);
+Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
+Route::get('services/purchases',[ServiceController::class,'purchases']);
 });
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);
@@ -48,20 +62,7 @@ Route::post('similar-word-move-up/{id}', [SimilarWordController::class, 'moveUp'
 Route::post('similar-word-move-down/{id}', [SimilarWordController::class, 'moveDown']);
 Route::post('similar-word-swap', [SimilarWordController::class, 'swap']);
 Route::post('similar-word-jump', [SimilarWordController::class, 'jump']);
-Route::get('word-tests',[WordTestController::class,'index']);
-Route::get('reading-tests', [ReadingTestController::class, 'index']);
-Route::get('messages',[MessageController::class,'index']);
-Route::get('grammars',[GrammarController::class,'index']);
-Route::get('app/words',[AppWordController::class,'index']);
-Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
-Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);
-Route::get('support',[OtherController::class,'support']);
-Route::get('about',[OtherController::class,'about']);
-// payment routes
 
-Route::get('payment',[PaymentController::class,'pay']);
-Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
-Route::get('services/purchases',[ServiceController::class,'purchases']);
 Route::get('services/order',function(){
 
 });
