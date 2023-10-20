@@ -42,7 +42,7 @@ class PaymentController extends Controller
     {
         $authority = $request->Authority; // دریافت کوئری استرینگ ارسال شده توسط زرین پال
         $status =  $request->Status; // دریافت کوئری استرینگ ارسال شده توسط زرین پال
-        // $payment = Payment::where('authority',$authority)->first();
+        $payment = Payment::where('authority',$authority)->first();
         $response = zarinpal()
         ->merchantId(env('ZARINPAL')) // تعیین مرچنت کد در حین اجرا - اختیاری
         ->amount(1000)
