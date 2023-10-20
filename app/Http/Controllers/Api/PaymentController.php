@@ -18,12 +18,14 @@ class PaymentController extends Controller
         ->description('خرید اشتراک msc') // توضیحات تراکنش
         ->mobile($order->user->mobile)
         // ->email('hamidreza.behrad96@gmail.com')
-        ->callbackUrl("http://mscenglish.ir/api/verifyPeyment/$order_id")
+        ->callbackUrl("http://mscenglish.ir/api/verifyPayment/$order_id")
         ->send();
         //  dd($response);
         if (!$response->success()) {
             return $response->error()->message();
         }
+
+        return response()->json($response->authority());
         // dd($response->authority());
         // ذخیره اطلاعات در دیتابیس
         // $response->authority();
@@ -31,4 +33,6 @@ class PaymentController extends Controller
         // هدایت مشتری به درگاه پرداخت
         return $response->redirect();
     }
+
+    public function 
 }
