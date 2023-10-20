@@ -48,7 +48,7 @@ Route::group(['middleware' => ['auth:api']], function () {
   // payment routes
 
   
-  Route::get('verifyPayment/{id}', [PaymentController::class, 'verify']);
+  Route::get('verifyPayment', [PaymentController::class, 'verify']);
   Route::get('services/purchases', [ServiceController::class, 'purchases']);
   Route::post('check-discount-code', [ServiceController::class, 'setDiscount']);
 });

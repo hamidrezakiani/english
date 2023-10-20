@@ -17,9 +17,13 @@ class CreatePaymentsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('order_id');
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+            $table->string('authority');
             $table->integer('amount');
             $table->string('card_number')->nullable();
+            $table->string('card_number_hash')->nullable();
+            $table->string('reference_id')->nullable();
             $table->enum('status',['PAYING','PAID','FAILED'])->default('PAYING');
+            $table->integer('status_code')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
