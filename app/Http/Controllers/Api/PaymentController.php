@@ -49,7 +49,8 @@ class PaymentController extends Controller
         ->verification()
         ->authority($authority)
         ->send();
-        dd($response);
+        // dd($response);
+        $payment->status_code = $response->code();
         $payment->card_number = $response->cardPan();
         $payment->card_number_hash = $response->cardHash();
         $payment->reference_id = $response->referenceId();
