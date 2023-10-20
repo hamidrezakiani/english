@@ -61,16 +61,16 @@ class ServiceController extends Controller
                   {
                     $this->setErrors([
                       'message' => 'کد وارد وارد شده معتبر نیست',
-                  ]);
+                    ]);
                   $this->setStatus(422);
                   }
               }
               else
               {
-                $this->setErrors([
-                  'message' => 'شما قبلا از کد تخفیف استفاده کرده اید',
-              ]);
-              $this->setStatus(422);
+                // $this->setErrors([
+                //   'message' => 'شما قبلا از کد تخفیف استفاده کرده اید',
+                // ]);
+                 $this->setStatus(422);
               }
           }
           else
