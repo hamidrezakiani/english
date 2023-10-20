@@ -50,7 +50,7 @@ class PaymentController extends Controller
         ->authority($authority)
         ->send();
         $payment->status_code = $response->error();
-        if($status='OK')
+        if($status=='OK')
         {
            
         // dd($response);
