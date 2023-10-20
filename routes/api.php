@@ -48,11 +48,12 @@ Route::group(['middleware' => ['auth:api']], function () {
   // payment routes
 
   
-  Route::get('verifyPayment', [PaymentController::class, 'verify']);
+  
   Route::get('services/purchases', [ServiceController::class, 'purchases']);
   Route::post('check-discount-code', [ServiceController::class, 'setDiscount']);
 });
 Route::get('payment/{order_id}', [PaymentController::class, 'pay']);
+Route::get('verifyPayment', [PaymentController::class, 'verify']);
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);
 Route::get('excel', [AuthController::class, 'excel']);
