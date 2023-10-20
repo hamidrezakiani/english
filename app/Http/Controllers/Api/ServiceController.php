@@ -67,6 +67,9 @@ class ServiceController extends Controller
               }
               else
               {
+                $this->setErrors([
+                  'message' => 'کد وارد وارد شده معتبرsssss نیست',
+                ]);
                 // $this->setErrors([
                 //   'message' => 'شما قبلا از کد تخفیف استفاده کرده اید',
                 // ]);
