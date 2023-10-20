@@ -50,6 +50,7 @@ Route::group(['middleware' => ['auth:api']], function () {
   Route::get('payment', [PaymentController::class, 'pay']);
   Route::get('verifyPayment/{id}', [PaymentController::class, 'verify']);
   Route::get('services/purchases', [ServiceController::class, 'purchases']);
+  Route::post('check-discount-code', [ServiceController::class, 'setDiscount']);
 });
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);
@@ -76,4 +77,3 @@ Route::get('order', function (Request $request) {
 
 //discount
 
-Route::post('check-discount-code', [DiscountController::class, 'checkCode']);
