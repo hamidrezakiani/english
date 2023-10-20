@@ -12,7 +12,7 @@ class Order extends Model
     use HasFactory,SoftDeletes;
 
     protected $fillable = [
-        'user_id','type','amount','discount_id'
+        'user_id','type','payable','discount_id','service_id'
     ];
 
     public function scopePaid(Builder $query): void

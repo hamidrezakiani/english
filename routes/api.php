@@ -28,33 +28,36 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+  return $request->user();
 });
-Route::group(['middleware' => ['auth:api'],'prefix' => 'account'],function(){
-  Route::post('profile/update',[ProfileController::class,'update']);
-  Route::get('profile',[ProfileController::class,'show']);
-  Route::get('word-tests',[WordTestController::class,'index']);
-Route::get('reading-tests', [ReadingTestController::class, 'index']);
-Route::get('messages',[MessageController::class,'index']);
-Route::get('grammars',[GrammarController::class,'index']);
-Route::get('app/words',[AppWordController::class,'index']);
-Route::get('word-test-tutorial',[OtherController::class,'wordTestTutorial']);
-Route::get('passage-test-tutorial',[OtherController::class,'readingTestTutorial']);
-Route::get('support',[OtherController::class,'support']);
-Route::get('about',[OtherController::class,'about']);
-// payment routes
+Route::group(['middleware' => ['auth:api']], function () {
+  Route::group(['prefix' => 'account'], function () {
+    Route::post('profile/update', [ProfileController::class, 'update']);
+    Route::get('profile', [ProfileController::class, 'show']);
+  });
 
-Route::get('payment',[PaymentController::class,'pay']);
-Route::get('verifyPayment/{id}',[PaymentController::class,'verify']);
-Route::get('services/purchases',[ServiceController::class,'purchases']);
+  Route::get('word-tests', [WordTestController::class, 'index']);
+  Route::get('reading-tests', [ReadingTestController::class, 'index']);
+  Route::get('messages', [MessageController::class, 'index']);
+  Route::get('grammars', [GrammarController::class, 'index']);
+  Route::get('app/words', [AppWordController::class, 'index']);
+  Route::get('word-test-tutorial', [OtherController::class, 'wordTestTutorial']);
+  Route::get('passage-test-tutorial', [OtherController::class, 'readingTestTutorial']);
+  Route::get('support', [OtherController::class, 'support']);
+  Route::get('about', [OtherController::class, 'about']);
+  // payment routes
+
+  Route::get('payment', [PaymentController::class, 'pay']);
+  Route::get('verifyPayment/{id}', [PaymentController::class, 'verify']);
+  Route::get('services/purchases', [ServiceController::class, 'purchases']);
 });
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);
 Route::get('excel', [AuthController::class, 'excel']);
-Route::get('planning',[OtherController::class,'planning']);
-Route::resource('words',WordController::class);
-Route::post('word-move-up/{id}',[WordController::class,'moveUp']);
-Route::post('word-move-down/{id}',[WordController::class,'moveDown']);
+Route::get('planning', [OtherController::class, 'planning']);
+Route::resource('words', WordController::class);
+Route::post('word-move-up/{id}', [WordController::class, 'moveUp']);
+Route::post('word-move-down/{id}', [WordController::class, 'moveDown']);
 Route::post('word-swap', [WordController::class, 'swap']);
 Route::post('word-jump', [WordController::class, 'jump']);
 Route::resource('similar-words', SimilarWordController::class);
@@ -63,15 +66,14 @@ Route::post('similar-word-move-down/{id}', [SimilarWordController::class, 'moveD
 Route::post('similar-word-swap', [SimilarWordController::class, 'swap']);
 Route::post('similar-word-jump', [SimilarWordController::class, 'jump']);
 
-Route::get('services/order',function(){
+Route::get('services/order', function () {
 
 });
 
-Route::get('order',function(Request $request){
-    dd($request);
+Route::get('order', function (Request $request) {
+  dd($request);
 });
 
 //discount
 
-Route::post('check-discount-code',[DiscountController::class,'checkCode']);
-
+Route::post('check-discount-code', [DiscountController::class, 'checkCode']);
