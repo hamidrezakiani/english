@@ -34,6 +34,11 @@ class ServiceController extends Controller
     }
     public function setDiscount(Request $request)
     {
+      $this->setErrors([
+        'message' => 'کد وارد وارد شده معتبر نیست',
+      ]);
+      $this->setStatus(432);
+      return $this->response();
          $request->validate([
           'service' => 'required|exists:services,type'
          ]);
@@ -68,11 +73,8 @@ class ServiceController extends Controller
               else
               {
                 $this->setErrors([
-                  'message' => 'کد وارد وارد شده معتبرsssss نیست',
+                  'message' => 'شما قبلا از کد تخفیف استفاده کرده اید',
                 ]);
-                // $this->setErrors([
-                //   'message' => 'شما قبلا از کد تخفیف استفاده کرده اید',
-                // ]);
                  $this->setStatus(422);
               }
           }
