@@ -43,16 +43,17 @@ class PaymentController extends Controller
         $authority = $request->Authority; // دریافت کوئری استرینگ ارسال شده توسط زرین پال
         $status =  $request->Status; // دریافت کوئری استرینگ ارسال شده توسط زرین پال
         $payment = Payment::where('authority',$authority)->first();
-        if($status='OK')
-        {
-            $response = zarinpal()
+        $response = zarinpal()
         ->merchantId(env('ZARINPAL')) // تعیین مرچنت کد در حین اجرا - اختیاری
         ->amount(1000)
         ->verification()
         ->authority($authority)
         ->send();
-        // dd($response);
         $payment->status_code = $response->error();
+        if($status='OK')
+        {
+           
+        // dd($response);
         $payment->card_number = $response->cardPan();
         $payment->card_number_hash = $response->cardHash();
         $payment->reference_id = $response->referenceId();
@@ -77,7 +78,9 @@ class PaymentController extends Controller
         }
         else
         {
-
+            $payment->status = 'FAILED';
+            $payment->save();
+            return view('failed-pay',compact($response->error()->message()));
         }
     }
 }
