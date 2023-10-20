@@ -24,8 +24,8 @@ class ServiceController extends Controller
                   ->first();
          if(!$order)
            $order = Order::create([
-              // 'user_id' => auth('api')->user()->id,
-              'service_id' => 2,
+              'user_id' => auth('api')->user()->id,
+              'service_id' => $service->id,
               'payable' => $service->amount
            ]);
          $this->setData(['amount' => $service->amount,'order_id' => $order->id]); 
