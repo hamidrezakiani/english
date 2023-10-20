@@ -34,5 +34,5 @@ class PaymentController extends Controller
         return $response->redirect();
     }
 
-    public function 
+    // public function 
 }
