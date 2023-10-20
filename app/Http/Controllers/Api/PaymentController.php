@@ -3,26 +3,28 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
 class PaymentController extends Controller
 {
-    public function pay()
+    public function pay($order_id)
     {
+        $order = Order::find($order_id);
         $response = zarinpal()
         ->merchantId('00000000-0000-0000-0000-000000000000') // تعیین مرچنت کد در حین اجرا - اختیاری
-        ->amount(500000) // مبلغ تراکنش
+        ->amount($order->payable) // مبلغ تراکنش
         ->request()
-        ->description('transaction info') // توضیحات تراکنش
-        ->mobile('09369422072')
-        ->email('hamidreza.behrad96@gmail.com')
-        ->callbackUrl('http://mscenglish.ir/api/verifyPeyment')
+        ->description('خرید اشتراک msc') // توضیحات تراکنش
+        ->mobile($order->user->mobile)
+        // ->email('hamidreza.behrad96@gmail.com')
+        ->callbackUrl("http://mscenglish.ir/api/verifyPeyment/$order_id")
         ->send();
-         dd($response);
+        //  dd($response);
         if (!$response->success()) {
             return $response->error()->message();
         }
-        dd($response->authority());
+        // dd($response->authority());
         // ذخیره اطلاعات در دیتابیس
         // $response->authority();
 
