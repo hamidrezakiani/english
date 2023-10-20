@@ -61,7 +61,8 @@ class PaymentController extends Controller
      if (!$response->success()) {
          $payment->status = 'FAILED';
          $payment->save();
-         return view('failed-pay',compact($response->error()->message()));
+         $error = $response->error()->message();
+         return view('failed-pay',compact('error'));
     }
     else
     {
@@ -80,7 +81,8 @@ class PaymentController extends Controller
         {
             $payment->status = 'FAILED';
             $payment->save();
-            return view('failed-pay',compact($response->error()->message()));
+            $error = $response->error()->message();
+            return view('failed-pay',compact('error'));
         }
     }
 }
