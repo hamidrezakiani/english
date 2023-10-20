@@ -49,7 +49,7 @@ class PaymentController extends Controller
         ->verification()
         ->authority($authority)
         ->send();
-        $payment->status_code = $response->error();
+        $payment->status_code = $response->error()->code();
         if($status=='OK')
         {
            
