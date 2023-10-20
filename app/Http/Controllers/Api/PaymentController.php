@@ -12,7 +12,7 @@ class PaymentController extends Controller
     {
         $order = Order::find($order_id);
         $response = zarinpal()
-        ->merchantId('d18f1b24-10fd-4621-aa6e-ee9aae97d4a6') // تعیین مرچنت کد در حین اجرا - اختیاری
+        ->merchantId(env('ZARINPAL')) // تعیین مرچنت کد در حین اجرا - اختیاری
         ->amount($order->payable) // مبلغ تراکنش
         ->request()
         ->description('خرید اشتراک msc') // توضیحات تراکنش
