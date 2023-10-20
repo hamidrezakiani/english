@@ -51,8 +51,8 @@ class PaymentController extends Controller
         ->send();
         // dd($response);
         $payment->status_code = $response->error();
-        $payment->card_number = $response->cardPan();
-        $payment->card_number_hash = $response->cardHash();
+        // $payment->card_number = $response->cardPan();
+        // $payment->card_number_hash = $response->cardHash();
         $payment->reference_id = $response->referenceId();
         
      if (!$response->success()) {
