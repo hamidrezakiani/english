@@ -36,7 +36,16 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::get('profile', [ProfileController::class, 'show']);
   });
 
-  Route::get('word-tests', [WordTestController::class, 'index']);
+  
+  // payment routes
+
+  
+  
+  Route::get('services/purchases', [ServiceController::class, 'purchases']);
+  Route::post('check-discount-code', [ServiceController::class, 'setDiscount']);
+});
+
+Route::get('word-tests', [WordTestController::class, 'index']);
   Route::get('reading-tests', [ReadingTestController::class, 'index']);
   Route::get('messages', [MessageController::class, 'index']);
   Route::get('grammars', [GrammarController::class, 'index']);
@@ -45,13 +54,7 @@ Route::group(['middleware' => ['auth:api']], function () {
   Route::get('passage-test-tutorial', [OtherController::class, 'readingTestTutorial']);
   Route::get('support', [OtherController::class, 'support']);
   Route::get('about', [OtherController::class, 'about']);
-  // payment routes
-
   
-  
-  Route::get('services/purchases', [ServiceController::class, 'purchases']);
-  Route::post('check-discount-code', [ServiceController::class, 'setDiscount']);
-});
 Route::get('payment/{order_id}', [PaymentController::class, 'pay']);
 Route::get('verifyPayment', [PaymentController::class, 'verify']);
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
