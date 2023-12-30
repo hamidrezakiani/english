@@ -63,7 +63,7 @@ class QuestionController extends Controller
     {
         $question = Question::find($id);
         $question->answers()->delete();
-        Question::where('type',$question->type)->where('orderIndex','>',$question->orderIndex)->where('test_id',$question->test_id)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
+        Question::where('type',$question->type)->where('orderIndex','>',$question->orderIndex)->where('foreign_id',$question->test_id)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
         $question->delete();
         return redirect()->back();
     }

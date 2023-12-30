@@ -44,7 +44,7 @@ Route::post('reading-tests/{id}', [ReadingTestController::class, 'update']);
 Route::get('reading-tests/delete/{id}', [ReadingTestController::class, 'destroy']);
 Route::post('readings',[ReadingController::class,'store']);
 Route::post('readings/{id}',[ReadingController::class,'update']);
-Route::post('readings/delete/{id}',[ReadingController::class,'update']);
+Route::post('readings/delete/{id}',[ReadingController::class,'destroy']);
 Route::post('questions', [QuestionController::class, 'store']);
 Route::post('questions/{id}',[QuestionController::class,'update']);
 Route::post('questions/delete/{id}',[QuestionController::class,'destroy']);

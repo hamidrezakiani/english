@@ -84,7 +84,7 @@ active
       <div class="modal-header">
         <h5 class="modal-title">سوال جدید</h5>
       </div>
-      <form action="}" method="POST" id="delete-form">
+      <form action="" method="POST" id="delete-form">
         @csrf
       <div class="modal-body">
               آیا میخواهید این سوال را حذف کنید؟
@@ -97,6 +97,28 @@ active
     </div>
    </div>
   </div>
+
+  {{-- delete reading model --}}
+  <div class="modal fade" id="reading-delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">سوال جدید</h5>
+       </div>
+       <form action="" method="POST" id="reading-delete-form">
+         @csrf
+       <div class="modal-body">
+               آیا میخواهید این متن و سوالات را را حذف کنید؟
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" id="close-delete-modal" data-dismiss="modal">خیر</button>
+         <button type="submit" class="btn btn-danger mr-4">بله</a>
+       </div>
+       </form>
+     </div>
+    </div>
+   </div>
+   {{-- end delete reading --}}
 
 
    <div class="row">
@@ -261,6 +283,9 @@ active
 
     $(document).on('click','.delete-question',function(){
        document.getElementById('delete-form').setAttribute('action',`{{url('panel/questions/delete')}}/${$(this).data('id')}`);
+    });
+    $(document).on('click','.delete-reading',function(){
+       document.getElementById('reading-delete-form').setAttribute('action',`{{url('panel/readings/delete')}}/${$(this).data('id')}`);
     });
 </script>
 @endsection
