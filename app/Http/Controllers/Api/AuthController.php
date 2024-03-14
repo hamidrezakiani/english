@@ -33,7 +33,7 @@ class AuthController extends Controller
         $send->Verify($user->mobile, 100000, $parameters);
 
         $this->setData([
-            // 'new_user' => $user->new_user
+            'new_user' => $user->new_user
         ]);
         return $this->response();
     }
