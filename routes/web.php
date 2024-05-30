@@ -1,7 +1,9 @@
-<?php
+ <?php
 
 use App\Http\Controllers\Panel\DiscountController;
 use App\Http\Controllers\Panel\GrammarController;
+use App\Http\Controllers\Panel\ImportReadingTest;
+use App\Http\Controllers\Panel\ImportWordTest;
 use App\Http\Controllers\Panel\MessageController;
 use App\Http\Controllers\Panel\OtherController;
 use App\Http\Controllers\Panel\QuestionController;
@@ -11,7 +13,6 @@ use App\Http\Controllers\Panel\ServiceController;
 use App\Http\Controllers\Panel\SimilarWordController;
 use App\Http\Controllers\Panel\WordController;
 use App\Http\Controllers\Panel\WordTestController;
-use App\Models\Word;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -68,6 +69,9 @@ Route::post('messages/{id}',[MessageController::class,'update']);
 Route::post('messages/delete/{id}',[MessageController::class,'destroy']);
 Route::resource('discounts',DiscountController::class);
 Route::resource('services',ServiceController::class);
+Route::post('/import-reading-test/{id}',[ImportReadingTest::class,'import']);
+Route::post('/import-word-test/{id}',[ImportWordTest::class,'import']);
+Route::post('/import-tr-word-test/{id}',[ImportWordTest::class,'importTr']);
 });
 Route::get('pay',function(){
     return view('pay');
@@ -84,3 +88,5 @@ Route::get('pay',function(){
 Route::get('/',function(){
     return view('landing.home');
 });
+
+

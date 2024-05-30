@@ -31,7 +31,28 @@ active
     </div>
    </div>
   </div>
+  <div class="modal fade" id="import-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">import</h5>
+       </div>
+       <form action="" method="post" id="import-form" enctype="multipart/form-data">
+       <div class="modal-body">
+           <div class="form-group">
+             <input type="file" name="file" id="" required>
+             @csrf
+           </div>
+       </div>
+       <div class="modal-footer">
+             <button type="submit" class="btn btn-success mr-4" id="import-button">import</a>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
 
+ 
   <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -75,6 +96,8 @@ active
                     <td>
                         <a class="fa fa-eye" href="{{url('panel/word-tests/'.$test->id)}}"></a>
                         <i class="fa fa-trash mr-3 delete" data-toggle="modal" data-target="#delete-modal" data-id="{{$test->id}}"></i>
+                        <i class="btn btn-warning mr-3 import" data-toggle="modal" data-target="#import-modal" data-id="{{$test->id}}">import</i>
+                        <i class="btn btn-warning mr-3 import-tr" data-toggle="modal" data-target="#import-modal" data-id="{{$test->id}}">import tr</i>
                     </td>
                 </tr>
             @endforeach
@@ -88,6 +111,14 @@ active
     $(document).on('click','.delete',function(){
        var id = this.getAttribute('data-id');
        document.getElementById('delete-form').setAttribute('action',`{{url('panel/word-tests/delete')}}/${id}`);
+    });
+    $(document).on('click','.import',function(){
+       var id = this.getAttribute('data-id');
+       document.getElementById('import-form').setAttribute('action',`{{url('panel/import-word-test')}}/${id}`);
+    });
+    $(document).on('click','.import-tr',function(){
+       var id = this.getAttribute('data-id');
+       document.getElementById('import-form').setAttribute('action',`{{url('panel/import-tr-word-test')}}/${id}`);
     });
 </script>
 @endsection
