@@ -16,9 +16,9 @@ class ProfileResource extends JsonResource
     {
         return [
             'name' => $this->name,
-            'payStatus' => $this->payStatus,
-            'new_user' => $this->new_user,
-            'verify'  => $this->mobileVerify
+            'payStatus' => boolval($this->payStatus),
+            'new_user' => boolval($this->new_user),
+            'verify'  => boolval($this->mobileVerify)
         ];
     }
 }
