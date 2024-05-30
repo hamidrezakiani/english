@@ -74,11 +74,11 @@ Route::post('/import-reading-test/{id}',[ImportReadingTest::class,'import']);
 Route::post('/import-word-test/{id}',[ImportWordTest::class,'import']);
 Route::post('/import-tr-word-test/{id}',[ImportWordTest::class,'importTr']);
 });
-Route::get('pay',function($orderId){
+Route::get('pay/{id}',function($orderId){
     return view('pay',compact($orderId));
  });
 
- Route::get('success-pay',function($orderId){
+ Route::get('success-pay/{id}',function($orderId){
     $order = Order::find($orderId);
     $order->update([
       'stauts' => 'PAID'
