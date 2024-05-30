@@ -1,5 +1,6 @@
  <?php
 
+use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Panel\DiscountController;
 use App\Http\Controllers\Panel\GrammarController;
 use App\Http\Controllers\Panel\ImportReadingTest;
@@ -77,6 +78,8 @@ Route::post('/import-tr-word-test/{id}',[ImportWordTest::class,'importTr']);
 Route::get('pay/{id}',function($orderId){
     return view('pay',compact('orderId'));
  });
+
+ Route::get('pay/{id}',[PaymentController::class,'pay']);
 
  Route::get('success-pay/{id}',function($orderId){
     $order = Order::find($orderId);
