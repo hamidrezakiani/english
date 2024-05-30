@@ -17,7 +17,7 @@ class ProfileResource extends JsonResource
         return [
             'name' => $this->name,
             'payStatus' => intval($this->payStatus),
-            'new_user' => intval($this->new_user),
+            'new_user' => intval($this->n   ew_user),
             'verify'  => intval($this->mobileVerify)
         ];
     }
