@@ -13,6 +13,7 @@ use App\Http\Controllers\Panel\ServiceController;
 use App\Http\Controllers\Panel\SimilarWordController;
 use App\Http\Controllers\Panel\WordController;
 use App\Http\Controllers\Panel\WordTestController;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -73,12 +74,18 @@ Route::post('/import-reading-test/{id}',[ImportReadingTest::class,'import']);
 Route::post('/import-word-test/{id}',[ImportWordTest::class,'import']);
 Route::post('/import-tr-word-test/{id}',[ImportWordTest::class,'importTr']);
 });
-Route::get('pay',function(){
-    return view('pay');
+Route::get('pay',function($orderId){
+    return view('pay',compact($orderId));
  });
 
- Route::get('success-pay',function(Request $request){
-     
+ Route::get('success-pay',function($orderId){
+    $order = Order::find($orderId);
+    $order->update([
+      'stauts' => 'PAID'
+    ]);
+    $order->user()->update([
+      'payStatus' => 1
+    ]);
     return view('success-pay');
  });
  Route::get('failed-pay',function(Request $request){
