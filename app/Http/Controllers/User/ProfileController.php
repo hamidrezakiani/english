@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\User\ProfileResource;
+use App\Http\Resources\User\RegisterResource;
 use App\Lib\ResponseTemplate;
 use App\Models\User;
 use Auth;
@@ -39,7 +40,7 @@ class ProfileController extends Controller
             'invited_by' => $invited_by,
             'new_user' => 0
         ]);
-        $this->setData($user);
+        $this->setData(new RegisterResource($user));
         return $this->response();
     }
 
