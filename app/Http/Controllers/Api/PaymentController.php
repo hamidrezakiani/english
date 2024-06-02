@@ -40,16 +40,20 @@ class PaymentController extends Controller
         $authority = $request->Authority; // دریافت کوئری استرینگ ارسال شده توسط زرین پال 
         $status =  $request->Status; // دریافت کوئری استرینگ ارسال شده توسط زرین پال
         $payment = Payment::where('authority',$authority)->first();
+        if(!$payment)
+           abort(403);
+        if($status=='OK')
+        {
         $response = zarinpal()
         ->merchantId(env('ZARINPAL')) // تعیین مرچنت کد در حین اجرا - اختیاری
         ->amount($payment->order->payable)
         ->verification()
         ->authority($authority)
         ->send();
-        dd($response);
+        dd($response->success());
+        $status = $response->code;
         $payment->status_code = $response->error()->code();
-        if($status=='OK')
-        {
+       
            
         // dd($response);
         $payment->card_number = $response->cardPan();
