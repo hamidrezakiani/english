@@ -42,6 +42,7 @@ class PaymentController extends Controller
         $payment = Payment::where('authority',$authority)->first();
         if(!$payment)
            abort(403);
+        
         if($status=='OK')
         {
         $response = zarinpal()
@@ -50,19 +51,23 @@ class PaymentController extends Controller
         ->verification()
         ->authority($authority)
         ->send();
-        dd($response->success());
-        $status = $response->code;
+       dd($response->error()->code());
         $payment->status_code = $response->error()->code();
-       
-           
-        // dd($response);
-        $payment->card_number = $response->cardPan();
-        $payment->card_number_hash = $response->cardHash();
-        $payment->reference_id = $response->referenceId();
-        
+        $payment->card_number = $response->cardPan() ?? $payment->card_number;
+        $payment->card_number_hash = $response->cardHash() ?? $payment->card_number_hash;
+        $payment->reference_id = $response->referenceId() ?? $payment->reference_id;
+        $payment->fee_type = $response->feeType() ?? $payment->fee_type;
+        $payment->fee = $response->fee() ?? $payment->fee;
      if (!$response->success()) {
-         $payment->status = 'FAILED';
-         $payment->save();
+       
+        if($response->error()->code() == 101){
+            $payment->status = 'PAID';
+            $payment->save();
+            return view('success-pay');
+        }
+       
+        $payment->status = 'FAILED';
+        $payment->save();
          $error = $response->error()->message();
          return view('failed-pay',compact('error'));
     }
