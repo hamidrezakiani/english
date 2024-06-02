@@ -52,14 +52,10 @@ class PaymentController extends Controller
         ->authority($authority)
         ->send();
       
-        $payment->status_code = $response->error()->code();
-        $payment->card_number = $response->cardPan() ?? $payment->card_number;
-        $payment->card_number_hash = $response->cardHash() ?? $payment->card_number_hash;
-        $payment->reference_id = $response->referenceId() ?? $payment->reference_id;
-        $payment->fee_type = $response->feeType() ?? $payment->fee_type;
-        $payment->fee = $response->fee() ?? $payment->fee;
+      
+        
      if (!$response->success() || $response->error()->code() != 101) {
-       
+        $payment->status_code = $response->error()->code();
         $payment->status = 'FAILED';
         $payment->save();
          $error = $response->error()->message();
@@ -67,7 +63,18 @@ class PaymentController extends Controller
     }
     else
     {
+        $payment->status_code = 101;
         $payment->status = 'PAID';
+        if($response->success()){
+            $payment->card_number = $response->cardPan();
+        $payment->card_number_hash = $response->cardHash();
+        $payment->reference_id = $response->referenceId();
+        $payment->fee_type = $response->feeType();
+        $payment->fee = $response->fee();
+        $payment->status_code = 100;
+        }
+        
+        
         $payment->order()->update([
             'status' => 'PAID'
         ]);
