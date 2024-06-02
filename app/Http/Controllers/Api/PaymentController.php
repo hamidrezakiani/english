@@ -70,7 +70,7 @@ class PaymentController extends Controller
         $payment->card_number_hash = $response->cardHash();
         $payment->reference_id = $response->referenceId();
         $payment->fee_type = $response->feeType();
-        $payment->fee = $response->fee();
+        $payment->fee = $response->fee()/ 10;
         $payment->status_code = 100;
         }
         
