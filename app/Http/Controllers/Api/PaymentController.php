@@ -54,7 +54,7 @@ class PaymentController extends Controller
       
       
         
-     if (!$response->success() || $response->error()->code() != 101) {
+     if (!$response->success() && $response->error()->code() != 101) {
         $payment->status_code = $response->error()->code();
         $payment->status = 'FAILED';
         $payment->save();
