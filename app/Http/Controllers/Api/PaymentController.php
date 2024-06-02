@@ -19,7 +19,7 @@ class PaymentController extends Controller
         ->description('خرید اشتراک msc') // توضیحات تراکنش
         ->mobile($order->user->mobile)
         // ->email('hamidreza.behrad96@gmail.com')
-        ->callbackUrl("http://app.mscenglish.ir/api/verifyPayment")
+        ->callbackUrl("http://app.mscenglish.ir/verifyPayment")
         ->send();
         //  dd($response);
         if (!$response->success()) {
