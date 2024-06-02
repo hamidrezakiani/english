@@ -51,20 +51,14 @@ class PaymentController extends Controller
         ->verification()
         ->authority($authority)
         ->send();
-       dd($response->error()->code());
+      
         $payment->status_code = $response->error()->code();
         $payment->card_number = $response->cardPan() ?? $payment->card_number;
         $payment->card_number_hash = $response->cardHash() ?? $payment->card_number_hash;
         $payment->reference_id = $response->referenceId() ?? $payment->reference_id;
         $payment->fee_type = $response->feeType() ?? $payment->fee_type;
         $payment->fee = $response->fee() ?? $payment->fee;
-     if (!$response->success()) {
-       
-        if($response->error()->code() == 101){
-            $payment->status = 'PAID';
-            $payment->save();
-            return view('success-pay');
-        }
+     if (!$response->success() || $response->error()->code() != 101) {
        
         $payment->status = 'FAILED';
         $payment->save();
@@ -88,7 +82,7 @@ class PaymentController extends Controller
         {
             $payment->status = 'FAILED';
             $payment->save();
-            $error = $response->error()->message();
+            $error = "پرداخت نا موفق";
             return view('failed-pay',compact('error'));
         }
     }
