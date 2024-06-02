@@ -98,6 +98,7 @@ active
                         <a class="fa fa-eye" href="{{url('panel/reading-tests/'.$test->id)}}"></a>
                         <i class="fa fa-trash mr-3 delete" data-toggle="modal" data-target="#delete-modal" data-id="{{$test->id}}"></i>
                         <i class="btn btn-warning mr-3 import" data-toggle="modal" data-target="#import-modal" data-id="{{$test->id}}">import</i>
+                        <i class="btn btn-warning mr-3 import-tr" data-toggle="modal" data-target="#import-modal" data-id="{{$test->id}}">import tr</i>
                     </td>
                 </tr>
             @endforeach
@@ -115,6 +116,10 @@ active
     $(document).on('click','.import',function(){
        var id = this.getAttribute('data-id');
        document.getElementById('import-form').setAttribute('action',`{{url('panel/import-reading-test')}}/${id}`);
+    });
+    $(document).on('click','.import-tr',function(){
+       var id = this.getAttribute('data-id');
+       document.getElementById('import-form').setAttribute('action',`{{url('panel/import-tr-reading-test')}}/${id}`);
     });
 </script>
 @endsection

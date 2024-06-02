@@ -46,17 +46,14 @@ Route::group(['middleware' => ['auth:api']], function () {
 });
 
 Route::get('word-tests', [WordTestController::class, 'index']);
-  Route::get('reading-tests', [ReadingTestController::class, 'index']);
-  Route::get('messages', [MessageController::class, 'index']);
-  Route::get('grammars', [GrammarController::class, 'index']);
-  Route::get('app/words', [AppWordController::class, 'index']);
-  Route::get('word-test-tutorial', [OtherController::class, 'wordTestTutorial']);
-  Route::get('passage-test-tutorial', [OtherController::class, 'readingTestTutorial']);
-  Route::get('support', [OtherController::class, 'support']);
-  Route::get('about', [OtherController::class, 'about']);
-  
-Route::get('payment/{order_id}', [PaymentController::class, 'pay']);
-Route::get('verifyPayment', [PaymentController::class, 'verify']);
+Route::get('reading-tests', [ReadingTestController::class, 'index']);
+Route::get('messages', [MessageController::class, 'index']);
+Route::get('grammars', [GrammarController::class, 'index']);
+Route::get('app/words', [AppWordController::class, 'index']);
+Route::get('word-test-tutorial', [OtherController::class, 'wordTestTutorial']);
+Route::get('passage-test-tutorial', [OtherController::class, 'readingTestTutorial']);
+Route::get('support', [OtherController::class, 'support']);
+Route::get('about', [OtherController::class, 'about']);
 Route::post('verificationCode', [AuthController::class, 'verificationCode']);
 Route::post('verify', [AuthController::class, 'verify']);
 Route::get('excel', [AuthController::class, 'excel']);

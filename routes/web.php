@@ -72,14 +72,13 @@ Route::post('messages/delete/{id}',[MessageController::class,'destroy']);
 Route::resource('discounts',DiscountController::class);
 Route::resource('services',ServiceController::class);
 Route::post('/import-reading-test/{id}',[ImportReadingTest::class,'import']);
+Route::post('/import-tr-reading-test/{id}',[ImportReadingTest::class,'importTr']);
 Route::post('/import-word-test/{id}',[ImportWordTest::class,'import']);
 Route::post('/import-tr-word-test/{id}',[ImportWordTest::class,'importTr']);
 });
-Route::get('pay/{id}',function($orderId){
-    return view('pay',compact('orderId'));
- });
 
- Route::get('pay/{id}',[PaymentController::class,'pay']);
+Route::get('payment/{order_id}', [PaymentController::class, 'pay']);
+Route::get('verifyPayment', [PaymentController::class, 'verify']);
 
  Route::get('success-pay/{id}',function($orderId){
     $order = Order::find($orderId);

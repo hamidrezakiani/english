@@ -94,4 +94,87 @@ class ImportReadingTest extends Controller
     \DB::commit();
     return redirect()->back();
     }
+
+    public function importTr($id,Request $request)
+    {
+        // $file = file_get_contents(public_path('test.txt'));
+        $request->validate([
+            'file' => 'required|mimes:txt'
+        ]);
+        $file=$request->file('file');
+        $file=\File::get($file->getRealPath());
+    \DB::beginTransaction();
+    $readingsSection = explode('^',$file);
+    $readings = Reading::where('test_id',$id)->get();
+    foreach($readingsSection as $key => $rs){
+       $rs = explode('&',$rs);
+       $reading = $rs[0];
+       $readings[$key]->update([
+         'translate' => $reading
+       ]);
+       $questions = $readings[$key]->questions;
+       $questionsSection = explode('#',$rs[1]);
+       foreach($questionsSection as $key1 => $q){
+          $q = explode('@',$q);
+          $q_text = $q[0];
+          $question = $questions[$key1];
+        
+          $question->update([
+            'translate' => $q_text
+          ]);
+          $answers = explode(PHP_EOL,$q[1]);
+        
+          foreach($answers as $key2 => $a){
+            if(str_replace(' ','',$a) == "")
+               unset($answers[$key2]);
+            else
+               $answers[$key2] = trim($a);
+
+          }
+          $answers = array_values($answers);
+          $orderAndswers = [];
+          foreach ($answers as $key3 => $a) {
+             $char = mb_substr($a,0,1);
+             if($char == 'آ' || $char == 'ب' || $char == 'ج' || $char == 'د'){
+               switch($char){
+                  case 'آ':
+                     $index = 0;
+                     break;
+                  case 'ب': 
+                     $index = 1;
+                     break;
+                  case 'ج':
+                     $index = 2;
+                     break;
+                  case 'د':
+                     $index = 3;   
+               }
+                 $a = trim(mb_substr($a,1,mb_strlen($a)-1));
+             }else{
+                \DB::rollBack();
+               throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1), 1);
+             }
+             $char = mb_substr($a,0,1);
+             if($char == ')' || $char == '(' || $char == ')' || $char == '('){
+                 $a = trim(mb_substr($a,1,mb_strlen($a)-1));
+             }
+             $answers[$key3] = $a;
+             $orderAndswers[$index] = $a;
+          }
+          if(sizeof($answers) != 4 || sizeof($orderAndswers) != 4){
+              \DB::rollBack();
+              throw new \Exception("Error Reading ".($key+1)." Question ".($key1+1), 1);
+          }
+          $questionAnswers = $question->answers;
+          for ($i=0; $i < 4; $i++) { 
+            $questionAnswers[$i]->update([
+               'translate' =>  str_replace("*","",$orderAndswers[$i]),
+               'status' => str_contains($orderAndswers[$i],"*")
+            ]);
+          }
+       }
+    }
+    \DB::commit();
+    return redirect()->back();
+    }
 }

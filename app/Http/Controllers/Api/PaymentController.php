@@ -19,7 +19,7 @@ class PaymentController extends Controller
         ->description('خرید اشتراک msc') // توضیحات تراکنش
         ->mobile($order->user->mobile)
         // ->email('hamidreza.behrad96@gmail.com')
-        ->callbackUrl("http://mscenglish.ir/api/verifyPayment")
+        ->callbackUrl("http://app.mscenglish.ir/api/verifyPayment")
         ->send();
         //  dd($response);
         if (!$response->success()) {
@@ -30,9 +30,6 @@ class PaymentController extends Controller
             'amount' => $order->payable,
             'authority' => $response->authority()
         ]);
-        // dd($response->authority());
-        // ذخیره اطلاعات در دیتابیس
-        // $response->authority();
 
         // هدایت مشتری به درگاه پرداخت
         return $response->redirect();
@@ -40,15 +37,16 @@ class PaymentController extends Controller
 
     public function verify(Request $request)
     {
-        $authority = $request->Authority; // دریافت کوئری استرینگ ارسال شده توسط زرین پال
+        $authority = $request->Authority; // دریافت کوئری استرینگ ارسال شده توسط زرین پال 
         $status =  $request->Status; // دریافت کوئری استرینگ ارسال شده توسط زرین پال
         $payment = Payment::where('authority',$authority)->first();
         $response = zarinpal()
         ->merchantId(env('ZARINPAL')) // تعیین مرچنت کد در حین اجرا - اختیاری
-        ->amount(1000)
+        ->amount($payment->order->payable)
         ->verification()
         ->authority($authority)
         ->send();
+        dd($response);
         $payment->status_code = $response->error()->code();
         if($status=='OK')
         {
