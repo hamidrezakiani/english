@@ -3,7 +3,7 @@
 namespace App\Http\Resources\User;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-
+use App\Models\Service;
 class ProfileResource extends JsonResource
 {
     /**
@@ -14,11 +14,13 @@ class ProfileResource extends JsonResource
      */
     public function toArray($request)
     {
+        $amount = Service::where('type','SUBSCRIPTION')->first()->amount;
         return [
             'name' => $this->name,
             'payStatus' => intval($this->payStatus),
             'new_user' => intval($this->new_user),
-            'verify'  => intval($this->mobileVerify)
+            'verify'  => intval($this->mobileVerify),
+            'amount'  => $amount
         ];
     }
 }

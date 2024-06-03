@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Cryptommer\Smsir\Smsir;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use App\Models\Service;
 class AuthController extends Controller
 {
     use ResponseTemplate;
@@ -73,6 +74,7 @@ class AuthController extends Controller
                     'api_token' => $user->api_token,
                     'payStatus' => $user->payStatus,
                     'new_user' => $user->new_user,
+                    'amount'  => Service::where('type','SUBSCRIPTION')->first()->amount
                 ]);
             } else {
                 $verifyCode->failed_attemp += 1;
