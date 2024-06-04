@@ -53,6 +53,8 @@ class ServiceController extends Controller
                   if($discount)
                   {
                       $order->payable = $service->amount - $discount->amount;
+                      if($order->payable < 0)
+                        $order->payable = 0;
                       $order->discount_id = $discount->id;
                       $order->save();
                       $this->setData(['amount' => $order->payable,'order_id' => $order->id]); 
