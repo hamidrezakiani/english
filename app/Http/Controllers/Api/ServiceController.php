@@ -29,7 +29,7 @@ class ServiceController extends Controller
               'service_id' => $service->id,
               'payable' => $service->amount
            ]);
-         $this->setData(['amount' => $order->payable,"discount" => $order?->discount?->amount ?? 0 ,'order_id' => $order->id]); 
+         $this->setData(['amount' => $service->amount,"discount" => $order?->discount?->amount ?? 0 ,'order_id' => $order->id]); 
          return $this->response();
     }
     public function setDiscount(Request $request)
@@ -57,7 +57,7 @@ class ServiceController extends Controller
                         $order->payable = 0;
                       $order->discount_id = $discount->id;
                       $order->save();
-                      $this->setData(['amount' => $order->payable,"discount" => $discount->amount,'code' => $discount->code,'order_id' => $order->id]); 
+                      $this->setData(["discount" => $discount->amount,'code' => $discount->code,'order_id' => $order->id]); 
                   }
                   else
                   {
