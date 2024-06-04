@@ -34,14 +34,14 @@ class WordController extends Controller
     private function withoutDeleted()
     {
         return Word::where('updated_at','<=',$this->currentUpdatingAt)
-        ->orderBy('updated_at','ASC')->paginate(400);
+        ->orderBy('orderIndex','ASC')->paginate(400);
     }
 
     private function withDeleted()
     {
         return Word::where('updated_at','>=',$this->lastUpdatedAt)
         ->where('updated_at','<=',$this->currentUpdatingAt)->withTrashed()
-        ->orderBy('updated_at','ASC')->paginate(400);
+        ->orderBy('orderIndex','ASC')->paginate(400);
     }
 
 }
