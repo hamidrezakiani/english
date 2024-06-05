@@ -15,15 +15,29 @@ class SimilarWordController extends Controller
     use ResponseTemplate;
     public function index(Request $request)
     {
+        if($request->agent == 'panel'){
         if ($request->flag == 'search' && $request->q != "") {
             $words = SimilarWord::where('word', 'like', $request->q . '%')
-                ->orWhere('translation', 'like', '%' . $request->q . '%')->withTrashed()->paginate(100);
+                ->orWhere('translation', 'like', '%' . $request->q . '%')->paginate(100);
         } else {
             if ($request->flag == 'all') {
                 $words =
-                SimilarWord::withTrashed()->orderBy('orderIndex', 'ASC')->get();
+                SimilarWord::orderBy('orderIndex', 'ASC')->get();
             } else {
-                $words = SimilarWord::withTrashed()->orderBy('orderIndex', 'ASC')->paginate($request->paginate);
+                $words = SimilarWord::orderBy('orderIndex', 'ASC')->paginate($request->paginate);
+            }
+        }
+    }else{
+            if ($request->flag == 'search' && $request->q != "") {
+                $words = SimilarWord::where('word', 'like', $request->q . '%')
+                    ->orWhere('translation', 'like', '%' . $request->q . '%')->withTrashed()->paginate(100);
+            } else {
+                if ($request->flag == 'all') {
+                    $words =
+                    SimilarWord::withTrashed()->orderBy('orderIndex', 'ASC')->get();
+                } else {
+                    $words = SimilarWord::withTrashed()->orderBy('orderIndex', 'ASC')->paginate($request->paginate);
+                }
             }
         }
         $this->setData($words);

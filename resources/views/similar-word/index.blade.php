@@ -367,7 +367,7 @@ active
     $(document).on('keyup','#search',function(){
         var searchQuery = this.value;
         $.ajax({
-            'url':`{{env('API_URL')}}/similar-words?flag=search&q=${searchQuery}`,
+            'url':`{{env('API_URL')}}/similar-words?flag=search&q=${searchQuery}&agent=panel`,
             'method':'GET',
             'timeout':0,
         }).done(function(response){
