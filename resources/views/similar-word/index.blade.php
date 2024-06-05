@@ -163,7 +163,7 @@ active
     function loadData(url){
         pendiing = true;
         $.ajax({
-            'url':`${url}&per_page=100`,
+            'url':`${url}&per_page=100&agent=panel`,
             'method':'GET',
             'timeout':0,
         }).done(function(response){
