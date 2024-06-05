@@ -17,13 +17,13 @@ class SimilarWordController extends Controller
     {
         if ($request->flag == 'search' && $request->q != "") {
             $words = SimilarWord::where('word', 'like', $request->q . '%')
-                ->orWhere('translation', 'like', '%' . $request->q . '%')->paginate(100);
+                ->orWhere('translation', 'like', '%' . $request->q . '%')->withTrashed()->paginate(100);
         } else {
             if ($request->flag == 'all') {
                 $words =
-                SimilarWord::orderBy('orderIndex', 'ASC')->get();
+                SimilarWord::withTrashed()->orderBy('orderIndex', 'ASC')->get();
             } else {
-                $words = SimilarWord::orderBy('orderIndex', 'ASC')->paginate($request->paginate);
+                $words = SimilarWord::withTrashed()->orderBy('orderIndex', 'ASC')->paginate($request->paginate);
             }
         }
         $this->setData($words);
