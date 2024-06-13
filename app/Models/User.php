@@ -30,7 +30,7 @@ class User extends Authenticatable
     ];
 
     public function getNewUserAttribute(){
-        return 1;
+        return 0;
     }
 
     public function smsVerifications()
