@@ -69,6 +69,7 @@ class ImportReadingTest extends Controller
                }
                  $a = trim(substr($a,1,strlen($a)-1));
              }else{
+                dd($answers);
                 \DB::rollBack();
                throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1), 1);
              }
