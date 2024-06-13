@@ -42,6 +42,7 @@ class ImportReadingTest extends Controller
           ]);
           $answers = explode(PHP_EOL,$q[1]);
           $b = [];
+          var_dump($answers);
           foreach($answers as $key2 => $a){
             if(str_replace(' ','',$a) == ""){
                echo "key = ".$key2."a = ".$a.PHP_EOL;
@@ -73,7 +74,7 @@ class ImportReadingTest extends Controller
              }else{
                 \DB::rollBack();
                 var_dump($answers,$a,$char);
-                die();
+               
                throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1)."char : ".$char."---a : ".$a, 1);
              }
              $char = substr($a,0,1);
