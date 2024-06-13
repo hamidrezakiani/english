@@ -42,7 +42,7 @@ class ImportReadingTest extends Controller
           ]);
           $answers = explode(PHP_EOL,$q[1]);
           $b = [];
-          var_dump($answers,str_replace(' ',''," ") == "");
+          var_dump($answers,str_replace(' ','',"") == "");
           die();
           foreach($answers as $key2 => $a){
             if(str_replace(' ','',$a) == ""){
