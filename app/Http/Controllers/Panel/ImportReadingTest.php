@@ -43,16 +43,15 @@ class ImportReadingTest extends Controller
           $answers = explode(PHP_EOL,$q[1]);
           $b = [];
           foreach($answers as $key2 => $a){
-            if(str_replace('\\r','',$a) == "")
+            if(strtr($a,["\r" => '',' ' => '']) == "")
                unset($answers[$key2]);
             else
-               $b[] = $a;
+               $answers[$key2] = trim($a);
 
           }
-          dd(str_replace('\r',"","\r"));
           $answers = array_values($answers);
           $orderAndswers = [];
-          foreach ($b as $key3 => $a) {
+          foreach ($answers as $key3 => $a) {
              $char = substr($a,0,1);
              if($char == 'a' || $char == 'b' || $char == 'c' || $char == 'd'){
                switch($char){
@@ -70,7 +69,6 @@ class ImportReadingTest extends Controller
                }
                  $a = trim(substr($a,1,strlen($a)-1));
              }else{
-               dd($char,$a);
                 \DB::rollBack();
                throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1), 1);
              }
@@ -78,10 +76,10 @@ class ImportReadingTest extends Controller
              if($char == ')' || $char == '(' || $char == ')' || $char == '('){
                  $a = trim(substr($a,1,strlen($a)-1));
              }
-             $b[$key3] = $a;
+             $answers[$key3] = $a;
              $orderAndswers[$index] = $a;
           }
-          if(sizeof($b) != 4 || sizeof($orderAndswers) != 4){
+          if(sizeof($answers) != 4 || sizeof($orderAndswers) != 4){
               \DB::rollBack();
               throw new \Exception("Error Reading ".($key+1)." Question ".($key1+1), 1);
           }
@@ -127,7 +125,7 @@ class ImportReadingTest extends Controller
           $answers = explode(PHP_EOL,$q[1]);
         
           foreach($answers as $key2 => $a){
-            if(str_replace(' ','',$a) == "")
+            if(strtr($a,["\r" => '',' ' => '']) == "")
                unset($answers[$key2]);
             else
                $answers[$key2] = trim($a);
