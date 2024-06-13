@@ -70,7 +70,7 @@ class ImportReadingTest extends Controller
                  $a = trim(substr($a,1,strlen($a)-1));
              }else{
                 \DB::rollBack();
-               throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1), 1);
+               throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1)."char : ".$char."---a : ".$a, 1);
              }
              $char = substr($a,0,1);
              if($char == ')' || $char == '(' || $char == ')' || $char == '('){
