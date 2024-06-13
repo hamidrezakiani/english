@@ -67,17 +67,17 @@ class ImportReadingTest extends Controller
                   case 'd':
                      $index = 3;   
                }
-                 $a = trim(substr($a,1,strlen($a)-1));
+                 $b = trim(substr($a,1,strlen($a)-1));
              }else{
                 \DB::rollBack();
                throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1)."char : ".$char."---a : ".$a, 1);
              }
-             $char = substr($a,0,1);
+             $char = substr($b,0,1);
              if($char == ')' || $char == '(' || $char == ')' || $char == '('){
-                 $a = trim(substr($a,1,strlen($a)-1));
+                 $b = trim(substr($b,1,strlen($b)-1));
              }
-             $answers[$key3] = $a;
-             $orderAndswers[$index] = $a;
+             $answers[$key3] = $b;
+             $orderAndswers[$index] = $b;
           }
           if(sizeof($answers) != 4 || sizeof($orderAndswers) != 4){
               \DB::rollBack();
