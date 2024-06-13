@@ -44,7 +44,7 @@ class ImportReadingTest extends Controller
           $b = [];
           foreach($answers as $key2 => $a){
             if(str_replace(' ','',$a) == ""){
-               echo $key2.PHP_EOL;
+               echo "key = ".$key2."a = ".$a.PHP_EOL;
                unset($answers[$key2]);
             }
             else
