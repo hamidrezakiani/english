@@ -42,8 +42,7 @@ class ImportReadingTest extends Controller
           ]);
           $answers = explode(PHP_EOL,$q[1]);
           $b = [];
-          var_dump($answers,str_replace(' ','',"") == "");
-          die();
+          dd($answers[5],$answers[0]);
           foreach($answers as $key2 => $a){
             if(str_replace(' ','',$a) == ""){
                echo "key = ".$key2."a = ".$a.PHP_EOL;
@@ -53,6 +52,7 @@ class ImportReadingTest extends Controller
                $answers[$key2] = trim($a);
 
           }
+         
           $answers = array_values($answers);
           $orderAndswers = [];
           foreach ($answers as $key3 => $a) {
