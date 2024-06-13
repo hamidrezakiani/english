@@ -42,17 +42,13 @@ class ImportReadingTest extends Controller
           ]);
           $answers = explode(PHP_EOL,$q[1]);
           $b = [];
-          dd($answers[5],$answers[0]);
           foreach($answers as $key2 => $a){
-            if(str_replace(' ','',$a) == ""){
-               echo "key = ".$key2."a = ".$a.PHP_EOL;
+            if(strtr($a,['\r' => '',' ' => '']) == "")
                unset($answers[$key2]);
-            }
             else
                $answers[$key2] = trim($a);
 
           }
-         
           $answers = array_values($answers);
           $orderAndswers = [];
           foreach ($answers as $key3 => $a) {
@@ -74,9 +70,7 @@ class ImportReadingTest extends Controller
                  $a = trim(substr($a,1,strlen($a)-1));
              }else{
                 \DB::rollBack();
-                var_dump($answers,$a,$char);
-               
-               throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1)."char : ".$char."---a : ".$a, 1);
+               throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1), 1);
              }
              $char = substr($a,0,1);
              if($char == ')' || $char == '(' || $char == ')' || $char == '('){
@@ -131,7 +125,7 @@ class ImportReadingTest extends Controller
           $answers = explode(PHP_EOL,$q[1]);
         
           foreach($answers as $key2 => $a){
-            if(str_replace(' ','',$a) == "")
+            if(strtr($a,['\r' => '',' ' => '']) == "")
                unset($answers[$key2]);
             else
                $answers[$key2] = trim($a);
