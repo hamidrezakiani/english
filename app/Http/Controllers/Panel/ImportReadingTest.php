@@ -49,7 +49,7 @@ class ImportReadingTest extends Controller
                $b[] = $a;
 
           }
-          dd(str_replace("\r","","\r"));
+          dd(str_replace('\r',"","\r"));
           $answers = array_values($answers);
           $orderAndswers = [];
           foreach ($b as $key3 => $a) {
