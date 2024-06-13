@@ -49,7 +49,8 @@ class ImportReadingTest extends Controller
                $b[] = $a;
 
           }
-         //  $answers = array_values($answers);
+          dd(str_replace("\r","","\r"));
+          $answers = array_values($answers);
           $orderAndswers = [];
           foreach ($b as $key3 => $a) {
              $char = substr($a,0,1);
