@@ -29,6 +29,10 @@ class User extends Authenticatable
         'mobile','name','invitation_code','invited_by','ip','mobileVerify','new_user','payStatus','api_token'
     ];
 
+    public function getNewUserAttribute(){
+        return 1;
+    }
+
     public function smsVerifications()
     {
         return $this->hasMany(SmsVerification::class);
