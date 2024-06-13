@@ -43,7 +43,7 @@ class ImportReadingTest extends Controller
           $answers = explode(PHP_EOL,$q[1]);
           $b = [];
           foreach($answers as $key2 => $a){
-            if(str_replace(' ','',$a) == "")
+            if(str_replace('\r','',$a) == "")
                unset($answers[$key2]);
             else
                $b[] = $a;
