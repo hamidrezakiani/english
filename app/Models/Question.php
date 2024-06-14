@@ -13,6 +13,13 @@ class Question extends Model
         'foreign_id','question','translate','solve','orderIndex','type',
     ];
 
+    protected static function booted () {
+        static::deleting(function(Question $question) { // before delete() method call this
+             $question->answers()->delete();
+             // do the rest of the cleanup...
+        });
+    }
+
     public function test()
     {
         return $this->belongsTo(Test::class);

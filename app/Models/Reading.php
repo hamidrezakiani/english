@@ -13,7 +13,13 @@ class Reading extends Model
     protected $fillable = [
         'test_id','text','translate','orderIndex'
     ];
-
+    
+    protected static function booted () {
+        static::deleting(function(Reading $reading) { // before delete() method call this
+             $reading->questions()->delete();
+             // do the rest of the cleanup...
+        });
+    }
     public function test()
     {
         return $this->belongsTo(ReadingTest::class,'test_id','id');

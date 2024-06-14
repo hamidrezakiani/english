@@ -16,7 +16,7 @@ class ImportReadingTest extends Controller
         ]);
         $file=$request->file('file');
         $file=\File::get($file->getRealPath());
-        Reading::where('test_id',$id)->forceDelete();
+        Reading::where('test_id',$id)->delete();
     \DB::beginTransaction();
     $readingsSection = explode('^',$file);
     unset($readingsSection[0]);

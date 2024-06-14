@@ -17,7 +17,7 @@ class ImportWordTest extends Controller
         $file=$request->file('file');
         $file=\File::get($file->getRealPath());
         $file = trim($file);
-        Question::where('type','WORD_TEST')->where('foreign_id',$id)->forceDelete();
+        Question::where('type','WORD_TEST')->where('foreign_id',$id)->delete();
     \DB::beginTransaction();
 
        $questions = explode('#',$file);
