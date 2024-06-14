@@ -26,7 +26,7 @@ active
                     <td>{{$order->user->mobile}}</td>
                     <td>{{$order->payable}}</td>
                     <td>{{$order->discount?->code ?? "ندارد"}}</td>
-                    <td>{{$order->created_at}}</td>
+                    <td>{{verta($order->created_at)}}</td>
                     <td>{{$order->payments()->where('status','PAID')->exists() ? "پرداخت شده" : "پرداخت نشده"}}</td>
                     <td>
                         <a class="fa fa-eye" href="{{url('panel/orders/'.$order->id)}}"></a>
