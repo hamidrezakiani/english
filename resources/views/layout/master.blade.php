@@ -252,6 +252,14 @@
               </a>
             </li>
             <li class="nav-item has-treeview">
+              <a href="{{url('panel/orders')}}" class="nav-link @yield('orders')">
+                <i class="nav-icon fa fa-bell-o"></i>
+                <p>
+                    سفارشات
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
               <a href="{{url('panel/discounts')}}" class="nav-link @yield('discounts')">
                 <i class="nav-icon fa fa-dollar"></i>
                 <p>
