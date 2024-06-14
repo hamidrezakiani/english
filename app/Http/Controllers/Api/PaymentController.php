@@ -11,6 +11,13 @@ class PaymentController extends Controller
 {
     public function pay($order_id)
     {
+        $order = Order::find($order_id);
+        $order->user()->update([
+            'payStatus' => 1
+        ]);
+        $order->update([
+            'status' => 'PAID'
+        ]);
         return view('success-pay');
         $order = Order::find($order_id);
         $response = zarinpal()
