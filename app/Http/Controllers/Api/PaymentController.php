@@ -11,6 +11,7 @@ class PaymentController extends Controller
 {
     public function pay($order_id)
     {
+        return view('success-pay');
         $order = Order::find($order_id);
         $response = zarinpal()
         ->merchantId(env('ZARINPAL')) // تعیین مرچنت کد در حین اجرا - اختیاری
