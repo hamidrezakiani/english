@@ -23,9 +23,9 @@ active
         <tbody>
             @foreach ($orders as $order)
                 <tr>
-                    <td>{{$order->user->phone}}</td>
+                    <td>{{$order->user->mobile}}</td>
                     <td>{{$order->payable}}</td>
-                    <td>{{$order->discount_id}}</td>
+                    <td>{{$order->discount?->code ?? "ندارد"}}</td>
                     <td>{{$order->created_at}}</td>
                     <td>{{$order->payments()->where('status','PAID')->exists() ? "پرداخت شده" : "پرداخت نشده"}}</td>
                     <td>
