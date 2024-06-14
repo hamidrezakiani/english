@@ -81,13 +81,13 @@ Route::get('payment/{order_id}', [PaymentController::class, 'pay']);
 Route::get('verifyPayment', [PaymentController::class, 'verify']);
 
  Route::get('success-pay/{id}',function($orderId){
-    $order = Order::find($orderId);
-    $order->update([
-      'stauts' => 'PAID'
-    ]);
-    $order->user()->update([
-      'payStatus' => 1
-    ]);
+   //  $order = Order::find($orderId);
+   //  $order->update([
+   //    'stauts' => 'PAID'
+   //  ]);
+   //  $order->user()->update([
+   //    'payStatus' => 1
+   //  ]);
     return view('success-pay');
  });
  Route::get('failed-pay',function(Request $request){
