@@ -95,11 +95,15 @@ class ReadingTestController extends Controller
     public function destroy($id)
     {
         $test = ReadingTest::find($id);
-        $questions = $test->questions;
-        foreach ($questions as $question) {
-            $question->answers()->delete();
+        $readings = $test->readings;
+        foreach($readings as $reading){
+            $questions = $reading->questions;
+            foreach ($questions as $question) {
+                $question->answers()->delete();
+            }
+            $reading->questions()->delete();
         }
-        $test->questions()->delete();
+        $test->readings()->delete();
         ReadingTest::where('orderIndex', '>', $test->orderIndex)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
         $test->delete();
         return redirect()->back();

@@ -21,7 +21,7 @@ class PaymentController extends Controller
         // ->email('hamidreza.behrad96@gmail.com')
         ->callbackUrl("http://app.mscenglish.ir/verifyPayment")
         ->send();
-        //  dd($response);
+        
         if (!$response->success()) {
             return $response->error()->message();
         }
