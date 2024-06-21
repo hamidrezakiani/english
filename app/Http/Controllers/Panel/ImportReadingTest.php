@@ -106,6 +106,8 @@ class ImportReadingTest extends Controller
         $file=\File::get($file->getRealPath());
     \DB::beginTransaction();
     $readingsSection = explode('^',$file);
+    unset($readingsSection[0]);
+    $readingsSection = array_values($readingsSection);
     $readings = Reading::where('test_id',$id)->get();
     foreach($readingsSection as $key => $rs){
        $rs = explode('&',$rs);
@@ -115,16 +117,17 @@ class ImportReadingTest extends Controller
        ]);
        $questions = $readings[$key]->questions;
        $questionsSection = explode('#',$rs[1]);
+       unset($questionsSection[0]);
+       $questionsSection = array_values($questionsSection);
        foreach($questionsSection as $key1 => $q){
-          $q = explode('@',$q);
+          $q = explode('@',trim($q));
           $q_text = $q[0];
           $question = $questions[$key1];
         
           $question->update([
             'translate' => $q_text
           ]);
-          $answers = explode(PHP_EOL,$q[1]);
-        
+          $answers = explode(PHP_EOL,trim($q[1]));
           foreach($answers as $key2 => $a){
             if(strtr($a,["\r" => '',' ' => '']) == "")
                unset($answers[$key2]);
@@ -153,7 +156,8 @@ class ImportReadingTest extends Controller
                  $a = trim(mb_substr($a,1,mb_strlen($a)-1));
              }else{
                 \DB::rollBack();
-               throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1), 1);
+                dd($answers);
+               throw new \Exception("Answer order Error Reading ".($key+1)." Question ".($key1+1)." Answer ".($key3+1), 1);
              }
              $char = mb_substr($a,0,1);
              if($char == ')' || $char == '(' || $char == ')' || $char == '('){
