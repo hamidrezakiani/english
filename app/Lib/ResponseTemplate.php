@@ -8,9 +8,15 @@ trait ResponseTemplate
     protected $errors = [];
     protected $status = 200;
 
+    protected $variables = [];
+
     public function setData($data)
     {
         $this->data = $data;
+    }
+
+    public function setVariable($key,$value) {
+        $this->variables[$key] = $value;
     }
 
     public function setErrors($errors)
@@ -34,6 +40,10 @@ trait ResponseTemplate
 
     public function response()
     {
-        return response()->json(['data' => $this->data,'status' => ['code' => $this->status,'title' => 'TEST'],'errors' => $this->errors],$this->status);
+        return response()->json([
+            'data' => $this->data,
+             ...$this->variables,
+            'status' => ['code' => $this->status,'title' => 'TEST'],
+            'errors' => $this->errors],$this->status);
     }
 }
