@@ -21,7 +21,8 @@ class ImportWordTest extends Controller
     \DB::beginTransaction();
 
        $questions = explode('#',$file);
-      
+       unset($questions[0]);
+       $questions = array_values($questions);
        foreach($questions as $key1 => $q){
           $q = explode('@',$q);
           $q_text = $q[0];
@@ -97,7 +98,8 @@ class ImportWordTest extends Controller
     \DB::beginTransaction();
        $modelQuestions = Question::where('foreign_id',$id)->where('type','WORD_TEST')->get();
        $questions = explode('#',$file);
-      
+       unset($questions[0]);
+       $questions = array_values($questions);
        foreach($questions as $key1 => $q){
           $q = explode('@',$q);
           $q_text = $q[0];
