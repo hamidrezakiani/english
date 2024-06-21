@@ -97,7 +97,7 @@ class WordTestController extends Controller
             $question->answers()->delete();
         }
         $test->questions()->delete();
-        WordTest::wordTests()->where('orderIndex','>',$test->orderIndex)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
+        WordTest::where('orderIndex','>',$test->orderIndex)->update(['orderIndex' => DB::raw('orderIndex - 1')]);
         $test->delete();
         return redirect()->back();
     }
