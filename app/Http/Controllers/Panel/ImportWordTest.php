@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Panel;
 
 use App\Http\Controllers\Controller;
+use App\Models\WordTest;
 use Illuminate\Http\Request;
 use App\Models\Question;
 
@@ -17,7 +18,13 @@ class ImportWordTest extends Controller
         $file=$request->file('file');
         $file=\File::get($file->getRealPath());
         $file = trim($file);
-        Question::where('type','WORD_TEST')->where('foreign_id',$id)->delete();
+        $test = WordTest::find($id);
+        $questions = $test->questions;
+        foreach($questions as $question)
+        {
+            $question->answers()->delete();
+        }
+        $test->questions()->delete();
     \DB::beginTransaction();
 
        $questions = explode('#',$file);

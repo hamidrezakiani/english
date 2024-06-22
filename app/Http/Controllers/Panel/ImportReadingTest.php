@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Panel;
 use App\Models\Question;
 use App\Models\Reading;
 use App\Http\Controllers\Controller;
+use App\Models\ReadingTest;
 use Illuminate\Http\Request;
 
 class ImportReadingTest extends Controller
@@ -16,7 +17,16 @@ class ImportReadingTest extends Controller
         ]);
         $file=$request->file('file');
         $file=\File::get($file->getRealPath());
-        Reading::where('test_id',$id)->delete();
+        $test = ReadingTest::find($id);
+        $readings = $test->readings;
+        foreach($readings as $reading){
+            $questions = $reading->questions;
+            foreach ($questions as $question) {
+                $question->answers()->delete();
+            }
+            $reading->questions()->delete();
+        }
+        $test->readings()->delete();
     \DB::beginTransaction();
     $readingsSection = explode('^',$file);
     unset($readingsSection[0]);
