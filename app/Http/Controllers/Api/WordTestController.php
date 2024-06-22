@@ -21,7 +21,6 @@ class WordTestController extends Controller
         else
             $tests = $this->withDeleted();
 
-            $tests = $this->withDeleted();
         $this->setData($tests);
         $this->setVariable('currentUpdatingAt',$currentTime);
         return $this->response();
