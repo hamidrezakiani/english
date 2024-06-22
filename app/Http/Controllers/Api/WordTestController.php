@@ -39,10 +39,18 @@ class WordTestController extends Controller
     private function withDeleted()
     {
         $lastUpdate = $this->lastUpdatedAt;
-        return WordTest::where('updated_at','>=',$lastUpdate)->withTrashed()
+        return WordTest::where('updated_at','>=',$lastUpdate)->orWhereHas('questions',function($query)use($lastUpdate){
+            return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
+            ->orWhereHas('answers',function($query)use($lastUpdate){
+                return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
+            });
+        })->withTrashed()
         ->with([
             'questions' => function ($query)use ($lastUpdate) {
                 return $query->where('updated_at','>=',$lastUpdate)->withTrashed()
+                ->orWhereHas('answers',function($query)use($lastUpdate){
+                    return $query->where('updated_at','>=',$lastUpdate)->withTrashed();
+                })
                 ->with(['answers' => function($query)use ($lastUpdate){
                     return $query->where('updated_at','>=',$lastUpdate)->withTrashed();
                 }]);
