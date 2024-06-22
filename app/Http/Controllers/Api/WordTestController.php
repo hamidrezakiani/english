@@ -39,20 +39,20 @@ class WordTestController extends Controller
     private function withDeleted()
     {
         $lastUpdate = $this->lastUpdatedAt;
-        return WordTest::where('updated_at','>=',$lastUpdate)->orWhereHas('questions',function($query)use($lastUpdate){
+        return WordTest::withTrashed()->where('updated_at','>=',$lastUpdate)->orWhereHas('questions',function($query)use($lastUpdate){
             return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
             ->orWhereHas('answers',function($query)use($lastUpdate){
                 return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
             });
-        })->withTrashed()
+        })
         ->with([
             'questions' => function ($query)use ($lastUpdate) {
-                return $query->where('updated_at','>=',$lastUpdate)->withTrashed()
+                return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
                 ->orWhereHas('answers',function($query)use($lastUpdate){
-                    return $query->where('updated_at','>=',$lastUpdate)->withTrashed();
+                    return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
                 })
                 ->with(['answers' => function($query)use ($lastUpdate){
-                    return $query->where('updated_at','>=',$lastUpdate)->withTrashed();
+                    return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
                 }]);
             }
         ])->orderBy('orderIndex', 'ASC')->get();
