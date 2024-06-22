@@ -48,7 +48,7 @@ class ReadingTestController extends Controller
                             return $query->where('updated_at','>=',$lastUpdate)->withTrashed();
                         }])->orderBy('orderIndex');
                     }
-                ])
+                ]);
             }
         ])->orderBy('orderIndex', 'ASC')->get();
     }
