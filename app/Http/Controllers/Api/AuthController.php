@@ -112,7 +112,7 @@ class AuthController extends Controller
                 'orderIndex' => $key+1,
                 'updated_at' => Carbon::now()
              ];
-             sleep(0.005);
+             sleep(0.01);
         }
         Word::insert($data);
     }
