@@ -110,9 +110,8 @@ class AuthController extends Controller
                 'word' => $word[0],
                 'translation'=> $word[1],
                 'orderIndex' => $key+1,
-                'updated_at' => Carbon::now()->addMilliseconds($key * 10)
+                'updated_at' => Carbon::now()->subDay(1)->addMilliseconds($key * 10)
              ];
-             sleep(0.01);
         }
         Word::insert($data);
     }
