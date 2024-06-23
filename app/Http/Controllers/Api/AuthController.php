@@ -109,7 +109,8 @@ class AuthController extends Controller
              $data[$key] = [
                 'word' => $word[0],
                 'translation'=> $word[1],
-                'orderIndex' => $key+1
+                'orderIndex' => $key+1,
+                'updated_at' => Carbon::now()
              ];
         }
         Word::insert($data);
