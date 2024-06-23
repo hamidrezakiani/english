@@ -1,0 +1,4125 @@
+determination:تصمیم، تعیین
+Decide:تصمیم گرفتن
+descision:تصمیم
+Make decision:تصمیم گیری کردن
+resolution:تصمیم
+Accuracy:دقت
+Precision:دقت
+Subtlety:دقت
+advertent:دقیق، متوجه
+Accurate:دقیق
+Precise:دقیق
+Subtle:دقیق
+Circulation:گردش
+Circumstance:محیط، پیرامون، شرایط
+Circuit:مدار
+Bonus:پاداش
+benign:خوش خیم
+benignity:خوش خیمی
+malignant:بدخیم
+malignancy:بدخیمی
+metastatic:بدخیم
+malicious:بدخیم
+vicious:خطرناک، بدخیم
+Carcinogen:سرطان زا
+cancer:سرطان
+influence:تحت تاثیر قرار دادن، اثر
+effect:تاثیر
+Effective:موثر
+Ineffective:بی تاثیر
+Affect:اثر، اثر کردن بر
+Biceps:عضله دو سر بازو
+quadriceps:عضله چهارسر ران
+Spasm:گرفتگی عضله
+Muscle wasting:تحلیل رفتن عضله
+Close:بستن
+Decisive:قطعی
+conclusive:قطعی
+Conclusion:نتیجه گیری
+Exclude:جدا شدن از بقیه
+Exclusive:انحصاری
+Include:شامل چیزی بودن
+Inclusion:شامل شدن
+Cognition:شناخت و درک
+Recognize :شناسایی کردن
+knowledge :دانش
+knowledgeable:دانا
+Acknowledge:تایید کردن
+Either of:هیچ کدام
+Both:هم این ...هم آن
+neither….nor:نه اين ... نه آن
+Core:مرکز، هسته
+Discourage:بی انگیزه کردن
+Encourage:تشویق کردن
+Corporal:جسمی
+Corpse:جسد
+Corpulent:چاق
+Abnormal:غیر طبیعی
+irregular:غیر طبیعی
+atypical:غیر طبیعی
+unconventional:غیر مرسوم
+Dormant:پنهان، خوابیده، مخفی
+Euphoria:خوشحالی
+Gradient:شیب
+Gradual :تدریجی
+Progress:پیشرفت
+Regress:پس رفت
+Accumulate:جمع کردن، انباشته شدن
+aggregate:جمع کردن، مجموعه
+collect:جمع آوری کردن
+Habit:عادت
+Behavior:رفتار
+Rehabilitation :توانبخشی
+Seniautomatic:نیمه خودکار
+Intellectual:ذهنی
+Intelligent:باهوش
+provide:تهیه کردن
+provision:تهیه
+Legal:قانونی
+illegal:غیر قانونی
+Privilege:مزایا
+Liberal:آزاد
+Deliver:رساندن، تحویل دادن، زایمان
+Compute:محاسبه کردن
+Dispute:بحث
+Disputable:قابل بحث
+complete:کامل کردن
+Approach:نزدیک شدن، دستیابی، روش و شیوه
+method:روش
+procedure:روش
+technique:روش، تکنیک
+style:سبک و روش
+way:راه، روش
+Manner:روش
+Supplementary:مکمل
+Complementary:تکمیلی
+Portion:سهم و بخش
+Proportion:تناسب
+proportionately:به طور متناسب
+proportional:متناسب، دارای بخش های برابر
+Corporation:گروهی
+Participate:مشارکت کردن
+Primary:ابتدایی
+Primarily:ابتدا
+Primitive:اولیه
+Satisfy:راضی کردن
+Dissatisfaction :نارضایتی
+Saturated:اشباع شده
+Unsaturated:غیر اشباع
+Same:مشابه
+Similar:مشابه
+Similarity:شباهت
+Assimilate:شبیه شدن
+Resemblance:شباهت
+Similitude:شباهت
+Simulation:شبیه سازی
+Stamina:ثبات
+Constant:ثابت
+Genocide:نسل‌کشی
+Suicide:خودکشی
+depreciate:بی ارزش کردن
+devaluate:بی ارزش کردن
+defame:بی ارزش کردن
+discredit:بی ارزش کردن
+degrade:بی ارزش کردن
+Obstacle:مانع
+Persist :پافشاری
+Resist:مقاومت
+Withstand:مقاومت
+Substance:ماده
+Stroke:سکته مغزی
+Stare:ثابت و خیره ماندن
+Structure:ساختار
+Construct:ساختن
+Destructive:مخرب
+Destroy:تخریب
+Obstruction:انسداد
+Reconstruction:بازسازی
+Establish:تاسیس کردن
+Simultaneous:به طور همزمان
+Ectasy:خوشحالی
+Surface:سطح
+Surpass :تجاوز کردن از یک اندازه
+Surplus:مازاد
+Tangible:ملموس
+Intangible:ناملموس
+Contagious:مسری از طریق تماس
+Contingent :محتمل
+Contact:تماس
+Intact :دست نخورده
+tenable:قابل دفاع
+Maintain :حفظ کردن
+Retain :حفظ کردن
+Continue:ادامه دادن
+resume:ادامه دادن
+Contain :شامل چیزی بودن، مهار کردن
+Sustain :تحمل کردن، حفظ کردن
+Sustainable :پایدار
+Temporal:موقت، گیجگاهی
+Temporary:موقتی
+Contemporary:معاصر
+Intend:تمایل داشتن
+Intention:هدف
+Attention:توجه
+Intentionally:از عمد
+Extent:محدوده
+Extend:گسترش دادن
+Transfer:انتقال دادن
+Transmit:انتقال دادن
+Translate:ترجمه
+Transport:حمل و نقل
+Transform:تغییر شکل
+Transfusion :انتقال مایع، تزریق
+Attractive:جذاب
+Abstract :خلاصه
+Contraction:انقباض
+Distract:منحرف کردن
+Extract :استخراج
+Visible:قابل دیدن
+Vision:بینایی
+Envision:تجسم کردن
+Visual:بینایی
+visualize:تجسم کردن
+invisible:غیرقابل دیدن
+Evident:آشکار
+Vital:حیاتی
+Revitalize:حیات بخشیدن
+Revive:احیا کردن
+Survive:زنده مانده
+Victim:قربانی
+Victimize:قربانی کردن
+victory:پیروز شدن
+Conviction:محکوم کردن
+Convince:متقاعد کردن
+Vincible:آسیب پذیر
+Vincibility:آسیب پذیری
+Invincible:شکست ناپذیر
+Invoke:خواهش کردن، دعا کردن
+Evoke:فراخواندن، یادآوری کردن
+Provoke:تحریک کردن
+Vacant:خالی
+Vacation:تعطیلات
+Vacuum:خلا
+Evacuate:خالی کردن
+Equivalent:معادل
+Value:ارزش
+Invaluable:غیر قابل قیمت گذاری، با ارزش
+Evaluate:ارزیابی
+Advent :پیدایش
+Adventure:ماجرا، حادثه
+Event:حادثه
+Eventually:سرانجام
+Conventional:مرسوم
+Intervention:مداخله
+Prevention:جلوگیری کردن
+Invention:اختراع
+wreck:خراب کردن
+wrong:نادرست
+wrap:پوشاندن، دور چیزپیچیدن
+write:نوشتن
+wrestle:کشتی گرفتن
+wrinkle:چروک افتادن
+Abort:سقط کردن
+Abscess:آبسه
+boil:آبسه
+pile up:روی هم انباشتن
+add up:افزودن
+Accomplish:انجام دادن
+Implement:انجام دادن، اجرا کردن
+Perform:انجام دادن
+Undertake:انجام دادن
+carry out:انجام دادن
+approve:تایید کردن
+affirm:تایید کردن
+verify:تایید کردن
+Adaptable:سازگار
+compatible:سازگار
+Additional:اضافی، بیشتر
+extra:اضافی، بیشتر
+further:اضافی، بیشتر
+excess:اضافی
+Adequacy:کفایت
+sufficiency:کفایت
+Adquate:کافی
+Advocate:طرفداری کردن
+support:حمایت کردن
+favor:لطف کردن، حمایت کردن
+biased toward:طرفداری کردن
+Affiity:نزدیکی، وابستگی
+relationship:رابطه
+rapport:ارتباط، توافق
+Affluent:ثروتمند
+wealthy:ثروتمند
+well off:ثروتمند
+well to do:ثروتمند
+Allied:متحد، یکپارچه
+unified:متحد، یکپارچه
+united:متحد، یکپارچه
+integrated:متحد، یکپارچه
+Account for:توضیح دادن، مسئول چیزی بودن
+Allied  to‌:مرتبط با
+realated:مرتبط
+Allegede:ادعا شده، بنا به گفته کسی
+claimed:ادعا شده
+Ambiguity:ابهام
+vagueness:ابهام
+Anecdotal:حرف که مستند نباشد
+Apatheric:بی علاقه و بی میل
+uninterested:بی علاقه و بی میل
+Application:کاربرد، استفاده از چیزی ،درخواست
+indication:کاربرد
+usage:کاربرد
+Abstain:خودداری کردن
+refrain:خودداری کردن
+avoid:خودداری کردن
+Approximately:تقریبا
+nearly:تقریبا
+almost:تقریبا
+roughly:تقریبا
+virtually:تقریبا
+Archive:تاریخچه، سابقه
+record:سابقه، ضبط کردن
+Array:نظم، به ردیف قرار دادن
+group:گروه
+Artificial:مصنوعی
+manufactured:مصنوعی
+unatural:مصنوعی
+fabricated:مصنوعی
+synthetic:مصنوعی
+l.e:بدین معنی که
+As a result of:در نتیجه ی
+due to:به واسطه
+absorb:جذب کردن
+Associated:مرتبط
+related:مرتبط
+connected:مرتبط
+linked:مرتبط
+Augment:افزایش
+increase:افزایش
+raise:افزایش
+escalate:افزایش
+maximize:افزایش
+accelerate :افزایش
+Assumption:فرضیه
+hypothesis:فرضیه
+premise:قاعده
+Attribute:ویژگی
+characteristic:ویژگی
+trait:ویژگی
+feature:ویژگی
+property:ویژگی
+specification :ویژگی
+Awful:ترسناک
+horrible:ترسناک
+nasty:زشت و زننده
+repugnant:زشت و زننده
+Availability:دسترسی
+accessibility:دسترسی
+access:دسترسی
+Awareness:آگاهی
+consciousness :هوشیاری
+alertness:هوشیاری
+circumspection:هوشیاری
+Based on:براساس
+on the basis:براساس
+on the premise :براساس
+on the ground that:براساس
+Beam:پرتو
+ray:پرتو
+Bout:حمله
+Outburst:حمله
+attack:حمله
+Cessation:توقف
+block:مسدود کردن
+decease:مرگ
+conditions:شرایط، بیماری
+environment:محیط
+surrounding:محیط
+status:وضعیت
+circumvent:کلک زدن
+combination:ترکیب
+integration:ترکیب
+blend:ترکیب
+comparison:مقایسه
+analogy:مقایسه، شباهت
+contrast:مقایسه، تضاد
+Complex:مجموعه، پیچیده
+building:مجتمع
+complexity:پیچیدگی
+intricacy:پیچیدگی
+intricate:پیچیده
+complicated:پیچیده
+elaborate:پیچیده
+sophisticated:پیچیده
+comprise of:شامل
+consist of:شامل
+involve:شامل بودن، شامل شدن
+compromised:تضعیف شده
+suppressed:سرکوب شده
+weakened:ضعیف شده
+creativity:خلاقیت، نوآوری
+innovation:خلاقیت، نوآوری
+conceal:مخفی کردن
+disguise:مخفی کردن
+concept:مفهوم
+sense:مفهوم
+notion:مفهوم
+concurrently:به طور همزمان
+simultaneously:به طور همزمان
+at the same time:به طور همزمان
+confirm:تایید کردن
+confict:درگیری، تضاد
+strife:درگیری
+conformity:انطباق، پیروی
+congruence:همگونی، هم شکلی
+homogeneity:همگونی، هم شکلی
+consequence:نتیجه، پیامد
+result:نتیجه
+outcome:نتیجه، خروجی
+ramification:نتیجه، عواقب، انشعاب
+considering:با توجه به
+respect to:با توجه به
+conserve:حفظ کردن، کنسرو
+protect:محفاظت کردن
+consolidate:تحکیم کردن
+fasten:تقویت کردن
+strengthen:تقویت کردن
+solidity:تحکیم کردن
+reinforce:تقویت کردن
+fortify:تقویت کردن
+constitute:تشکیل دادن
+form:تشکیل دادن
+constrain:تحمیل کردن، محدود کردن
+constricted:محدود شده
+Consultation:مشورت
+negotiation:مذاکره
+mentoring:مشورت
+consumption:مصرف
+use up:مصرف
+containment:مهار
+mentor:مشاور
+contaminate:آلوده کردن
+infect:عفونی کردن
+contemplation:تفکر
+thinking :تفکر
+meditation :اندیشه، تفکر
+reflection:تفکر، انعکاس
+contend:مبارزه کردن، ادعا کردن
+deal with:سروکار داشتن با، معامله کردن با
+ingredients:اجزا
+elements:اجزا
+contest:رقابت
+rivairy:مرقابت
+competition:رقابت
+context:زمینه
+background:زمینه
+texture:بافت، زمینه، متن
+possible:ممکن
+contradiction:مخالفت، تضاد
+opposition:مخالفت، تضاد
+unlike:برخلاف
+contribute:همکاری، نقش داشتن
+incorporate:متحد کردن، مشارکت دادن
+contribution:همکاری، نقش داشتن
+contrive:طرح ریختن، نقشه کشیدن
+plan:طرح ریختن، نقشه کشیدن
+fabricate:جعل  و تقلید کردن، ساختن
+plot:طرح ریختن، نقشه کشیدن
+devise:درست کردن، طرح ریختن
+design:طراحی
+controversial:بحث برانگیز
+debatable:بحث برانگیز
+arguable:بحث برانگیز
+convalescent:بهبودی
+recuperation:بهبودی
+recovery:بهبودی
+rehabilitation:بهبودی، توانبخشی
+convenience:راحتی، آسودگی
+relief:راحت، تسکین دادن
+tranquility:راحت
+comfort:راحتی
+orthodox:معمول
+normal:طبیعی
+usual:معمول
+convert:تبدیل کردن
+change:تغییر دادن
+convertible:قابل تبدیل و تغییر
+changeable:قابل تبدیل
+variable:متغیر
+convey:منتقل کردن
+copious:فراوان
+abundant:فراوان
+plentiful:فراوان
+extensive:وسیع ،پهناور
+Numerous:فراوان
+obesity:چاقی
+fatness:چاقی
+plump:چاق
+overweight:اضافه وزن
+chubby:چاق
+obese:چاق
+Cripple:چاق
+conform:تطابق
+harmony:هماهنگی
+corrode:پوسیدن
+decay:فاسد شدن
+corroded:پوسیدگی
+rotten:فاسد، خراب
+carious:پوسیده
+decayed:فاسد
+cosmic:جهانی
+global:جهانی
+cosmetic:وسیله آرایش
+beauty:زیبایی
+product:محصول، ایجاد کردن
+contradict:تضاد
+oppose:مخالفت کردن
+neutralize:خنثی کردن
+constriction:انقباض، تنگی
+shrinking:کاهش یافتن، کوچک شدن
+cramp:گرفتگی عضلانی
+muscle:ماهیچه
+crave:اشتیاق و تمایل
+desire:میل، آرزو، تمایل داشتن
+wish:آرزو
+willing:راضی، مشتاق
+enthusiasm:شور و اشتیاق، علاقه
+aspire:آرزو، اشتیاق
+dissatisified:ناراضی
+criticizing:منتقد
+crucial:حیاتی، بحرانی
+essential:ضروری
+critical:حیاتی، بحرانی، انتقادی
+necessary:ضروری
+indispensable:ضروری، حتمی
+urgent:ضرورت
+inevitable:حتمی، اجتناب ناپذیر
+cruelty:بی رحمی
+inhumanity:بی رحمی
+brutality:بی رحمی
+crux:قسمت و نکته مهم
+essence:قسمت و نکته مهم
+point:نکته، نقطه، امتیاز
+main:اصلی
+cull:جمع آوری کردن
+cultivation:کشت میکروارگانیسم
+curative:درمانی
+healing:درمانی
+therapeutic:درمانی
+medicinal:درمانی
+remedial:درمانی
+corrective:اصلاحی
+restorative:احیاکننده
+tonic:صوتی، کشش، داروی درمانی
+curiosity:کنجکاوی
+interest:علاقه
+currently:اخیرا
+recently:اخیرا
+cut down:کاهش دادن
+reduce:کاهش دادن
+dawn:آغاز، طلوع آفتاب
+sunrise:طلوع
+initiation:شروع
+debilitate:ناتوان کردن
+enervate:ناتوان کردن
+Debrief :پرسش کردن
+enquire:تحقیق کردن
+question:سوال، سوال پرسیدن
+deceive:فریب دادن
+mislead:فریب دادن
+deceleration:کاهش
+reduction :کاهش
+mitigation:کاهش
+decline:کاهش
+decrease :کاهش
+abatement:کاهش
+decency:شایستگی
+respect:احترام
+dignity:بزرگی و شایستگی
+deceptive:فریبنده و گمراه کننده
+misleading:فریبنده
+illusionary:فریبنده و گمراه کننده
+illusive:گمراه کننده
+fraudulent:متقلب، جعلی
+treacherous:فریبنده و گمراه کننده
+dishonest:غیر قابل اعتماد
+declare:آشکار کردن
+announce:آشکار کردن، تبلیغ کردن
+publicize:به اطلاع عموم رساندن، تبلیغ کردن
+broadcast:پخش کردن
+decoding:رمزگشایی
+decrypting:رمزگشایی
+deciphering:رمزگشایی
+dedicated:وفادار
+committed:وفادار
+devoted:وفادار
+loyal:وفادار
+depletion:حذف
+elimination:حذف
+deletion:حذف
+deplete:حذف کردن
+eradication:ریشه کن کردن، از بین بردن
+removal:حذف
+remove:حذف کردن
+omission:حذف
+defect:نقص، کمبود
+deficiency:نقص، کمبود
+drawback:نقص، کمبود
+defective:ناقص
+incomplate:ناقص
+imperfect:ناقص
+definitely:قطعا
+absolutely:قطعا
+certainly:قطعا
+surely:قطعا
+unquestionably:قطعا
+doubt:شک
+undoubtedly:قطعا
+undeniably:قطعا
+deformity:از شکل افتادگی
+malformation:بدشکلی
+distortion:از شکل افتادگی، تحریف
+abnormality:نقص، غیر طبیعی بودن
+disfigurement:از شکل افتادگی
+defuse:خنثی کردن
+deactivate:خنثی کردن
+disarm:بی ضرر کردن، خنثی کردن
+disable:ناتوان کردن، خنثی کردن
+degenerative:مخرب
+devastate:خراب کردن
+delay:تاخیر، به تاخیر انداختن
+postpone:به تاخیر انداختن
+put off:به تاخیر انداختن
+prolong:طولانی کردن، به تاخیر انداختن
+deleterious:مضر، آسیب رسان
+harmful:مضر، آسیب رسان
+damaging:مضر، آسیب رسان
+detrimental:مضر
+adverse:بد، مضر
+unfavorable:ناخواسته، نامطلوب
+undesirable:ناخواسته، نامطلوب
+deliberate:عمدی
+puposeful:عمدی
+delighful:دلپذیر
+enjoyable:لذت بخش
+pleasurable:خوشایند
+pleasant:خوشایند
+delinquency:تخلف
+crime:جرم، تخلف
+misconduct:بد رفتاری، تخلف
+offense:توهین، حمله
+misdeed:جرم
+violation:خشونت
+delve:سوراخ کردن
+puncture:سوراخ کردن
+pierce:سوراخ کردن
+perforate:سوراخ کردن
+make hole:سوراخ کردن
+dementia:زوال عقل
+mental decline:زوال عقل
+insanity:دیوانگی
+demotivating:بی انگیزه کردن، ناامید کردن
+depresing:ناراحت کردن
+dispirit:ناامید کردن
+disappointing:ناامید کننده
+density:غلظت
+tickness:ضخامت
+depart:رفتن، ترک کردن
+leave:ترک کردن
+abandon:ترک کردن، رها کردن
+derived from:مشتق شدن از
+stem:ریشه، پایه
+originate:نشات گرفتن
+despite:علی رغم
+in spite of:علی رغم
+disastrous:مصیبت بار،فجیع
+catastrophic:مصیبت بار، فجیع
+ruining:مخرب
+detection:شناسایی
+inspection:بررسی
+examination:بررسی، آزمایش
+deteriorate:بدتر کردن
+worsen:بدتر کردن
+exacerbate:بدتر کردن، خراب کردن
+degenerate:بدتر کردن
+aggravate:بدتر کردن
+dexterity:مهارت
+talent:استعداد
+skill:مهارت
+mastery:مهارت، برتری
+dictatorial:زورگویانه
+undemocratic:غیر دموکراتیک
+authoritarian:مستبد
+differentiate:تمایز قائل شدن
+distinguish:تمایز دادن ،فرق گذاشتن
+discriminate:فرق قائل شدن
+dilation:اتساع
+widening:اتساع
+guideline:دستورالعمل
+disappointed:ناامید
+frustrated:بیهوده
+hapless:درمانده
+disapprove:رد کردن
+frown on:مخالفت کردن
+criticize:انتقاد کردن
+reject:مخالفت کردن
+discernible:قابل تشخیص
+detectable:قابل شناسایی
+distinguishable:قابل تشخیص
+discount:تخفیف، کاهش دادن
+lessen:کاهش دادن
+diminish:کاهش دادن
+mitigate:کاهش دادن
+abate:کاهش دادن
+discouraging:ناامید کننده
+discovery:کشف کردن
+disclose:آشکار کردن
+explore:کشف کردن
+discrete:مجزا
+seprate:مجزا
+disgust:نفرت
+hate:نفرت
+repugnance:مخالفت، تناقض
+dislocation:در رفتگی، جا به جایی
+disjointing:دررفتگی
+sprain:پیج خوردن
+disorder:اختلال
+condition:وضعیت، بیماری، اختلال
+illness:بیماری
+disease:بیماری
+disorientation:سرگردانی
+confusion:گیجی
+disposition:حالت، حالت
+complexion:چهره، ظاهر
+appearance:ظاهر
+dispropertionate:نامتناسب
+mismatch:نامتناسب
+inharmonious:ناهماهنگ
+asymmetric:نابرابر
+disseminate:منتشر کردن یا شدن
+dissipate:پراکنده کردن
+circulate:چرخیدن، پراکنده کردن یا شدن
+spread:پخش کردن، پخش شدن
+distribute:پخش کردن، توزیع کردن
+disperse:پراکنده کردن
+diffuse:پراکنده کردن
+dissolve:حل کردن
+disintegrate:از هم پاشیدن، تجزیه شدن
+dismiss:خارج کردن، برکنار کردن
+melt away:آب شدن، از بین رفتن
+dissuade:منصرف کردن
+deter:جلوگیری کردن، منصرف کردن
+distant:دور
+far:دور
+distend:متورم شدن
+swell:متورم شدن
+distinction:تفاوت
+diffrence:تفاوت
+dissimilarity:تفاوت
+distintively:به شکل مجزا
+diffrently:به شکل متفاوت
+diferentiate:تمایز
+distort:تحریف کردن
+deform:تغییر دادن
+distress:اضطراب
+turmoil:اضطراب
+agitation:اضطراب
+stress:اضطراب
+anxiety:اضطراب
+divert:منحرف شدن، منحرف کردن
+dizzy:سرگیجه
+vertigo:سرگیجه
+docile:فروتن، مطیع
+obedient:فروتن، مطیع
+submissive:فروتن، مطیع
+moderate:خفیف، معتدل
+domestic:بومی
+native:بومی، ذاتی
+indigenous:بومی
+dominant:غالب بودن، برتری
+predominant:برتر
+prevailing:شایع
+ruling:حکم، رایج
+governing:حکومت
+domination:غالب بودن، برتری
+superiority:برتری
+predominance:برتری
+donation:اهدا
+dedication:اهدا، فداکاری
+grant:دادن، اهدا کردن
+drastically:شدیدا
+severely:شدیدا
+intensely:شدیدا
+violently:شدیدا
+intensively:شدیدا
+vigorously:شدیدا
+extremely:شدیدا
+highly:شدیدا
+dubious:مشکوک
+tentative:احتمالی، غیر قطعی
+uncertain:نا مشخص
+suspicious:مشکوک
+unreliable:غیر قابل اعتماد
+questionable:نامطمئن
+duty:وظیفه، کار
+task:وظیفه، کار
+function:نقش، عملکرد
+work:کار، کار کردن
+dynamic:پویا
+active :فعال
+robust:سالم
+danger:خطر
+risk:خطر، به خطر انداختن
+hazard:خطر، در معرض خطر قرار دادن
+threat:خطر و تهدید، تهدید کردن
+jeopardy:تهدید، تهدید کردن
+dyslexia:ناتوانی در خواندن و نوشتن
+efficient:موثر
+efficacious:موثر
+impressive:موثر
+effectual:موثر
+Effectiveness:تاثیر
+efficacy:تاثیر
+efficiency:کارآیی
+Struggle:تلاش کردن، درگیر شدن
+qualified:واجد شرایط
+Elusive:گیج کننده
+seductive:فریبنده
+alluring:فریبنده
+tempting:فریبنده
+insert:قراردادن
+Embryo:جنین
+fetus :جنین
+emission :دفع، ترشح
+discharge:دفع
+release:آزاد کردن
+excretion:ترشح
+secretion:ترشح
+emotion:احساس
+feeling:احساس
+affection:احساس
+passion:احساس
+emphasize:تاکید کردن
+highlight:تاکید کردن
+enclose:محدود کردن
+constrict:منقبض کردن، جمع کردن
+restrict:محدود کردن
+inspire:تشویق کردن، استنشاق کردن
+motivate:تشویق کردن، تحریک کردن
+encouraging:امیدوار کننده
+promising:امیدوار کننده
+motivating:امیدوار کننده
+endanger:به خطر انداختن
+threaten:تهدید کردن
+Jeopardize:تهدید کردن
+endeavor:تلاش کردن
+try:تلاش کردن
+attemp:اقدام کردن، تلاش کردن
+strive:تلاش کردن
+endure:تحمل کردن
+tolerate:تحمل کردن
+bear:تحمل کردن
+stand:ایستادن
+abide:تحمل کردن، ماندن
+ensure:تضمین کردن
+guarantee:ضمانت
+warranty:ضمانت
+assure:تضمین کردن
+entanglement:گرفتاری
+involvement:درگیری
+entertaining:سرگرم کننده
+fun:سرگرم کننده
+entirely:کاملا
+completely:کاملا
+fully:کاملا
+totally:کاملا
+wholly:کاملا
+epidemic:همه گیری
+widespread:شایع، همه گیر
+pervasive:همه گیری
+episode:قسمت
+period:دوره
+part:قسمت
+equipment:تجهیزات
+facility:وسیله، سهولت
+apparatus:لوازم
+tools:ابزار، عوارض
+phase:دوره، مرحله
+eradicate:ریشه کن کردن
+eliminate:ریشه کن کردن
+get ride of:از شر چیزی خلاص شدن
+ergogenic:نیروزا
+empowering:نیروزا
+amplifying:تقویت کننده
+energetic:نیروزا
+reinforcing:نیروزا
+fallacious:اشتباه
+erroneosly:اشتباها
+mistakenly:اشتباها
+soar:بالا رفتن
+mount:کوه، افزایش یافتن
+escape:فرار کردن
+flight:پرواز، فرار
+run away:فرار
+estimate:تخمین زدن
+measure:اقدام، اندازه گیری
+assess:ارزیابی
+calculate:محاسبه کردن
+project:طرح، طرح ریختن
+eternal:دائمی، بی وقفه
+perpetual:دائمی، بی وقفه
+immortally:فنا ناپذیر
+everlasting:همیشگی، دائمی، جاودان
+ethical:اخلاقی
+moral:اخلاقی
+ethnical:نژادی
+racial:نژادی
+esthetic:مرتبط با زیبایی
+equal:یکسان
+identical:مشابه
+like:شبیه، دوست داشتن
+elation:سرافرازی
+happiness:خوشحالی
+joy:لذت، خوشی
+delight:خوشی، لذت بردن
+exhilaration:نشاط
+ecstasy:سرخوشی
+Evade:اجتناب کردن
+Evaluation:ارزیابی کردن
+assessment:ارزیابی کردن
+appraisal:ارزیابی کردن
+gauging:اندازه گیری
+rating:درجه، درجه بندی
+estimation:تخمین
+checkup:ارزیابی
+test:آزمایش
+eventual:نهایی
+final:پایان
+ultimate:نهایی
+concluding:پایانی
+Eventually :درنهایت
+finally:سرانجام
+Evidently:به شکل روشن و آشکار
+obviously:به شکل روشن و آشکار
+clearly:به طور واضح
+visibly:قابل دیدن
+appearantly:ظاهرا
+Evolution:تکامل
+development:تکامل
+evolve:رشد کردن، تکامل یافتن، بیرون دادن
+advance:پیشرفت
+Exceeding:زیاده روی
+Excessive:اضافی
+redundant:اضافی، زائد
+Exclude :جدا کردن
+isolate:مجزا کردن، قرنطینه کردن
+separate:مجزا کردن، جدا کردن
+uniquely:منحصرا
+particularly:مخصوصا
+executive:اجرایی
+administrative:اجرایی
+Administration:مدیریت، حکومت، تجویز دارو
+Administrator:اجراکننده
+Administered:تجویز شده
+Managerial:ریاست
+exhausting:طاقت فرسا، خستگی آور
+unbearable:سخت، طاقت فرسا
+intolerable:سخت، طاقت فرسا
+existence:وجود، حضور
+presence:وجود، حضور
+expensive:گران
+costly:گران
+experience:تجربه، تجربه کردن
+experiment:تجربه، تجربه کردن
+experimental:تجربی و آزمایشگاهی
+laboratory:آزمایشگاهی
+expert:متخصص
+specialist:متخصص، کارشناس
+proficient:متخصص
+provider:متخصص، کارشناس
+expertise:تخصص
+proficiency:تخصص
+competence:صلاحیت، توانایی
+knowledge:دانش
+ability:توانایی
+explanation:توضیح
+clarification:توضیح
+description:توضیح، توصیف
+justification:توجیه
+juice:عصاره
+exquisitely:پیچیده
+elaborately:پیچیده
+external:خارجی
+outward:به طرف بیرون، ظاهر
+extinct:از بین رفته، منقرض
+extinguished:از بین رفته
+nonexistent:از بین رفته
+factual:واقعی
+real:واقعی
+actual:واقعی
+true :صحیح، حقیقی
+genuine:واقعی، حقیقی
+faculties:قوه ذهنی
+capability:توانایی، قابلیت
+capacity:ظرفیت
+fading:محو شونده
+declining:کاهش یابنده
+fake:جعلی
+supposed:فرض شده
+FALSE:اشتباه
+untrue:اشتباه
+incorrect:اشتباه
+mistaken:اشتباه
+fantasty:خیال و تصور
+wide:گسترده
+vast:گسترده
+fetal:کشنده
+deadly:کشنده
+lethal:کشنده
+mortal:کشنده
+incurable:غیر قابل درمان
+untreatable:غیر قابل درمان
+feasibility:امکان
+possibility:امکان
+fervent:گرم، با اشتیاق
+passionate:بااحساس
+enthusiastic:مشتاق
+feverish:گرم
+hot:داغ
+burning:سوزان
+finding:کشف
+exploration:کشف
+flexibility:انعطاف پذیری
+adaptability:انعطاف پذیری
+adjustability:سازش
+flooding:خونریزی، طغیان
+overflowing:سرشار از چیزی
+occupying:اشغال کردن، سرگرم کردن
+engrossing:جذاب، سرگرم کننده
+fluctuation:نوسان وتغییر
+variation:تغییر
+alteration:تغییر
+oscillation:نوسان
+instability:ناپایداری
+follow:دنبال کردن
+pursue:دنبال کردن
+following:بعدی، دنبال کردن
+latter:بعدی
+next:بعدی
+succeeding:بعدی
+subsequent:بعدی
+forbidden:ممنوع
+impermissible:غیر مجاز
+banned:ممنوع
+forecast:پیش بینی کردن
+predict:پیش بینی کردن
+foreign:بیگانه
+alien:بیگانه، مخالف
+foreseeable:قابل پیش بینی
+predictable:قابل پیش بینی
+formidable:قوی
+strong:قوی
+powerful:قوی
+mightly:قوی
+solid:جامد، محکم
+fortunately:خوشبختانه
+luckily:خوشبختانه
+fragile:شکننده وضعیف
+breakable:شکننده
+weak:ضعیف
+fragmented:تکه تکه شده
+disintegrated:تکه تکه شده
+dissected:تکه تکه شده
+segmented:تکه تکه شده
+framwork:چهارچوب
+mold:قالب، الگو
+template:چهارچوب
+pattern:الگو
+frame:چهارچوب
+frequent:مکرر
+repeated:مکرر
+periodic:دوره ای، متناوب
+successive:پشت سر هم، به ترتیب
+frightening:ترسناک
+terrifying:ترسناک
+frown at:مخالفت کردن
+fruitless:بی ثمر
+futile:بی ثمر
+fulfill:برآورده کردن
+meet:جلسه، ملاقات کردن، برآورده کردن
+fuming:دودزا، خشمگین
+funds:سرمایه
+stock:سرمایه، ذخیره
+furthermore:به علاوه
+moreever:به علاوه
+in addition:به علاوه
+besides:به علاوه
+gender:جنس
+sex:جنس
+germinate:جوانه زدن
+sprout:جوانه زدن
+grow:رشد کردن، بزرگ شدن
+gestate:حامله
+pregnant:حامله
+gifted:بااستعداد
+talented:بااستعداد
+give rise to:منجر شدن به
+result in:منجر شدن به
+conducive to:منجر شدن به
+lead to:منجر شدن به
+grab:گرفتن، چنگ زدن، ربودن
+receive:دریافت کردن، گرفتن، رسیدن
+take:گرفتن، به دست آوردن
+catch:گرفتن، فهمیدن
+capture:گرفتن
+obtain:به دست آوردن
+acquire:به دست آوردن، کسب کردن
+hold:نگه داشتن
+committment:ضمانت
+hallucination:خیال، توهم
+halted:متوقف شده
+stopped:متوقف شده
+handicapped:ناتوان
+impotent:ناتوان
+deficient:کمبود، نقص
+disabled:ناتوان
+handle:دسته، به کار بردن، اداره کردن
+tackle:از عهده کاری برآمدن
+work out:حل کردن
+solve:حل کردن
+cope with:از پس چیزی برآمدن
+hard evidence:مدرک معتبر
+acid test:وسیله آزمایش
+have a bearing on:ارتباط داشتن با
+have something to do with:ارتباط داشتن با
+relation:رابطه
+relevance:ارتباط
+hazardous:خطرناک
+risky:خطرناک
+dangerous:خطرناک
+unsafe:ناایمن
+insecure:ناایمن
+Healthy:سالم
+sound:سالم، صدا، به نظر رسیدن
+vigorous:شدید، قوی
+lively:سالم
+hectic:گیج کننده
+problematic:گیج کننده
+confusing:گیج کننده
+herbal:گیاهی
+vegetative:گیاهی
+hemorrhage:خونریزی
+bleeding:خونریزی
+herbalism:طب گیاهی، گیاهی
+emphasis:تاکید کردن
+historical:تاریخی
+ancient:باستانی
+hostility:مخالفت و دشمنی
+enmity:دشمنی
+opposing :مخالف
+imminent:قریب  الوقوع
+probable:محتمل
+impart:منتقل کردن، فاش کردن
+reveal:آشکار کردن
+impartial:بی طرف
+unbiased:بی طرف
+impede:مانع بودن
+bar:جلوگیری کردن
+obstruct:جلوگیری کردن
+hinder:مانع بودن
+inhibit:جلوگیری کردن
+hamper:جلوگیری کردن
+prevent:جلوگیری کردن
+impedance:مانع
+barrier:مانع
+blockage:مانع
+impediment:مانع
+hindrance:مانع
+inhibition:منع، جلوگیری
+impetus:محرک، انگیزه
+incentive:محرک، انگیزه
+spur:محرک، انگیزه
+motivation:محرک، انگیزه
+impulse:محرک، انگیزه
+stimulus:محرک
+catalyst:محرک
+impulsion:تحریک
+momentum:محرک
+apply:افزودن، درخواست کردن، اجرا کردن
+execute:اجرا کردن
+implicate:دلالت کردن بر، اشاره داشتن به
+indicate:اشاره کردن
+imply:اشاره کردن
+importance:اهمیت
+significance:اهمیت
+infirm:ناتوان
+inefficient:ناکافی
+unable:ناتوان
+incapable:ناتوان
+powerless:ناتوان
+impovershed:فقیر
+poor:فقیر
+weaken:ضعیف شده
+improbable:غیر ممکن
+unlikely:بعید
+impossible:غیر ممکن
+improper:نامناسب
+inappropriate:نامناسب
+improvments:پیشرفت ها
+in contrast with:در مقایسه با
+compared to:در مقایسه با
+in light of:به واسطه ی
+owing to:به واسطه ی
+thank to:به واسطه ی
+by virtue of:به واسطه ی
+inaccessibility:عدم دسترسی
+unavailability:عدم دسترسی
+inadequacy:بی کفایتی
+inefficiency:نا کارامدی
+incompetency:بی کفایتی
+inattentive:بی توجه
+careless:بی دقتی
+thoughtless:بی فکری
+mindedness:گرایش ذهنی، درک
+inborn:ذاتی
+natural:طبیعی، ذاتی
+incapacitated:تضعیف شده، ناتوان
+incite:تحریک کردن
+stimulate:تحریک کردن
+instigate:تحریک کردن
+excite:تحریک کردن
+arouse:تحریک کردن
+induce:تحریک کردن
+inclination:تمایل
+willingness:تمایل
+comprise:شامل بودن
+contain:شامل بودن
+consist:شامل بودن
+encompass:شامل بودن
+insertion:جای گذاری
+embedment:جای گذاری
+inclusive:شامل
+comprehensive:جامع
+convincing:قانع کننده
+persuasive:قانع کننده
+compelling:قانع کننده
+income:درآمد
+revenue:درآمد
+inconclusive:غیرقطعی
+incomplete:نا تمام
+partial:جزئی، طرفدار
+indefinite:نامشخص
+unproved:تایید نشده
+unconfirmed:تایید نشده
+incriminate:متهم کردن
+accuse:متهم کردن
+indict:متهم کردن
+incubation:دوره نهفتگی یا کمون
+latent:پنهان، مخفی
+independet:مستقل
+self governing:مستقل
+self ruling:خودرای
+self determining:مستقل
+autonomous:مستقل و خودکار
+refer:اشاره داشتن
+indicator:شاخص، نشانگر
+index:شاخص
+criterion:ملاک، معیار
+indiffrent:بی تفاوت
+apathetic:بی تفاوت
+unconcerned:بی توجه، بی تفاوت
+indistinguishable:غیر قابل تمایز
+undetectable:غیر قابل شناسایی
+unrecognizable:غیر قابل شناسایی
+unidentifiable:نا مشخص، نا معلوم
+people :مردم
+ones:افراد
+motionless:بی حرکت
+immobile:بی حرکت
+stationary:بی تغییر
+unavoidable:غیر قابل پیشگیری
+assured:تضمین شده
+certain:معین، مشخص
+fated:مقدر شده
+predetermined:از پیش تعیین شده
+unpreventable:غیر قابل پیش گیری
+inexperienced:بی تجربه
+amateur:تازه کار
+non specialist:بی تجربه
+layman:تازه کار
+infancy:کودکی
+childhood:کودکی
+infectious:عفونی
+septic:عفونی
+suppurative:عفونی
+inferior:پست، پایین
+subordinate:پایینی، زیر دست
+junior:کم، کوچک
+minor:کوچک، کم اهمیت، اقلیت
+infirmity:ضعف، ناتوانی
+weekness:ضعف
+disability:ناتوانی
+impotency:ضعف
+impact:تاثیر
+impression:تاثیر
+informing:آموزنده
+instructive:آموزنده
+infuriating:آزاردهنده
+irritating:آزاردهنده
+infousion:تزریق
+injection:تزریق
+ingenious:خلاق
+skilled:ماهر
+skillful:ماهر
+adept:استاد، ماهر
+ingest:خوردن
+consume:مصرف کردن
+swallow:قورت دادن
+take in:پذیرفتن، فهمیدن
+eat:خوردن
+devour:خوردن، بلعیدن
+inherent:ذاتی
+innate:ذاتی
+inintiate:شروع کردن
+launch:شروع کردن
+commence:شروع کردن
+onset:شروع کردن
+outbreak:شیوع، وقوع
+proceed:شروع کردن
+novelty:نوآوری
+inoculation against:واکسینه کردن یا شدن
+immunity:ایمنی
+inoffensive:بی ضرر
+harmless:بی ضرر
+nonviolent:بی خشونت
+nonaggressive:غیر تهاجمی
+inorganic:غیر طبیعی
+inquire:سوال کردن، تحقیق  کردن
+investigate:تحقیق  کردن
+probe:کاوش، بررسی
+research:تحقیق  کردن
+examine:بررسی کردن
+study:تحقیق، مطالعه
+insidiously:موذیانه
+perniciously:به شکل زیان آور
+treacherously:خائنانه
+insight:بینش
+point of view:نقطه نظر، دیدگاه
+idea:عقیده
+perception:درک
+intuition:بصیرت
+insomnia:بی خوابی
+sleeplessness:بی خوابی
+instant:فوری
+immediate:فوری
+prompt:فوری، سریع
+instantaneous:فوری، آنی
+quick:سریع
+instruction:آموزش، دستورالعمل
+education:تحصیل
+training:تمرین دادن، آموزش
+guidance:راهنمایی
+coaching:اماده سازی
+directing:هدایت
+mental:ذهنی
+severe:شدید
+violent:شدید، خشن
+intensive:شدید
+extreme:شدید، زیاد
+interact:اثر متقابل داشتن، بر هم کنش
+reciprocate:اثر متقابل داشتن
+interaction:اثرات متقابل، برهم کنش
+interply:اثرات متقابل
+interference:تداخل
+disruption:تخریب
+disturbance:مزاحمت
+interruption:اختلال
+interim:موقتی
+impermanent:موقتی
+transient:موقتی
+intermittent:متناوب
+alternating:متناوب
+stagnant:مقطعی
+discontinues:ناپیوسته
+intrusive:مزاحم، مهاجم
+uninvited:ناخوانده
+invaild:نامعتبر
+untrustworthy:نامعتبر
+discredited:بی اعتبار، بی اعتباری
+priceless:بسیار با ارزش ،غیر قابل
+precious:گرانبها
+invariable:بی تغییر
+unalterable:تغییر ناپذیر
+stable:ثابت و پایدار
+permanent:دائمی
+steady:ثابت
+irrelevant:نامرتبط
+unrelated:نامرتبط
+irreparable:جبران ناپذیر
+irreversible:غیرقابل بازگشت
+inadequate:ناکافی
+insufficient:ناکافی
+sparse:کم
+imitate:تقلید کردن
+simulate:تشبیه کردن، شبیه سازی
+rationalization:استدلال
+lack of:کمبود یا نبود چیزی
+absence of:فقدان چیزی
+loss of:فقدان چیزی
+last:طول کشیدن
+persist:اصرار کردن
+hidden:مخفی
+concealed:نهفته
+undercover:مخفی
+lavish:اسراف کردن
+extravagant:ولخرجی، عجیب و غریب
+legality:قانونی
+legitimac:قانونی
+lengthen:طولانی کردن
+stretch out:کشیده شده
+protract:طول دادن
+lenient:ملایم، آسان گیر
+easygoing:آسان، آسان گیر
+mild:ملایم، معتدل
+gentle:آرام
+soft:نرم، ملایم، مهربان
+liable to:مستعد، در معرض
+answerable:مسئول
+responsible:مسئول
+liable for:مستعد، محتمل
+susceptible:حساس، آسیب پذیر
+likely to:احتمال دارد که
+link:ارتباط و اتصال
+connection:ارتباط
+association:ارتباط
+joint:متصل، مفصل
+liquefactive:له کننده، آبکی
+look up:جست وجو کردن
+scan:بررسی کردن
+loop:حلقه
+circle:حلقه
+lots of:مقدار زیاد، تعداد زیاد
+a lot of:مقدار زیاد، تعداد زیاد
+lucrative:سودمند
+profitable:سودمند
+productive:سودمند
+lump:توده، گره
+gland:غده
+tumor:توده
+node:گره
+knot:گره
+mass:توده، غده
+maintain:نگه داشتن، حفظ کردن
+retain:حفظ کردن
+preserve:محافظت کردن
+sustain:نگه داشتن، حفظ کردن
+major:عمده، اصلی
+majority:اکثریت
+most of:اکثریت
+make up:جبران کردن
+compensate:جبران کردن
+malady:بیماری
+mandate:قانون
+command:دستور
+order:دستور
+law:قانون
+sign:امضا، علامت
+manufacture:تولیدکننده
+producer:تولیدکننده
+margin:حاشیه
+edge:مرز
+border:مرز
+cognitive:ذهنی
+mentioned:ذکر شده
+stated:بیان شده
+referred:اشاره شده
+merely:صرفا، فقط
+solely:صرفا، فقط
+simply:فقط
+just:فقط
+merge:ترکیب شدن، یکی شدن
+integrate:یکی شدن
+combine:ترکیب شدن یا کردن
+unify:یکی شدن
+unite:یکی شدن
+mix:ترکیب شدن
+merits:محاسن
+privileges:مزایا
+midst:وسط
+middle:مرکز، متوسط
+midpoint:وسط
+slight:کمی، اندکی
+unimportant:کم اهمیت
+negligible:جزیی، بی اهمیت
+trivial:جزیی
+minuscule:کوچک، خرد
+tiny:ریز
+minute:ریز، کوچک، جزیی
+microscopic:ریز
+very small:بسیار کوچک
+little:کوچک
+micro:ریز، بسیار کوچک
+miniature:ریز، بسیار کوچک
+nano:ریز، بسیار کوچک
+misconception:درک نادرست
+misunderstanding:اشتباه فهمیدن
+mistake:اشتباه
+misinterpretation:درک نادرست
+inadvertently:سهوا
+unintentionally:سهوا
+mobilization:همکاری
+preparation:آماده کردن
+arming:مسلح کردن
+equipping:اسباب کاری را فراهم کردن
+accommodated:تغییر کردن، تغییر کرده
+moderated:تعدیل یافته، تعدیل یافتن
+format:قالب، الگو
+matrix:قالب، الگو
+shape:شکل دادن، شکل
+monetary:پولی
+financial:مالی
+money:پول
+economic:اقتصادی
+budgetary:مالی
+Monitoring :نظارت و کنترل
+supervising :نظارت
+checking:کنترل
+Morbidity:بیماری، میزان شیوع بیماری
+affliction:درد، ابتلا به بیمتری
+ilIness:بیماری
+sickness:بیماری
+ailment:درد، بیماری
+disorder :اختلال
+complication:پیچیدگی، عواض
+Mortality :مرگ و میر
+fetality:مرگ و میر
+casually:ناگهان
+mostly:عمدتا
+mainly:عمدتا
+Hemialgia:درد در یک‌طرف سر
+chiefly:عمدتا
+sedentary:بی حرکت
+encourage :تشویق و انگیزش
+motive:انگیزه
+muddled:مبهم
+ambiguous:مبهم
+absurd:نامعقول
+multitude:مقدارزیاد
+many:زیاد
+plenty:مقدارزیاد
+mystery:رمز و راز
+secret:رمز و راز
+naive:ساده لوح
+unsophisticated:ساده لوح
+ingenuous:ساده لوح
+namely:بدین معنی که
+that is:بدین معنی که
+narrowing:محدود و مشخص کردن
+limiting:محدود و مشخص کردن
+define:محدود و مشخص کردن
+meaning:مفهوم
+now:امروزه، حالا
+nowadays:امروزه
+today:امروزه
+noxious:سمی
+poisonous:سمی
+venomous:سمی
+virulent:سمی
+innumerable:زیاد
+countless:بیشمار
+deal:سروکار داشتن، مقدار، معامله کردن
+plenty of:تعداد زیادی
+i.e:به این معنی که
+objection:مخالفت
+objective:هدف، مخالفت کردن
+obligation:تعهد، مسئولیت
+responsibility:مسئولیت
+oblivious:بی توجه، فراموش کار
+inconsiderate:بی اهمیت
+ignorant of:ناآگاه، بی اطلاع
+indifferent to:بی توجه به چیزی
+obsessed about:غرق در فکر راجب چیزی
+occupied:مشغول
+engrossed:مشغول چیزی شده
+preoccupied:گرفتار
+hindrence:مانع
+get:گرفتن، رسیدن
+occurrence:اتفاق افتادن
+incidence:وقوع
+happening:اتفاق افتادن
+odor:بو، رایحه
+smell:بو، بوییدن
+scent:بو، رایحه
+aroma:بو، رایحه
+offend:اهانت کردن
+assault:حمله، حمله کردن
+disturbing:مزاحم
+on the threshold of:در آستانه
+on the verge of:در آستانه
+ongoing:در حال انجام
+in progress:در حال پیشرفت و جلو رفتن
+continuing:در جریان، مداوم
+progressing:در حال پیشرفت و جلو رفتن
+opening:روزنه
+hole:حفره
+perforation:سوراخ
+chance:فرصت
+occasion:فرصت
+optimal:بهینه
+favorable:مناسب
+optimistic:خوش بین
+hopeful:امیدوار
+confident:مطمئن
+positive:مثبت، قطعی، خوشبینانه
+full of hope:امیدوار
+optimize:بهینه سازی
+improve:بهبود بخشیدن
+boost:تقویت کردن
+promote:ارتقا دادن
+oriented:جهت دار
+conscious:با تمرکز، هوشیار
+organic:طبیعی
+orthodox medicine:پزشکی مدرن
+western medicine:پزشکی مدرن
+Out of question:جامع و کامل
+unquestionable:جامع و کامل
+outdated:منسوخ، از مد افتاده
+obsolete:منسوخ
+old fashioned:منسوخ، از مد افتاده
+out of date:تاریخ گذشته
+outmoded:منسوخ، از مد افتاده
+outgoing:برون گرا
+extroverted:برون گرا
+sociable:برون گرا و اجتماعی
+outlook:چشم انداز، دورنما، منظره
+perspective:دیدگاه، منظره
+prospect:پیشبینی، منظره
+outrageous:تهاجمی
+aggressive:پرخاشگر، متجاوز
+brutal:وحشی و بی رحم
+superficial:سطحی
+exterior:ظاهری، بیرونی
+overcome:غلبه کردن
+dominate:غلبه کردن
+prevail:غلبه یافتن، شایع شدن
+defeat:شکست، شکست دادن
+conquer:تسلیم کردن، غلبه یافتن
+triumph:پیروزی، غلبه یافتن
+over developed:فوق پیشرفته
+high teach:فوق پیشرفته
+overhear:استراق سمع کردن
+eavesdrop:استراق سمع کردن
+overlook:غفلت کردن
+disregard:نادیده گرفتن
+neglect:غفلت کردن
+ignore:نادیده گرفتن
+pay no attention:توجه نکردن
+overrun:تجاوز کردن
+exceed:فراتر از حدی رفتن
+go beyond:تجاوز کردن از چیزی
+common:رایج
+Commonplace:معمولی
+typical:معمولی
+Painstaking :رنج آور ،درد آور
+overwhelming:سخت و رنج آور
+palatable:خوش مزه
+tasty:خوش مزه
+delicious:خوش مزه
+delicate:خوش مزه
+palpation:لمس
+touch:لمس
+palpitation :تپش، لرزش
+beat:ضربان، تپش
+pulse :ضربان، نبض
+pendemic:همه گیری
+prevalent:شایع، رایج
+panic:ترس
+fear:ترس
+particulary:مخصوصا
+exclusively:منحصرا
+peculiar:خاص، عجیب و غریب
+unusual:غیرمعمول
+penetrability:نفوذپذیری
+permeability:نفوذپذیری
+understanding:درک
+peripheral:فرعی، خارجی
+periphery:پیرامون ،محیط
+setting:تنظیم، محیط، زمینه
+circumference :محیط
+permanetly:به شکل دائمی، دائما
+eternally:به شکل دائمی، دائما
+permeable:نفوذپذیر
+penetrable:نفوذپذیر
+permissible:مجاز
+allowed:مجاز
+advised:قابل توصیه
+perpetuate:همیشگی کردن، دائمی کردن
+immortalize:جاودان کردن
+eternalize:دائمی کردن
+perspire:عرق کردن
+sweat:عرق کردن
+persuade:متقاعد کردن
+pertinet to:مرتبط با
+associated with:مرتبط با
+related to:مرتبط با
+stage:رده
+pioneer:پشرو، اصلی
+leading:پشرو، اصلی
+plausible:باورکردنی، پذیرفتنی
+acceptable:قابل پذیرش
+believable:قابل باور
+Probability:احتمال
+Potentiate:تقویت کردن
+empower:تقویت کردن
+precedent:قبلی
+preceding:قبلی
+former:قبلی
+precipitate:تسریع کردن
+catalyze:سرعت بخشیدن
+speed up:سرعت بخشیدن
+preconception:پیش فرض
+presupposition:پیش فرض
+Precursor:نشانگر
+prognosis:نشانگر
+indicator :نشانگر
+preference:برتری، اولویت
+priority:برتری، اولویت
+preliminary:مقدماتی، اولیه
+inintial:اولیه
+introductory:مقدماتی، اولیه
+presume:فرض کردن
+assume:فرض کردن
+Suppose:فرض کردن
+imagine:تصور کردن
+initiate:شروع کردن
+set out to:شروع کردن
+profound:اساسی، عمیق
+deep:عمیق
+substantial:اساسی
+profoundly:اساسا، به شکل عمیق
+deeply:اساسا، به شکل عمیق
+prominent:قابل توجه
+considerable:قابل توجه
+outstanding:ممتاز، برجسته
+eminent:برجسته، بزرگ
+dramatic:قابل توجه، چشمگیر
+promptly:فوری
+spontaneously:خود به خود
+prone to:مستعد چیزی
+predisposed to:مستعد چیزی
+prophylaxis:طب پیشگیری
+preventive treatment:طب پیشگیری
+protection:حفاظت
+proponent:طرفدار، توضیح دهنده
+supporter:طرفدار و حامی
+adherent:طرفدار
+share:بخش، قسمت، سهم
+prosperous:خوشبخت
+lucky:خوش شانس
+professional:متخصص
+proximity:نزدیکی
+closeness:نزدیکی
+nearness:نزدیکی
+juxtaposition:مجاورت
+vicinity:مجاورت، نزدیکی
+pulverizing:پودر کردن
+powdering:پودر کردن
+purchase:خریدن
+quackery:حیله گری
+deception:حیله گری
+eligible:واجد شرایط
+quarantined:قرنطینه شده
+isolated:ایزوله شده، جدا شده
+ethnic:نژادی
+dogmatic:متعصب
+rarely:به ندرت
+seldom:به ندرت
+scarcely:به ندرت
+hardly:به شدت، به ندرت
+readiness:آمادگی
+realigning:به موازات و لب به لب قرار گرفتن
+overlapping:دارای اشتراک
+reappear:دوباره روی دادن
+recurring:برگشت
+reason:دلیل
+cause:علت
+reasoning:توضیح دادن
+argumentation:استدلال کردن، توضیح دادن
+recall:به یاد آوردن
+remind:به یاد آوردن
+summon:فراخواندن
+receipt:دریافت، اعلام وصول
+bill:صورت حساب
+recession:فروکش، پسرفت
+regression:پسرفت
+reconciling:آشتی
+compromising:سازش کردن
+history:تاریخچه
+recoverable:قابل درمان
+retrievable:قابل درمان، قابل بازگشت
+recruit:استخدام کردن
+hire:استخدام کردن
+employ:استخدام کردن
+recuperate:بهبودی یافتن
+convalesce:بهبودی یافتن، شفا یافتن
+mend:بهبودی یافتن
+remission:عفو، بهبودی
+redemption:خلاص شدن، آزاد سازی، بازخرید شغلی
+redundancy:اضافی
+superfluous:اضافی
+refer to:اشاره داشتن به
+point to:اشاره داشتن به
+refute:رد کردن، تکذیب کردن
+rule out:رد کردن
+refuse:رد کردن
+regarding:در رابطه با
+with regard to:در رابطه با
+as for:در ارتباط با
+regardless:بدون توجه
+irrespective:بدون توجه
+region:ناحیه
+district:ناحیه
+territory:حدود
+area:ناحیه
+section:بخش
+sector:بخش، قسمت
+regulate:تنظیم کردن
+manipulate:دستکاری، کنترل کردن
+adjust:تنظیم کردن
+manage:کنترل کردن، اداره کردن
+restoration:ترمیم، بازگرداندن
+rehearsal:تمرین، تکرار
+drill:تمرین، تمرین کردن
+review:مرور، خلاصه، مرور کردن
+reimburse:بازپرداخت
+repay:بازپرداخت
+relapse:عود کردن
+recur:عود کردن
+relatively:به طور نسبی
+reliable:قابل اعتماد
+valid:معتبر
+dependable:قابل اعتماد
+credible:معتبر
+relieving:آرام بخش، مسکن
+alleviating:آرام بخش
+palliative:آرام بخش
+alleviation:تسکین یافتن
+remedy:درمان، دارو
+therapy:درمان
+cure:درمان
+remittance:پول، پرداخت
+payment:پرداخت
+remote:دور
+tele:دور
+replacement:جایگزنی
+substitution:جایگزنی
+replenish:احیا کردن، دوباره پر کردن
+restore:ترمیم کردن، باز گرداندن
+fill up:پر کردن
+recharge:دوباره پر کردن، احیا کردن
+replicate:تکرار کردن، پاسخ دادن، همانند سازی
+proliferate:زیاد شدن، همانند سازی
+reproduce:همانندسازی
+recreate:همانندسازی، تفریح کردن
+representative:نماینده چیزی بودن
+repress:سرکوب کردن
+supress:سرکوب کردن
+overwhelm:در هم کوبیدن، از کار انداختن
+reprove:رد کردن
+dispraise:انتقاد کردن، سرزنش کردن
+researcher:محقق
+scholar:محقق
+resentful:بی میل، رنجیده
+aggrieved:صدمه دیده، رنجیده
+irritated:آزرده
+dissatisfied:ناراضی، ناخشنود
+discontented:ناراضی، ناخشنود
+offended:رنجیده
+residual:رسوبی، باقیمانده
+deposit:ته نشین، به جا گذاشتن
+sedimentary:رسوبی
+remaining:باقیمانده
+resonance:تشدید
+intensification:تشدید
+response:پاسخ
+reaction:واکنش
+reply:پاسخ، واکنش
+restless:بی قرار
+agitate:تحریک کردن، آشفتن
+tense:وخیم شدن، سفت، سخت
+reservoir:منبع، ذخیره
+store:ذخیره، منبع
+supply:منبع، تهیه کردن
+restlessness:بی قراری
+irritiation:آزرده بودن، عصبی بودن
+tension:بی قراری
+result from:ناشی از
+resurface:دوباره روی دادن
+reversible:برگشت پذیر
+recyclable:قابل برگشت
+recover:بهبود یافتن، دوباره به دست آوردن
+retrieve:احیا کردن
+resuscitate:احیا کردن
+revolve:چرخیدن
+rotate:چرخیدن
+rigorous:سخت، شدید
+rough:ناهموار، سخت، خشن
+rocket:با سرعت حرکت کردن، راکت
+safeguard:محافظ، محافظت کردن
+defend:دفاع کردن
+guard:محافظ، محافظت کردن
+sanitizer:ضدعفونی کننده
+disinfectant:ضدعفونی کننده
+scarcity:کمبود
+lack:کمبود، فقدان
+shortage:کمبود
+scheme:طرح
+secretions:ترشحات
+excretions:ترشحات
+seek:جستجو کردن
+look for:جستجو کردن، منتظر بودن
+seemingly:ظاهرا
+apparently:ظاهرا
+seem:به نظر رسیدن
+appear:به نظر رسیدن، ظاهر شدن
+selection:انتخاب
+choice:انتخاب
+set up:ایجاد کردن، کار انداختن
+set in operation:ایجاد کردن
+setback:شکست
+failure:شکست
+severity:شدت
+intensity:شدت
+shared:مشترک
+shrink:کوچک شدن
+atrophy:کوچک شدن
+situated:واقع شده در
+located:واقع شده در
+sizeable:بسیار بزرگ
+huge:عظیم، بسیار بزرگ
+skeptical:تردید، شک
+slightly:کمی، اندکی
+a little:کمی، اندکی
+a bit:کمی
+slip:افتادن، خطا
+fall:افتادن
+so far:تاکنون، تا اینجا
+thus for:تاکنون
+already:قبلا، تا کنون
+so called:معروف به
+known:معروف به، دانسته
+soon after:بلافاصله بعد از
+immediately:فورا
+straight away:در لحظه، فوررا
+at once:در لحظه، فوررا
+right away:فورا
+instantly:فورا
+soothe:آرام کردن، تسکین دادن
+palliate:آرام کردن، تسکین دادن
+relieve:آرام کردن، تسکین دادن
+source:منبع
+span:محدوده
+range:طیف، گستره
+species:گونه
+specimen:نمونه
+sample:نمونه
+sponsor:حامی
+specific:خاص، ویژه
+particuler:خاص
+sporadic:کم
+infrequent:نا رایج، کم
+power:قدرت
+strenght:قدرت
+stare at:خیره شدن
+look at:نگاه کردن
+mention:ذکر کردن
+fund:سرمایه، سرمایه گذاری
+stubbornness:سرسختی
+persistence:دوام، مقاومت، اصرار
+subjected to:در معرض چیزی بودن
+exposed to:در معرض چیزی بودن
+submit:تسلیم شدن
+yield:محصول، تسلیم کردن یا شدن
+surender:تسلیم شدن
+give in:تسلیم شدن
+subscribe to:حمایت کردن از چیزی
+substanitally:اساسا
+fundamentally:اساسا
+substitute:تعویض کردن
+replace:جایگزینی کردن
+succession:توالی، ردیف
+superficially:ظاهری، سطحی
+supplement:مکمل
+complement:مکمل
+surrender:تسلیم شدن
+surround:احاطه، محاصره کردن، محدود کردن
+survey:تحقیق
+investigation:تحقیق، بررسی
+survival:بقا، زنده ماندن
+vulnerable:آسیب پذیر
+unnatural:صنعتی
+tactful:ماهر
+perceptible:قابل درک
+lateral:گیجگاهی، کناری
+terminal:پایان، پایانه، کشنده
+terminate:پایان دادن
+end:پایان، پایان دادن، تمام شدن
+finish:پایان دادن
+testimonial:شاهد، مدرک، شهادت دادن
+witness:شاهد، مدرک، شهادت دادن
+thereby:درنتیجه، بنابراین
+therefore:درنتیجه، بنابراین
+thining:لاغر کننده
+slimming:لاغر کننده
+thoroughly:کاملا
+entirly:کاملا
+traceable:قابل ردیابی
+calmness:آرامش
+trauma:زخم، آسیب
+damage:آسیب
+injury:صدمه
+trial:آزمایش
+turbulence:آشفتگی، اغتشاش
+disturblence:اختلال
+unaware:ناآگاه
+uninformed:ناآگاه
+underpin:اساس و مبنای چیزی، حمایت کردن
+underline:اساس و مبنای چیزی
+unforeseen:غیر قابل پیش بینی
+unpredicatable:پیش بینی نشده
+one dimensional:تک بعدی
+unidimensional:یک بعدی
+uniform:یک شکل، لباس یک دست
+unchanging:بدون تغییر و ثابت
+uniformity:یک شکل و ثابت
+invariability:بدون تغییر و ثابت
+monotony:ثبات
+uninitiated:تازه کار، غیر حرفه ای
+non professional:تازه کار
+unitary:یکپارچه، متحد
+integreated:یکپارچه، متحد
+utilize:استفاده کردن، به کار بردن
+exploit:به کار بردن
+benefit from:سود بردن از چیزی
+take advantage:سود بردن از چیزی
+unthouched:دست نخورده
+intact:کامل، سالم، دست نخورده
+unverifiable:نامعتبر، تایید نشده
+unproven:تایید نشده
+upbringing:تربیت ،پرورش
+growth:رشد، تومور
+urgency:ضرورت
+necessity:ضروری بودن
+strange:غیر عادی، بیگانه
+uncommon:غیرمعمول
+vague:مبهم
+vanish:محو شدن
+fade:محو شدن
+ventilation:تهویه
+air condition:تهویه
+viable:با دوام، زنده ماندنی
+surviving:با دوام، زنده ماندنی
+violence:خشونت، شدت
+warmth:گرما
+heat:گرما
+waxing and waning:بزرگ و کوچک شدن
+weird:عجیب و غریب
+bizarre:عجیب و غریب
+well bieng:رفاه
+welfare:رفاه
+wholesome:سالم
+wound:زخم، خستگی
+sore:زخم، مجروح کردن
+lesion:زخم
+ulcer:زخم
+ruin:خراب کردن
+destruct:تخریب
+as important as:به مهمی
+clogged:مسدود
+salt:نمک
+carry back:برگرداندن
+disposal:در دسترس، از شر چیزی خلاص شدن
+ease:سهولت
+bile:صفرا
+individual:فرد، فردی
+sufficient:کافی، شایسته
+compose:ساختن
+insufficiency:بی کفایتی
+lining:لایه، پوشش
+membrane:غشا
+needed:موردنیاز
+over:در طی، بالای، روی
+plaque:پلاک
+press:مطبوعات، فشار
+reuse:استفاده مجدد
+tickening:ضخیم شدن
+total:جمع
+unwelcome:ناخوشایند
+accordingly:براین اساس
+free:آزاد، مستقل، بدون چیزی
+Moreover:علاوه بر این
+non western:سنتی
+own:خود
+‎physiologist:فیزیولوژیست
+pollution:آلودگی
+present:حاضر، ارائه دادن
+rebuild:بازسازی
+take the time:وقت گذاشتن
+topic:موضوع
+altitude:ارتفاع
+create:ایجاد 
+commerce:تجارت
+frequency:فرکانس
+height:ارتفاع
+industry:صنعت
+latitude:عرض جغرافیایی
+marine:دریایی
+naturally:به طور طبیعی
+radiation:تابش
+reaching:رسیدن
+recreation:تفریح
+ultraviolet:ماورا بنفش
+vapor:بخار
+wavelength:طول موج
+aching:درد
+explosion:انفجار
+fatal:کشنده
+hemorrhagic:خونریزی کننده
+known as:معروف به‎
+lymph node:گره لنفاوی
+multiply:تکثیر کردن
+named after :به نام
+neutralizing :خنثی سازی
+pathogen :بیماری زا
+predictable :قابل پیش بینی
+rashes:بثورات، جوش پوستی
+rehydration :آب رسانی مجدد
+resemble :شباهت داشتن‎
+storm:طوفان
+suspected:مشکوک
+through:ازطریق
+victims:قربانیان، مبتلایان
+yellow fever:تب زرد
+all over:سراسر
+author:نویسنده
+disagree:مخالف
+dramatically:به شکل چشمگیری
+employment:استخدام کردن
+evidence:شواهد و مدارک
+finance:سرمایه گذاری
+grasp:فهمیدن، به دست آوردن
+indictment:اتهام
+military:نظامی، ارتش
+great:بزرگ
+occupy:مشغول کردن، تصرف کردن
+spend:صرف شدن، صرف کردن
+throughout:در سراسر
+applying:به کار بردن
+overheat:گرمای زیاد
+care:مراقبت ،توجه
+clammy:ناتوان
+aid:کمک
+become:شدن
+lie down:دراز کشیدن
+intake:مصرف
+nausea:تهوع
+chill:سرما، منجمد کردن
+once:یکبار
+raising:در حال رشد، طلوع، رشد دادن
+pulse:نبض، ضربان
+repeatedly:مکررا
+place:جا، قرار دادن
+sip:جرعه
+sponge:اسفنج
+sufficiently:به اندازه کافی
+sweating:تعریق
+tub:وان
+unconscious:ناخودآگاه
+achieve:به دست آوردن
+address:آدرس، ارسال، دستور دادن، حل کردن
+ambitious:جاه طلب
+assembly:اجتماع، انجمن، مجلس
+attainment:دست یابی
+building block:بنا و اساس
+by:از، با، کنار، توسط
+emerging :پیدایش
+era:عصر، دوره
+global :جهانی
+investment:سرمایه گذاری
+milestone:نقطه عطف، علامت
+base:پایه و اساس، بنیان نهادن
+pillar:اصول، رکن
+surveillance:نظارت
+then:سپس
+toward:به طرف
+universal:جهانی
+adopt:قبول کردن، اتخاذ کردن
+constantly:دائما
+fluctuate:نوسان داشتن
+affected:تحت تأثیر واقع شده
+Mathematically:از نظر ریاضی
+no matter:بدون توجه
+official:مسئول، رسمی
+pure:خالص
+rate:میزان
+real world:دنیای واقعی
+remain:باقی ماندن‎
+steady pattern:الگوی ثابت
+that`s what:این چیزی است که
+turn out:تولید کردن، به نظر رسیدن، وارونه کردن
+unfounded:بی اساس
+while:در حالی که
+antimicrobial:ضد میکروبی
+caused by:ناشی از
+century:قرن
+clinician:متخصصان بالینی
+combat:مبارزه کردن
+community:جامعه
+direction:جهت
+doubtful:مشکوک
+emergence:پیدایش
+ever growing:همواره در حال رشد
+future:آینده
+gain:افزایش، سود، به دست آوردن
+humanity:بشریت
+migrate:مهاجرت
+regard:در نظر گرفتن
+asset:دارایی
+attrition:فرسایش، ساییدگی
+beside:به علاوه
+capable:توانا
+capital:پایتخت، سرمایه
+Come to realize:متوجه شدن
+consumable:مصرف شدنی
+developed:توسعه یافته
+developing:در حال توسعه
+emigration:مهاجرت
+labor:کارگری، زحمت
+middle Eastern:خاورمیانه ای
+devoted to:اختصاص دادن به
+people driven:مردم محور
+satisfaction:رضایت
+recruitment:استخدام
+retention:حفظ کردن
+retirement:بازنشستگی
+turnover:میزان استعفاء کارمندان، وارونه کردن، انتقال
+without which:که بدون آن
+a moment:یک لحظه
+Pesticide:آفت‌کش
+acute:حاد
+Categorization:طبقه بندی
+disappear:ناپدید شدن
+discomfort:رنج، ناراحتی
+duration:مدت زمان
+longer than:طولاتی تر از
+neuropathic:مربوط به عصب
+nociceptive:دردناک
+persisting:مداوم
+postsurgical:پس از جراحی
+reportedly:ظاهرا
+category:دسته
+addressed:هدف، نشانی، مخاطب
+comprehensible:قابل درک
+endogenous:درونی
+interpretation:تفسیر
+jealousy:حسادت
+linking:ربط دادن
+malice:نفرت، کینه توزی
+nothing to do with:ارتباطی با چیزی نداشتن
+one's belief:اعتقاد فرد
+point out:اشاره کردن
+prejudice:تعصب، پیش داوری، تبعیض
+pride:غرور
+Summary:خلاصه
+than:نسبت به، تا اینکه
+vary:فرق داشتن، تغییر دادن
+want:نیاز، خواستن
+at least:حداقل
+commonly:معمولا
+fall asleep:به خواب رفتن
+‎in the course of:در طی
+less likely:به احتمال کم
+more likely:به احتمال زیاد
+perhaps:شاید
+rob:دزدیدن
+sensor:حس گر
+Stick to:چسبیدن به چیزی، پایبند بودن
+the last bit:مورد آخر
+withdraw:ترک کردن، کنار کشیدن
+worse:بدتر
+wristwatch:ساعت مچی
+award:اعطا کردن، جایزه
+broad:گسترده
+burnout:فرسودگی
+citizenship:تابعیت
+civic:مدنی، اجتماعی
+conceptualized:درک شده
+connect:اتصال
+engagement:درگیر چیزی بودن
+exhaustion:خستگی
+faithful:با ایمان
+flexible:منعطف
+In seeking to:در جستجوی
+tie in:ارتباط داشتن
+virtue:وجدان
+are needed:موردنیاز است
+as well as:همچنین
+bear burden:مسئولیتی را به عهده گرفتن
+disproportionate:نامتناسب
+diverse:متنوع، مختلف
+enabling:قادر ساختن
+fortification:تقویت
+including:شامل
+mental clarity:تمرکز
+Micronutrient:ریز خوراک
+modification:اصلاح
+overall:به طور کلی، روپوش پزشکی
+preventable:قابل پیشگیری
+Productivity:بهره وری
+rely on:وابسته به
+make stride:قدم برداشتن
+better off:پولدارتر، موفق تر
+cereal:غلات
+Contrary to:بر خلاف
+etiology:علت شناسی
+in this regard:در این رابطه
+influential:موثر
+admire:تحسین کردن
+lace with:مرتبط با
+refine:پالایش کردن
+set:مجموعه، دستگاه، شروع کردن، قرار دادن
+shun:دوری کردن از
+rich:ثروتمند
+though:اگر چه
+too early:خیلی زود
+breakthrough:پیشرفت، شکاف
+Continually:به طور مداوم
+Defense:دفاع
+Molecule:مولکول
+Mutating:درحال جهش
+Stick out:متمایز، برجسته، رو به بالا
+Sugar:قند
+ahead:پیش رو
+Attach:ضمیمه کردن، چسباندن
+check up:کنترل منظم
+defensive:دفاعی
+department:دپارتمان
+extract:عصاره، خلاصه، استخراج کردن
+management:مدیریت
+meanwhile:ضمنا
+output:خروجی، محصول
+perfection:کمال
+preparing:آماده کردن
+pressurizing:تحت فشار قرار دادن
+regular:منظم
+staff:کارکنان
+Funding:سرمایه
+Grading:درجه بندی
+threatening:تهدید کننده
+understandably:به طور قابل فهم
+imaginative:تخیلی
+Elderly:سالمند
+Handful:تعداد کم
+Intractable:غیر قابل درمان
+strike:ضربه، اعتصاب کردن
+Low grade:درجه پایین، خفیف
+Neuronal:عصبی
+pacemaker:راهنما، تنظیم کننده ضربان قلب
+Progressive:در حال پیشرفت
+Surgical:جراحی
+Suspect:مشکوک بودن
+tract:مسیر، اثر، وسعت
+Accompany:همراهی کردن
+Behave:رفتار کردن
+Compound:ترکیب
+Content:محتوا
+divide:تقسیم کردن، تقسیم شدن
+synthesize:سنتز کردن، تولید کردن
+favored:موفق، مطلوب، ارجح
+Packaging:بسته بندی
+Probably:احتمالا
+somehow:به طریقی
+gradual:تدریجی
+Analyze:آنالیز کردن، تجزیه و تحلیل کردن
+Causative:مسبب
+Distinct:متمایز، واضح، متفاوت
+Drastic:شدید، جدی
+Embed:قرار دادن
+Evolutionary:تکاملی
+facial:مربوط به صورت، ظاهری
+And so forth:و غیره
+Framework:چهار چوب
+Homeostasis:توازن
+Mutation:جهش
+Opportunity:فرصت
+Pinpoint:با دقت اشاره کردن
+Process:روند و فرایند
+Reproductive:تولید مثلی
+Significant:قابل توجه، علامت
+Sterility:عقیم بودن
+Turtle:لاکپشت
+Underlie:مبنای چیزی بودن
+Unique:منحصر به فرد
+Aberrant:اشتباه، گمراه
+Alternative:جایگزین
+Conditioned:مشروط، عادت کرده به چیزی
+enable:قادر ساختن
+Anticipate:پیش بینی کردن، انتظار کشیدن
+Associate with:مرتبط با
+Audible:قابل شنیدن
+Behavioral:رفتاری
+mice:موش
+modify:اصلاح کردن
+neurodegenerative:تخریب کننده سیستم عصبی
+neurological:عصب شناسی
+Enzyme:آنزیم
+freeze:یخ زدگی، افسردگی
+Maintaining:حفظ کردن
+Route:مسیر
+Schizophrenic:نوعی اختلال روانی
+syndrome:سندروم
+Synthesis:ساختن
+Amphetamine:آمفیتامین
+Placebos:دارو نما (شبیه دارو ولی بدون اثر واقعی)
+Prescribe:تجویز کردن
+Recommend:سفارش کردن، توصیه کردن
+satisfied:راضی
+Increasingly:به طور افزایشی
+Irritability:زود رنجی
+lifetime:طول زندگی
+long term:طولانی مدت
+medication:دارو، تجویز دارو
+Suffered from:مبتلا بودن به چیزی
+Treatment:درمان
+Understandable:قابل فهم
+to date:تاکنون
+adulthood:بزرگسالی
+aggression:خشونت، تجاوز
+characterize:مشخص کردن
+coldhearted:بی عاطفه
+Correspond:مطابق بودن
+Depending on:وابسته بودن به
+Empathizing:همدردی کردن
+Empathy:درک و همدردی
+Engage:مشغول بودن، مشغول شدن
+hothead:بی پروا
+impulsivity:تحریک پذیری فوری
+offending:باعث رنجش، خطا
+Persistent:مقاومت، پایداری
+Psychopathic:اختلال روانی
+Psychopathy:اختلال روانی
+reactive:واکنش دهنده
+remorse:پشیمانی
+structural:ساختاری
+accommodation:منزل، تطبیق ،کمک
+Accompanies:همراهی می کند
+Alarm:هشدار
+Annoying:مزاحم
+Arbitrary:اختیاری، قراردادی
+infection:عفونت
+just as:درست همانطور
+medicine:دارو
+punishment:تنبیه
+Clinical:بالینی
+In turn:به نوبت، به نوبه خود
+Inexpensive:ارزان
+Destruction:تخریب
+Weapon:سلاح
+Alarming:هشداردهنده
+Arising:ناشی از
+Chronic:مزمن
+Diabetes:دیابت
+Due to:به واسطه ی
+Epidemiological:مربوط به علم همه گیرشناسی
+manifesting:بروزدادن، بروز یافتن
+Obesogenic:چاق کننده
+argument:مشاجره، اثبات، استدلال
+athletic:ورزشکار، ورزشی
+insurance:بیمه
+nutrition:تغذیه
+Beyond:دورتر، آن سوی
+Cardiovascular:قلبی عروقی
+Causation:علت
+coach:مربی
+Diagnostic:علایم تشخیصی
+elite:ممتاز و سرآمد
+Environmental:محیطی
+Genetic:ژنتیک
+Genome:ژنوم
+Identification:شناسایی
+performance:عملکرد
+Strenuous:شدید، فعال و مشتاق
+Traditional:سنتی
+Undertaking:انجام دادن
+Unfair:ناعادلانه
+inheritance:وراثتی
+countinuing:مداوم
+extinction:انقراض
+focused:متمرکز شده
+hunt:جستجو، شکار
+illiteracy:بی سوادی
+Detailed:با جزئیات
+Educational:آموزشی
+Literacy:سواد
+obtrusive:نامطلوب، دردسر
+serious:جدی
+socioeconomic:اجتماعی اقتصادی
+illustration:تصویر
+tradition:سنت، رسم
+impoverished:ضعیف، فقیر
+tragic:مصیبت بار
+Citizen:شهروند
+Consistently:به طور مداوم
+Deprived:ناتوانی
+Self sufficiency:خودکفایی
+Household:خانه دار
+Implication:معنی و مفهوم ،پیامد
+minority:اقلیت
+mortality:مرگ و میر
+occupational:شغلی
+poverty:فقر
+worsened:بدتر شده
+altogether:در مجموع
+as long as:تا زمانی که
+beach:ساحل
+chamber:محفظه
+lying on:درازکشیدن روی
+precaution:اقدام احتیاطی
+prolonged:طولانی
+claustrophobia:ترس از فضای بسته
+Issue:موضوع، مسئله
+psychological:وابسته به روانشناسی
+sedate:آرام کردن
+suppress:سرکوب کردن
+uncomfortable:ناراحت
+undergo:تحت عملی قرار گرفتن
+Adderall:قرص آدرال
+Deficit:کمبود
+Detail:جزییات
+Suffering from:رنج کشیدن از
+Intense:شدید
+Proven:اثابت شده
+Routinely:به طور معمول
+Talking about:صحبت کردن در مورد
+Workforce:نیروی کار، کارگر
+Tremendous:عظیم
+afraid:ترسیدن
+cash:پول نقد
+chunk:مقادیر
+fail to:نتوانستن
+prize:جایزه
+properly:صحیح
+potentially:بطور بالقوه و احتمالی
+Grain:دانه
+Institute:موسسه
+Limit:حدود، محدود کردن
+performing:انجام دادن
+postdoctoral:فوق دکترا
+largely:عمدتا
+Hemiplegla:فلج یک طرفه بدن
+Somewhat:تاحدی
+Succeed:موفق شدن
+Suffer:رنج کشیدن
+Unexpected:غیرقابل انتظار
+Volunteer:داوطلب
+Worry about:نگران بودن درمورد
+According to:برطبق، بنابر
+Anesthesia:بی هوشی
+Bones :استخوان ها
+Cellular:سلولی
+Colleague:همکاران
+connective:پیوندی
+Basis:اساس و پایه
+Hormone:هورمون ها
+Biologic:مربوط به زیست شناسی
+Musculoskeletal:ماهیچه اسکلتی
+Orthopedic:مربوط به استخوان
+Osteoarthritis:التهاب مفاصل
+Sensation:احساس
+Female:زنان
+Spinal:نخاعی
+Surgeon:جراح
+Tendon:تاندون ها
+tissue:بافت
+Accelerate:سرعت دادن
+Average:میانگین
+Bankruptcy :ورشکستگی
+Budget:بودجه‌ها
+Coverage:پوشش (شامل شدن)
+Debt:قرض، وام
+Expenditure:هزینه
+Expense:هزینه
+Obtaining:به دست آوردن، کسب کردن
+Component:ترکیبات
+Premium:حق بیمه، پاداش
+Spending:صرف کردن، هزینه کردن
+out of Pocket:خارج از جیب
+Acupuncture:طب سوزنی
+antidepressant:ضد افسردگی ها
+brenefical:سود مند، مفید
+classify:دسته بندی، طبقه بندی
+conclude:نتیجه گیری
+instance:نمونه
+Organization:سازمان
+Psychotherapy:روان درمانی
+Consistent:ثابت
+Fluoxetine:فلوکستین
+Autism:اوتیسم
+Cerebral:مغزی
+Clue:راهنما، سرنخ
+Communication:ارتباط
+Exhibit:نمایش دادن، نشان دادن
+Focused on:متمرکز بر روی
+Improving:پیشرفت
+palsy:فلج
+Postural:کیفیتی
+Predictor:نشانگر، پیش بینی کننده
+Pull:کشیدن
+Spectrum:طیف
+infant:نوزاد
+absorbed:جذب شده
+artery:شریان
+charity:خیریه
+comment:توضیح دادن، اظهار نظر کردن
+calcification:سخت شدن
+Caution:احتیاط
+Double:دو برابر
+Middle age:میانسال
+Post menopausal:بعد از یائسگی
+Confer:مشورت کردن، اعطا کردن
+Dietary:رژیمی
+Affecting:تحت تاثیر قرار دادن
+Confirmation:تایید
+coordinated:هماهنگ
+Focus:تمرکز کردن
+inter professional:بین شغلی، بین حرفه ای
+Multi Agency  :چند سازمانی
+multi Professional:چند حرفه ای
+Multi Sectoral:چند بخشی
+Political:سیاسی
+manager:مدیر
+rivarly:رقابتی
+rival:رقیب، رقابت کردن
+Superordinate:ارشد، برتر
+Leadership:رهبری
+Advancing:درحال پیشرفت
+Assistance:کمک، دستیاری
+Audio:صوتی
+Broadband:برد وسیع
+Capabilities:توانایی ها
+Comparatively:به طور مقایسه ای
+Describe:توصیف کردن
+Electronically:الکترونیکی
+Elsewhere:در جای دیگر
+Error:خطا
+Exponential:تصاعدی
+Instrument:سند، وسیله
+Needle:سوزن
+Reliability:اعتبار
+Robotic:رباتیک
+Satellite:ماهواره
+Scalpel:چاقوی جراحی
+Telecommunication:ارتباط از راه دور
+Tele health:درمان ازراه دور
+Transmission:انتقال دادن
+interface:رابط
+Mechanically:به طور مکانیکی
+Composed of:متشکل از
+consumer:مصرف کننده
+take for granted:نادیده گرفتن
+identifying:شناسایی کردن
+describing:توصیف کردن،  وصف کننده
+prominetly:به طور برجسته
+restriction:محدودیت
+Label:برچسب
+manufacturer:تولیدکننده
+misusing:استفاده اشتباه
+nevertheless:با وجود این، با این حال
+Sardine:نوعی ماهی
+tricked:گول خورده
+Unknowingly:غیر عمدی
+Bark: پوست درخت
+Berries:بوته توت، دانه
+forage:جست و جو برای غذا
+Possess:داشتن، مالک چیزی بودن
+Influenced:تحت تاثیر
+matter:ماده، موضوع
+Pharmacology:دارو شناسی
+Relaxant:آرام بخش
+Scientific:علمی
+Soothing:آرام بخش، تسکین دهنده
+Spear:نیزه
+Taken Place:رخ دادن
+Harbour:پناه دادن
+Hunting:شکار کردن
+Toxic:سمی
+Tribal:قبیله ای
+Woodland:منطقه جنگلی
+absent:غایب
+insofar as:تا جاییکه
+membership:عضویت
+Accomplishment:دستاورد
+Adequate:کافی
+Avoidable:قابل اجتناب
+Distribution:پخش کردن
+Ordinary:معمولی
+Preservation:محفاظت
+Resource:منبع
+Spared:در امان مانده، یدکی
+Determining:معین کردن
+Infrastructure:زمینه، پیدایش
+Invested:سرمایه گذاری شده
+National:ملی
+Patient:بیمار
+Extended:گسترش یافته
+Healthcare:مراقبت بهداشتی
+Expectancy:انتظار و توقع، امید
+Conduct:هدایت کردن، اجرا
+Rural:روستایی
+Suggest:توصیه کردن، اشاره کردن
+Transtformed:دگرگون شده، تغییر شکل یافته
+Urban:شهری
+Wealth:ثروت، فراوانی
+Determine:معین کردن، مشخص کردن
+Follow Up:پیگیری
+Initial:اولیه
+Occurred:اتفاق افتاده
+Prostate:پروستات
+Sensitivity:حساسیت
+subpopulations:زیرگروه ها
+Biologically:از نظر زیست شناسی
+Chemotherapy:شیمی درمانی
+Compare:مقایسه کردن
+Detoxification:سم زدایی
+intriguing:جذاب، فریبنده
+minimally:به طور حداقلی
+nutrional:تغذیه ای
+oncology:سرطان شناسی
+pancreatic:مربوط به پانکراس
+proteolytic:تجزیه کننده پروتئین
+Gonzalez Regimen:رژیم غذایی گنزالس
+striking:قابل توجه
+Superior:برتر و والا
+treat:درمان کردن
+raw:خام
+Bacitracin:نوعی آنتی بیوتیک
+Beneficent: سودمند، خوب
+‎Blood Stream:جریان خون
+Chemical:شیمیایی
+Discover :کشف کردن
+Fight:جنگیدن
+Infected:عفونی شده
+Locally:موضعی
+masses:توده ها
+Painstaking:خسته کننده، کوشا
+Concentrated:غلیظ، متمرکز شده
+Exquisite:دقیق، شدید، مطبوع و نفیس
+influenza:انفولانزا
+nations:کشورها
+expect:انتظار داشتن
+Pandemic:همه گیری جهانی
+production:تولید
+strain:سویه، نوع
+supplies:منابع
+wave:موج
+activation:فعال سازی
+appropriate:مناسب
+Elicit:استخراج کردن
+Facilitation:تسهیلات
+Memory:خاطره، حافظه
+Neural:عصبی
+Pleasure:لذت، خوشی
+Semi Permanent:نیمه دائمی
+Synapse:سیناپس
+Article:مقاله
+Blockers:مسدود کننده ها
+Calculating:محاسبه کردن
+Functioning:عملکرد
+Hypothetical:فرضی
+literature:تحقیقات قبلی، ادبیات
+consider:قلمداد کردن
+Demanding:سخت، دشوار، خواهان
+Prescribing:تجویز
+systematic:اصولی، با برنامه
+inquiry:بررسی و تحقیق
+Architecture:معماری
+Benefit:سود
+Collaborate:همکاری کردن
+Cutting edge:پیشرو
+Philosophy:فلسفه
+translation:ترجمه
+Unfortunately:متاسفانه
+Airborne:موجود در هوا
+Alveoli:حبابچه ریه
+Coarse:درشت، زبر، خشن
+Micrometer:میکرومتر
+particle:ذره
+penetrate:نفوذ کردن
+Kidney:کلیه ها
+Lung:ریه
+ultrafine:فوق العاده ریز
+underground:زیرزمین
+accidental:تصادفی
+smallpox:ابله
+cease:متوقف کردن، متوقف شدن
+fine:خوب، ریز
+easier:آسان تر
+inoculate:مایع کوبی(روشی برای پیشگیری از آبله)
+Potential:بالقوه، احتمالی
+Proposal:طرح پیشنهادی
+traditionally:به طور سنتی
+transmitting:انتقال یافتن
+Variolation:آبله کوبی(روشی برای پیشگیری از آبله)
+Warfare:جنگی
+Chronically:به شکل مزمن
+Construction:ساخت
+Cost:هزینه
+Dealing with:ازعهده کاری برآمدن، سرو کار داشتن با
+Demonstration:اثبات، بروز، نشان دادن
+microwave:امواج ریز
+mourning:عزاداری کردن
+operation:عمل
+prohibitively:به شکل ممانعت کننده
+seeking:جستجو کردن
+Interview:مصاحبه‌
+Session:جلسه
+Specialty:تخصص
+standardize:استاندارد سازی
+predefined:از قبل مشخص و تعیین شده
+tele psychiarty:روان درمانی از راه دور
+television:تلویزیون
+Advantage:مزیت
+Amazing:تعجب انگیز، شگفت انگیز
+Amount:مقدار
+Explain:توضیح دادن
+ilInesses:بیماری ها
+Medical:پزشکی
+Validity:اعتبار
+Worldwide:جهانی
+Barring:محروم کردن
+Chief:رئیس
+Database:پایگاهای اطلاعاتی
+Multiple:متعدد، چندین
+Oversea:خارجی
+Perrmanency:دوام
+Massively:به طور وسیع، بسیار
+Pre existing:از قبل موجود
+unauthorized:نامعتبر
+adapt:سازگار شدن، سازگار کردن
+nonflowing:راکد، غیر روان
+coagulate:لخته شدن
+dilate:منبسط شدن، گشاد کردن، گشاد شدن
+Handling:اداره کردن، بررسی
+pumping:پمپاژ کردن
+Vessels:رگ ها
+Carbonate:کربنات
+Colorless:بی رنگ
+insoluble:غیرقابل حل
+investigators:محققان
+irrigation:آبیاری
+Continued:مداوم
+Corrosive:خورنده، فاسد کننده
+Determined:معین و مشخص، مصمم
+Detoxify:سم زدایی
+Necrosis:نکروز
+Promoting:در حال پیشرفت
+butyrate:بوتیرات
+causing:باعث چیزی شدن
+gut:روده
+Compared with:در مقایسه با
+Glucose:گلوکز
+Ferment:تخمیر
+Producing:تولید کردن
+Self destruct:خود تخریبی
+blanket:پتو
+Cooling therapy:درمان با سرما
+Crash:تصادف
+Heartbeat:ضربان قلب
+Hypothermic:کاهش دمای بدن
+Infusion:تزریق
+Metabolism:سوخت و ساز، متابولیسم
+Require:نیاز داشتن
+Temperature:دما
+Accumulation:تجمع
+Deterioration:وخامت، زوال، بدتر شدن
+Differentiation:تمایز، تفاوت
+muddle:گیجی، گیج شدن
+Nucleic:هسته ای
+Physiological:وابسته به فیزولوژی
+Programmed:برنامه ریزی شده
+proposed:پیشنهاد شده
+Radical:تندرو، ریشه و بنیان
+Unrepaired:ترمیم نشده
+adopted:پذیرفته شده
+Gastrointestinal:معده روده ای
+identified:مشخص شده، شناسایی شده
+immune:ایمن
+Infused:تزریق شده
+‎Melting Away:ذوب شدن
+Sequence:توالی
+Make strides:قدم های بلند برداشتن، پیشرفت کردن
+Target:هدف
+Beriberi:بری بری
+Diarrhea:اسهال
+edema:ادم
+intercellular:بین سلولی
+neuromuscular:ماهیچه ای عصبی
+osteoid:بافت استخوانی
+cement:سیمانی
+Clotting:لخته شدن
+collagen:کلاژن
+overlap:هم پوشانی، روی هم افتادن
+pellagra:پلاگر
+prothromobin:پروترومبین
+scurvy:کمبود ویتامین ث
+symptoms:علائم
+Amyloid:امیلوئید
+beneficial:مفید و سودمند
+Build up:توسعه یافتن، زیاد شدن تدریجی
+Citalopram:قرص ضد اضطراب
+Clumping:انعقاد
+Elevated:افزایش یافته
+Fluid:مایع
+Initially:در ابتدا
+Serotonin:سروئوئین
+Subsequently:بعدا
+Unimpaired:سالم و تخریب نشده
+Biomedical:زیست پزشکی
+‎Fight or flight:استرس عمیق
+impaired:تخریب شده
+influencing:تاثیر گذار
+Injuries:صدمات و آسیب ها
+Lifespan:طول عمر
+Personality:شخصیت
+Delayed:با تاخیر
+Disadvantage:عدم مزیت
+Elicite:استخراج کردن
+Population:جمعیت
+Quality:کیفیت
+Resistance:مقاومت
+Socialization:اجتماعی شدن
+socioeconomic :سیاسی اقتصادی
+Attitude:شیوه، رویکرد، نگرش
+Definition:تعریف
+Establishment:سازمان
+Herbalist:طب گیاهی
+Homeopathy:هموپاتی(نوعی درمان)
+Intolerant:بی تحمل
+Limitation:محدودیت
+Radically:شدیدا
+off putting:دلهره آور
+Valuable:با ارزش
+ideologies:عقیده ها
+jurisdiction:حکومت
+phenomenon:پدیده
+Reflect:منعکس کردن، فکر کردن
+Richer:غنی تر
+Unequal:نا برابر
+Politics:علم سیاست
+Allergic:حساسیت داشتن به چیزی
+Antibiotic:آنتی بیوتیک
+Antiviral:ضد ویروس
+Asthma:اسم
+Chromosome:کروموزوم
+interfere:تداخل داشتن
+introduction:مقدمه، معرفی
+likelihood:احتمالا
+Participants:شرکت کنندگان، اعضا
+Prescription:تجویز، نسخه دکتر
+Previous:قبلی
+Speculate:فکر کردن
+Undeveloped:توسعه نیافته
+Wheezing:خس خس گلو
+Balance:تعادل
+Diet:رژیم غذایی
+Improved:توسعه یافته
+Milligram:میلی گرم
+Mineral:معدنی
+Potassium:پتاسیم
+Potato:سیب زمینی
+Sodium:سدیم
+Whopping:بزرگ
+circuitry:مدارها
+joystick:فرمان یا دسته کنسول بازی
+limb:عضو
+mastered:ماهر
+cursor:مکان نما، نشانه
+Detect:شناسایی کردن
+Feedback:باز خورد
+Figure Out:فهمیدن
+microelectrode:میکرو الکترود
+neurobiologist:متخصص بیولوژی عصب
+neuroprosthetic:اندام مصنوعی
+reorganize:سازمان دهی مجدد
+trained:اموزش دیده
+Agent:عامل، نماینده
+Alterations:تغییرات
+Attenuated:تضعیف شده
+Fungi:قارچ ها
+Generalized:تعمیم یافته، گسترده
+Bloodstream:جریان خون
+illustrate:توضیح دادن، با مثال روشن ساختن
+Immunization:ایمن سازی
+impair:تخریب کردن
+Intestinal:روده ای
+invade:حمله کردن
+Invasion:تهاجمی
+localized:موضعی
+measles:سرخک
+virus:ویروس
+Intestine:روده
+Meningitis:مننژیت
+Microbial:میکروبی
+Microorganism:موجودات ریز آزمایشگاهی
+placenta:جفت مربوط به جنین
+Produce:تولید کردن
+protozoa:تک سلولی
+Recipients:دریافت کنندگان
+septicemia:عفونت خون
+subclinical:بیماری بدون علامت
+toxin:سم
+various:متنوع، گوناگون
+Asbestos:پنبه نسوز
+Biological:مرتبط با زیست شناسی
+Commercially:به لحاظ تجاری
+conference:همایش
+Material:ماده
+Fibrous:فیبری
+properties:ویژگی ها
+quite:کاملا، نسبتا زیاد
+recognized:شناسایی شده
+Silicate:سیلیکات
+Discuss:بحث
+toll:عوارض
+wait:منتظر ماندن
+Blackout:غش کردن
+Cardiac:قلبی عروقی
+Complain:شکایت کردن
+Faint:غش کردن
+Generally:عموما، به طور کلی
+impressed:تحت تأثیر قرار گرفته
+Insulin:انسولین
+Manual:راهنما، انجام شده با دست، دستی
+‎Pass Out:غش کردن
+Dentist:دندان پزشک
+Emotional:احساسی
+Stomach:معده
+supplied:فراهم شده، منابع
+Surprisingly:به شکل تعجب آور
+Transfusion:تزریق
+Varicose:واریس
+relative:نسبی، وابسته به چیزی
+allegations:اتهامات، اظهارات
+arise:نشات گرفتن، به وجود امدن
+as regards:با توجه  به
+communiacation:ارتباط
+competency:شایستگی، لیاقت
+dissatisfaction:عدم رضایت
+elicited:استخراج شده
+failed to:نتوانستن
+Cultural:فرهنگی
+Deal not with:سر و کار نداشتن، ارتباط نداشتن
+Deficiencies:کمبودها
+culture:فرهنگ، کشت سلول
+Differences:تفاوت ها
+Related To:در ارتباط با
+Malpractice:اشتباه انجام دادن کاری
+medical practice:حرفه پزشکی
+Misunderstand:اشتباه فهمیدن
+physician:پزشک
+Presenting:موجود
+Resident:ساکن، ماندگار، کارآموز پزشکی
+Trainees:کارآموزان
+Uncertainty:شک و تردید
+Abuse:سوءاستفاده کردن
+Across:سراسر، ازمیان
+Crisis:بحران
+Deputy:نماینده، جانشین
+dozen:چندین
+Effectively: به طور موثر
+Game Changer:تغییر دهنده ماجرا
+Induced:تحت‌ تاثیر چیزی
+instead:در عوض
+non addictive:غیر اعتیاد آور
+Opioid:ماده ی مخدر
+Painkiller:مسکن ضد درد
+addictive:اعتیاد آور
+Skepticism:تردید
+terrible:ترسناک، بسیار بد
+thousands:هزاران
+as if:گویی اینکه
+course:کلاس و دوره، روش
+craziness:حماقت، دیوانگی
+brainstorming:تشنجات مغزی، هم فکری، الهام ناگهانی
+exotic:عجیب و غریب
+Creativity :خلاقیت
+Creative techniques:تکنیک های خلاقانه
+precisely:دقیقا
+way out:بیراهه
+Checklist:چک لیست
+Correlation:هماهنگی
+Indicating:نشانگر
+measurement:اندازه گیری
+Modest:متوسط، ساده، معتدل
+observation:مشاهده، مراقبت، رعایت
+stressor:استرس زا
+Hygiene:بهداشت
+Sewage:فاضلاب
+Tuberculosis:سل
+Typhoid:حصبه
+curl:حلقه کردن، موی فر
+demonstrate:ثابت کردن
+Endurance:تحمل
+fitness:پرورش اندام
+fundamental:اساسی
+Muscular:ماهیچه ای
+Pediatric:متخصص کودکان
+Push-Up:شنا روی زمین
+self esteem:عزت نفس
+stunt:از رشد باز ماندن
+wall sit:نشستن با تکیه به دیوار
+well crafted:به خوبی طراحی شده
+well designed:به خوبی برنامه ریزی شده
+Acceptance:پذیرش
+Advisable:مفید، قابل توصیه
+all inclusive:همه جانبه
+enduring:بادوام
+envirment:محیط
+expectation:انتظار
+classified                                                                                   :دسته بندی شده
+regarded as:درنظر گرفته شدن به عنوان
+Likewise:همچنین
+Viewpoint:دیدگاه
+Cavity:حفره، کرم خوردگی دندان
+Decay Causing:فاسدکننده
+Dentin:مینای دندان
+Device:وسیله
+Disinfected:ضدعفونی شده
+Drill :مته
+drilling into:سوراخ کردن
+emitting:تابش کننده
+established:تثبیت شده، پا برجا
+extracted:استخراج شده
+germ:میکروب
+grind away:خورد کردن
+invasive:تهاجمی
+molar:دندان اسیاب
+purple plasma:پلاسمای بنفش
+relying on:با تکیه بر
+sterilize:استریل کردن
+stubborn:سرسخت، سمج
+tempreature:دما
+tooth decaying:خراب کننده دندان
+untreated:درمان نشده
+wiping out:از بین بردن، زدودن
+Allergy:آلرژی
+Allergy Producing:آلرژی زا
+Dust Mite:ریز گرد
+Exposed:در معرض چیزی بودن
+Hives:کهیر
+Itchy:خارش
+Nosebleed:خون ریزی بینی
+Overreaction:واکنش بیش از حد
+Pollen:گرده
+Breathing:تنفس کردن
+Coughing:سرفه کردن
+Rash:جوش
+redness:قرمزی
+sting: نیش زدن
+stung:نیش زد
+arises:مطرح شدن، منشا گرفتن، به وجود آمدن
+Diabetic:دیابتی
+Excrete:بیرون انداختن، دفع کردن
+Itching:خارش
+Look out:مراقب بودن
+Offspring:فرزند
+perceive:درک کردن
+unexpectedly:به شکل غیرمنتظره
+waistline:خط دور کمر
+youngsters:جوانان
+apnea:قطع تنفس در خواب
+continuous:مداوم
+impairment:تخریب
+interrupted:مختل شده
+snoring:خر و پف کردن
+truly:واقعا
+Bankrupt:ورشکسته
+Copayments:اقساط، بازپرداخت
+Decade:دهه
+Deductibles:مبالغ قابل کسر
+Employee:کارمند
+Employer:کارفرما
+Escalation:افزایش
+Evocative:اثر گذار
+Forcing:مجبور کننده
+Going Up:افزایش یافتن
+Medicaid:بیمه درمانی مستمندان
+keep:نگه داشتن، ادامه دادن
+Per Annum:سالانه
+Anniversary:سالگرد
+Annual:سالانه
+Medicare:بیمه سالمندان
+overshadow:تحت تاثیر قرار دادن
+Rising:در حال افزایش
+scandalously:به شکل افتضاح آور
+Uninsured:بیمه نشده
+vivid:زنده، واضح و روشن
+Choose:انتخاب کردن
+percentage:درصد
+pressure:فشار
+Devote:اختصاص دادن
+Led to:منجر شدن به
+trend:روند
+Academic:دانشگاهی
+Advocacy:طرفدار چیزی بودن
+Character:ویژگی شخصیتی
+Conceptual:مفهومی
+Consensus :اجماع، موافقت عمومی
+Efficiently:به طور کارآمد
+Effort:تلاش و کوشش
+Exactly:دقیقا
+Holistic:کلی
+Industrial:صنعتی
+Ancestor:جد
+Archeological:باستان شناسی
+Achievement:دست آورد
+Institution:موسسه
+Labeled:برچسب خورده
+Reform:اصلاح کردن
+revisioning:تجدیدنظر
+Variance:گوناگونی
+Wider:وسیع تر
+available:در دسترس
+consequently:بعدا
+data:اطلاعات
+Document:مدرک
+Questioning:بازجویی، مورد شک قرار گرفتن
+Reinterpretation:تفسیر مجدد
+Infinitely:نا محدود
+Molecular:مولکولی
+Origin:منشا
+Paraphrase:به بیان دیگر گفتن یا نوشتن، تفسیر
+sapiens:هوشمند
+speculating:فکر کردن
+According:با توجه به
+Arena:استادیوم
+Contraception:جلوگیری از بارداری
+Educated:تحصیل کرده
+Admission:پذیرش
+Alcohol related:مرتبط با الکل
+appoximately:تقریبا
+Implant:کاشتن
+inserted:قرار داده شده
+Theoretically:به لحاظ تئوریک
+Dying:مردنی
+Attenders:حاضرین
+Casualty:سانحه، تصادف
+Conservative:محافظه کار
+Dependent on:وابسته به
+Drinker:آشامنده، مشروب خور
+Although:اگر چه
+As part of:به عنوان بخشی از
+Classification:دسته بندی
+Complaint:شکایت
+Current:رایج ،جاری
+Depressed:افسرده
+Disturb:مزاحمت ایجاد کردن، آشفتن
+Diurnal:روزانه
+Indirectly:غیر مستقیم
+Practitioner:متخصص
+Screening:آزمایش، غربالگری
+Select:انتخاب
+Myth:افسانه
+Objectively:به شکل واقعی
+occur:اتفاق افتادن
+Paramount:برتر
+Predictive:نشانگر چیزی بودن
+Psychiatric:روان پزشک
+Recognizable:قابل تشخیص و شناسایی
+Somatic:جسمی
+Location:موقعیت مکانی
+assist:کمک کردن
+assurance:اطمینان، تضمین
+compassion:دلسوزی
+logistics:مدیریت و اجرای یک طرح
+outdoor:بیرون خانه
+qualities:خصوصیات
+frightning:ترسناک
+Gamut :حدود، وسعت ،گام
+indoor:درون خانه
+Sympathy:همدردی
+Termed:نامیده شده
+Altered:تغییر یافته
+Match:مسابقه و رقابت
+Modality:چگونگی و روش
+Modulate:تنظیم و کنترل کردن
+Radiotherapy:پرتو درمانی
+Root:ریشه
+Slice:برش
+Interpret:تفسیر کردن
+Nervous:عصبی
+Neurones:نورون ها
+Nonspecific:غیر اختصاصی
+Elude:دوری کردن، فرار کردن، گیج کردن
+Ability :توانایی
+Creative:خلاقیت
+Imagination:تصور
+Plaything:وسیله بازی
+Seriously:به شکل جدی
+solution:راه حل
+Aware:آگاه، آگاه بودن
+Heart:قلب
+Obstructive:مانع، مسدود کننده
+Fatty:چرب
+Pulmonary:تنفسی
+Targeting:مورد هدف قرار دادن
+Vascular:عروقی
+Especially:مخصوصا
+Exception:استثنا
+Maturity:بلوغ، بالغ شدن
+Continues:ادامه دار
+Rise:افزايش
+Sudden:ناگهانی
+Absorption:جذب
+Delivery:تحویل دادن، به دنیا آوردن بچه
+Emerge:ظاهر شدن
+nanotube:لوله نانو
+Nanowire:سیم نانو
+Otherwise:در غیر این صورت
+Reactivity:واکنش پذیری
+self assembled:خود سازمان یافته
+Societal:اجتماعی
+mobility:تحرک
+monolayer:تک لایه
+Nanomaterials:مواد نانو
+Nanoparticles:ذرات نانو
+nanoscale:در مقیاس نانو
+toxicity:سمی بودن
+Two dimensional:دوبعدی
+Curve:انحنا و خمیدگی
+Damaged:آسیب دیده
+Fat free :فاقد چربی
+Fat soluble:حلال در چربی
+fatty tissue:بافت چربی
+fed:تغذیه شده
+hence:بنابراین
+implay:به طور ضمنی اشاره کردن، اشاره کردن
+in addition to:به علاوه ی
+Inflamed:دچار التهاب شده
+Insulating:عایق بندی کردن، جدا کردن
+Nutritionist:متخصص تغذیه
+Protective:محافظت کننده
+Rest of:باقی‌مانده ی چیزی
+Strategically:از نظر استراتژیک
+thus:بنابراین
+increasing:در حال افزایش
+Depression:افسردگی
+Broadening:گسترش دادن
+Challenge:چالش، به مبارزه طلبیدن
+comprehension:فهم و درک
+concentrated on:متمرکز روی
+concerning:درباره ی
+Monoamines:دارای یک گروه آمین
+Neurotransmitter:انتقال دهنده ی عصبی
+Synapses:سیناپس عصبی
+Translational:قابل ترجمه
+Embody:دربرداشتن، مجسم کردن
+Multi faceted:چند وجهی
+Nonetheless:با وجود این
+Partially:نسبتا
+Presidential:وابسه به رئیس جمهور
+Prolific:پر زاد و ولد، فراوان
+Seminal:اصلی، اولیه، مربوط به منی
+Significantly:به شکل چشمگیر
+Disagreement:عدم توافق
+Substantiated:ثابت شده
+Theorist:تئوریسن
+Variety:تنوع
+Advantageous:مفید، دارای مزیت
+Advertising:تبلیغ کردن
+case:مورد
+Independent:مستقل
+Malfunction:عملکرد بد
+Manipulation:دستکاری کردن
+Miraculous:معجزه آسا
+Mutate:جهش یافتن
+organelles:اندام ها
+Congenital:مادر زادی و ارثی
+Investigator:محقق
+Counteract:خنثی کردن
+Generator:تولید کننده
+Godsend:خدادادی
+Pharmaceutical:مربوط به داروسازی
+Preserved:محافظت کردن، محفوظ
+Reside in:واقع شدن در
+Situation:موقعیت
+Underwhelming:چشمگیر نبودن
+Outweigh:سنگین تر بودن، اهمیت بیشتر داشتن
+pregnancy:حاملگی
+someday:یک روز، روزی
+spontaneous:به صورت خود به خود، آنی
+additive:افزودنی
+biotic:حیاتی
+digestive:هضم کننده
+Fermentation:تخمیر
+Flavored:مزه دار،مزه دار کردن
+Grass fed:با علف تغذیه شده
+guar:نوعی گیاه
+Gum:لثه دندان، چسب، صمغ
+Heated:گرما دیده
+Hormone free:بدون هورمون
+Chilled:سرد شده
+Consistency:تداوم یافتن، غلظت
+Corn:ذرت
+Pay attention: توجه کردن
+Rather than:به جای، تا اینکه‎
+Regulation:قانون
+show up:دیده شدن، حاضرشدن
+Sweetener:شیرین کننده
+syrup:شربت
+Yogurt:ماست
+Anthropology:انسان شناسی
+As a part of:به عنوان بخشی ازچیزی
+generation:نسل
+harming:آسیب زدن
+same way:روش مشابه
+magic:جادو
+discipline:رشته تحصیلی، زمینه، تنبیه کردن
+Ethnology:نژادشناسی
+Folk medicine:پزشکی سنتی
+Originated from:منشا گرفتن ازچیزی
+pass through:منتقل کردن، منتقل شدن
+Penetrating:نفوذ کردن
+traditional medicine:پزشکی سنتی
+Opinions :عقاید
+belief:باور
+religious:مذهبی
+societies:جوامع
+sociology:جامعه شناسی
+witchcraft:جادوگری
+Accumulated:تجمع یافته
+As the whole:به عنوان یک مجموعه
+Autonomously:به شکل خودکار
+Conundrum:مشکل
+Cultivate:پرورش دادن
+Dissemination:پخش و توزیع
+Dynamics:علم دینامیک، پویایی
+Formal:رسمی
+Goal:هدف
+Having to:مجبور بودن، ناچار بودن
+start from scratch:از اول شروع کردن
+Knowing teacher:معلم دانا‎
+learning paradox:معضل یادگیری
+Learnings:آموزه ها
+Long after:مدت ها بعد از اینکه
+Long term:بلند مدت
+On one’s owns:به خودی خود، تنهایی
+on the part of:از سوی
+Presumably:فرضاً
+self help:کمک کردن به خود
+self reliance:اتکاء کردن به خود
+sort:گونه، نوع
+passive:غیرفعال
+truth:واقعیت
+Unknowing:بی اطلاع از چیزی
+Alleviate:تسکین دادن
+Applicants:متقاضیان و درخواست کنندگان
+application process:فرایند تقاضا
+Aptitude:استعداد
+Attract:جذب کردن
+Challenging:چالش برانگیز
+Diagnose:تشخیص دادن
+Earning:بدست آوردن
+Exciting:مهیج
+Experienced:باتجربه
+Fascinating:جذاب، خیره کننده
+intellectually:به لحاظ ذهنی
+competitive:رقابتی
+Job security:امنیت شغلی
+Reward:پاداش و جایزه
+Suffering:رنج، آسیب
+Team based work:کار گروهی
+Trust:اعتماد
+Ultimately:سرانجام
+Unimaginable:غیر قابل تصور
+Winning a place:جایگاهی را به دست آوردن
+witnessing:شاهد بودن
+clarify:مشخص کردن
+cocerned:مرتبط بودن، نگران بودن
+Meeting the criteria:برآورده کردن یک ملاک
+Overuse:استفاده بیش از حد
+Participation:مشارکت
+criteria:معیار و ملاک
+Preoccupation:غرق در چیزی شدن‎
+Leading to:منجرشدن به
+Yet:با این حال، تا کنون
+keep at bay :مهار کردن
+amid:در میان
+frontier:مرز
+Confused:گیج
+Debate:بحث
+Decidedly:جدی
+Unsubstantiated:ثابت نشده
+Exist:وجود داشتن
+moratorium:منع قانونی
+Oat bran:سبوس جو‎
+Pessimistic:بدبین
+Pioneering:پیشرو
+Popular:معروف
+‎than ever:نسبت به همیشه
+Added sugars:قندهای افزودنی
+Artificially:مصنوعی
+No longer:دیگر، از این به بعد
+conceive:تصور کردن
+contributing factor:فاکتور موثر
+demand:درخواست و تقاضا
+junk:به درد نخور
+Used to:قبلا
+gap:شکاف
+Belt:کمربند
+Embarrassing:خجالت آور
+extensive advances:پیشرفت های گسترده
+For instance:برای مثال
+handicaps:نواقص
+accompained by:همراه با
+acute conditions:بیماری های حاد
+aimed at:متمرکز بر چیزی
+burden:بار، مسئولیت
+Plague:وبا
+Regular meals:وعده های معمولی غذا(3 وعده)
+Substantially:اساسا
+turn to:روی آوردن به چیزی
+Paradoxical:متناقض
+Replete with:پر از چیزی
+absence:نبود چیزی
+vastly:به طور وسیع
+improvement:ارتقا
+Cardiovascular disease:بیماری قلبی عروقی
+Leading causes:دلایل اصلی
+Modernization:مدرن شدن
+Non adherence:پیروی نکردن
+Policymakers:سیاست گزاران
+Population aging:پیری جمعیت
+Alert:هوشیار
+Allege:ادعا کردن
+Authenticate:تایید کردن
+erroneous:اشتباه
+opinion:عقیده
+series:یک دنباله و سری از چیزی
+active smokers:کسانی که سیگار می کشند
+as soon as:به محض اینکه
+Innovative:نوآوری
+Rarely do:به ندرت اتفاق می افتد
+Regimen:دستورات غذایی و دارویی، حکومت
+Sanitation:بهداشت
+shift:تغییر
+Transition:انتقال
+Urbanization:شهری شدن
+would:هم معنای will
+Purpose:هدف
+Resolve:حل کردن
+Supervisor:سوپروایزر
+Transcribing:تبدیل گفتار به نوشتار
+verification:تایید
+find out:فهمیدن
+stimulation:تحریک
+Bested:به درد خوردن
+commit:مرتکب شدن
+concentrate:تمرکز کردن، تغلیظ کردن
+subject:موضوع و عنوان، نمونه
+Whether:اینکه آیا
+Equally:به طور مساوی
+boost :ارتقا دادن
+Actually:واقعا
+Associated odors:بوی مربوط به چیزی
+Average person:فرد معمولی
+Cough:سرفه
+Dampness:نمناک بودن
+Damp:نمناک
+Take steps:قدم برداشتن و اقدام کردن
+Further research:تحقیقات بیشتر
+Getting rid of:خلاص شدن از چیزی
+Hair splitting:موشکافی کردن، بررسی کردن
+indoor mold:کپک خانگی
+Moisture:رطوبت
+by products:محصولات جانبی
+Noisance free:بدون مزاحمت
+noise:سرو صدا
+Runny nose:آبریزش بینی
+Sinus conditions:بیماری های سینوس
+Affective disorder:اختلال احساسی
+Behavioral disorders:اختلالات رفتاری
+Coinciding:هم زمان بودن با چیزی
+Compared with:در مقایسه با
+Match up:مناسب چیزی بودن
+disruptions:اختلالات
+Operate:عمل کردن
+Neuron:نورون
+Dusk :غروب
+Exaggerated response:پاسخ بیش از حد
+Genetically engineering:مهندسی ژنتیک
+Glow:تابش
+House:خانه، محل قرار گرفتن
+Imprinting mechanism:مکانیزم های ژنتیکی
+Accommodate:سازگار شدن، تطبیق یافتن
+Communities:جوامع
+Determinant:مولفه، عامل تعیین کننده
+Documenting:با سند صحبت کردن
+International:جهانی
+Apathogenic:غیربیماری زا
+Season switch:تغییر فصل
+Strikingly :به طورقابل توجهی
+Supra chiasmatic nucleus:هسته های هیپوتالاموسی
+wean:از شیر مادرگرفتن‎
+Puberty:بلوغ
+Self esteem:عزت نفس
+Self mutilation:خودآزاری
+Transit:عبور و مرور
+entities:موجودات
+coping with:از عهده چیزی برآمدن‎
+Preventive measure:اقدام پیشگیرانه‎
+Ascent:صعود
+Chest pain:درد قفسه سینه
+Dizziness:سرگیجه
+Dosage:دوز دارو
+headache:سردرد
+lowland:مکان های با ارتفاع کم
+meditication:دارو، درمان با دارو
+a variety of:گروهی از
+Even though:اگرچه
+Represent:ارائه دادن
+Occasionally:معمولا
+Shortness of breath:تنگی نفس
+temporarily:موقتی
+unstable:نا پایدار
+upon:به روی، به محض
+reality:واقعیت
+Computer generated:به وجود آمده با کامپیوتر
+Elevator:اسانسور
+Interact with:در تعامل با چیزی بودن
+Mental illness:بیماری ذهنی‎
+Phobia:ترس
+Getting sick:مریض شدن
+Necessarily:الزاما
+mandatory:اجباری
+Recreating:به وجود آوردن مجدد
+Schedule:جدول، برنامه ریزی
+Therapist:درمانگر
+dimension:ابعاد
+Used to:قبلا
+Virtual:واقعی
+Public speaking:صحبت در عموم
+Peer:دوستان، برابر
+Stay high:بالا ماندن
+Rational:منطقی
+That's why:به این دلیل است که
+model:طراحی کردن
+turn out:به نظر رسیدن
+worry about:نگران چیزی بودن
+Campaign:جنگ
+Contract:مبتلا شدن، منقبض شدن
+are likely to:احتمالا
+Body:بدن
+not only:نه تنها
+But also:بلکه
+Cognitive health:سلامت ذهنی
+Gradually:به تدریج‎
+Paralyze:فلج کردن
+Polio:فلج اطفال
+Remarkable:قابل توجه
+disfigured:تغییر شکل، بد حالت شدن
+field:زمینه‎
+Conception:درک، لقاح جنین
+Postnatal:پس از تولد‎
+Predisposition:استعداد ابتلا به بیماری
+Ovum:تخمك
+role:نقش کلیدی
+rule:قانون
+Womb:رحم
+Appeare:ظاهر شدن
+cage:قفس
+Cruel:بی رحم
+Documented:اثبات شده
+Expansion:گسترش
+Justifiable:قابل توجیه
+existent:موجود
+poorly regulated:دارای نظم ضعیف
+practice:تمرین، روش، شغل
+Prohibit:ممنوع کردن
+promience:برتری
+suppporter:حامی
+Trade:تجارت
+opponent:مخالف
+get better:بهتر شدن
+healthcare provider:متخصص سلامت
+reassurance:اطمینان مجدد
+extra mile:تلاش بیشتر
+Trusting:قابل اعتماد
+alternate:تغییر دادن
+appropriateness:تناسب، مناسب بودن
+brisk:تند و سریع
+clamber:به سختی بالا رفتن
+As well as:همچنین، به خوبی
+Criticized by:مورد نقد قرار گرفتن
+put forward:مطرح کردن
+Overtraining:تمرین بیش از حد
+Tough workout:ورزش زیاد
+Typically:به طور مرسوم
+With regard to:در رابطه با
+Monitor:کنترل کردن و نظارت کردن
+Nutrient:ماده غذایی
+osteoporosis:پوکی استخوان
+preterm:تولد زودرس
+shortcomings:نواقص
+In relation to:در رابطه با
+Labeling:برچسب گذاری
+Statement:توضیح، بیانیه
+stillbirth:زایمان ناموفق
+Coworker:همکار
+Disrespectful:غیر محترمانه
+Expressing:بیان کردن
+Fabric:پارچه
+Fashion design:طراحی مد
+impose:تحمیل کردن
+In short:به طور خلاصه
+Interpersonal:بین فردی
+Less effective:با تاثیر کمتر نسبت به چیزی دیگر
+on the one hand:از طرفی دیگر
+either:هر کدام
+Submit :تسلیم شدن، پیشنهاد کردن
+unattractive:غیرجذاب
+unproductive:بی حاصل
+Abundance:فراوانی
+Antenna:آنتن
+distance:فاصله
+Cancer causing:سرطانزا
+Extensively:بطور گسترده
+Keep short:کوتاه نگاه داشتن‎
+microwaves:امواج مایکرویو
+concern:نگران
+conventional:مرسوم، امروزی
+Emit:ساطع کردن
+Exposure:مواجهه
+Algiatry:کنترل درد
+Analgesics:ضد دردها‎
+analgesia:ضد درد
+Branch:شاخه
+easing:تسکین دادن
+employing:به کار گرفتن واعمال کردن
+Heal:شفا دادن، درمان کردن
+Interdisciplinary:بین رشته ای
+Interventional:مداخلات درمانی
+advise:توصیه
+Develop:بروز دادن، ابتلا به بیماری، توسعه یافتن
+Residential:مسکونی
+Strap:بستن
+waist:کمر
+Pharmacist:داروشناس
+Psychologist:روانشناس
+Resistant:مقاوم و پایدار
+Underlying:اساسی، پایه
+Obvious:روشن و آشکار
+Plenty of:تعداد و مقدار زیادی از چیزی
+Enhance:افزایش یافتن، ارتقا یافتن
+Immobility:عدم تحرک
+Pneumonia:پنومونی
+point out:اشاره کردن
+Postoperative:بعد ازعمل
+Regain:بازیابی کردن، پس گرفتن
+Rest:استراحت
+express:بیان کردن
+Birth defect: نقص هنگام تولد
+Cases:موارد
+Fetus:جنین
+Looked at:بررسی کردن
+Options:گزینه ها، انتخاب
+common:رایج و متداول
+The same number:تعداد برابر
+Were found:یافت شد
+Made Possible:ممکن ساختن
+found:تشکیل دادن، گذشته ی find به معنای یافتن
+Bring about:باعث شدن
+cloning:تکثیر
+dwarfism:کوتولگی، قد کوتاهی
+growth hormone:هورمون رشد
+Unethical:غیراخلاقی
+allow:اجازه دادن
+Consent:رضایت
+Controversies:بحث و جدل ها
+Expected:مورد انتظار
+inform:آگاه
+must:باید
+Principle:اصل
+Qualify:واجد شرایط بودن
+Reasonable:معقول
+Recommended:توصیه شده
+Relevant:مرتبط
+Requirement:نیاز
+Self determination:خوداتکایی
+Those:آنها
+Truthful:قابل اعتماد
+Voluntary:داوطلبانه، ارادی
+A wealth of:تعداد زیادی از چیزی
+assign:اختصاص دادن، قلمداد کردن
+As much As:به اندازه ی
+Being backward:به عقب رفتن
+Date back:به قبل بازگشتن
+Dominance:برتری
+indeed:در واقع، به راستی
+structured:ساخته شده
+Just as:درست همانطوری که
+Long before:مدت ها قبل
+Anti viral:ضد ویروس
+Appetite:اشتها
+Bowel:روده
+Bruising:کبودی
+natural medicine:پزشکی طبیعی
+Popularity:شهرت
+prove:ثابت کردن
+realize:درک کردن، تشخیص دادن
+Receive criticism:مورد انتقاد واقع شدن
+Report:گزارش دادن
+stigma:لکه ننگ
+substantive:اثبات شده، واقعی
+public:عمومی
+western:غربی
+general:عمومی
+opposite:در مقابل، ضد
+Most likely:به احتمال زیاد
+Clay colored:بی رنگ‎
+Close contact:تماس نزدیک
+Fatigue:خستگی
+Half of:نیمی از
+Oral:دهانی
+Sharing:مشترک
+Short term:کوتاه مدت
+Take decades:دهه ها طول کشیدن
+liver:کبد
+Up to:حدود‎
+Vomiting:استفراغ
+Crowded:شلوغ
+shopping mall:مرکز خرید
+Along:در طی
+More often that not:گاهی اوقات‎
+Belonging to:متعلق به
+Confidence:اعتماد، اعتماد به نفس
+Downtown:مرکز شهر
+favorite:مورد علاقه و مطلوب
+Fleeing:گریختن
+fright:ترس
+Formally:به طور رسمی
+given:معین و مشخص، داده شده، معتاد
+make it:موفق شدن
+manifestation:تظاهر، بروز
+applicable:قابل اجرا
+Manageable:قابل مدیریت
+least:کمترین
+frightened:ترسیده
+strategy:استراتژی
+landing:فرود
+line:مسیر، ردیف
+safe:ایمن
+level:سطح
+resolved:حل کردن، عزم جدی برای کاری
+serve:به کار گرفتن، خدمت کردن
+sideline:حاشیه
+Upper class:درجه بالاتر، طبقه بالاتر اجتماعی
+eager :مشتاق
+judge:قضاوت کردن
+Estimating:تخمین زدن
+Excess weigh:وزن اضافی
+invent:اختراع
+In practice:درعمل
+indice:شاخص و نمایه
+Movement:جنبش، جا به جایی
+profession:شغل و حرفه
+Using:استفاده
+view:دید، عقیده ،دیدن، در نظر گرفتن
+success:موفقیت
+widely:به طور گسترده
+desired:مطلوب، خواستنی
+publish:منتشر کردن
+life:زندگی
+Accurately:به طور دقیق
+Unclothed:بدون لباس
+surpassingly:به اندازه زیادی
+Slim:لاغر
+Storage:ذخیره سازی
+Aged person:فرد سالخورده‎
+decrement:ضعف و نقص
+Aging:پیر شدن
+Approximate:تقریبی
+As compared with:در مقایسه با
+Even:حتی
+loss:گمراهی، مرگ، ضرر کردن، هدر رفتن
+Measurable:قابل اندازه‌گیری
+Pronounced:چشم گیر
+Peak:حداکثر
+Per decade:در هر دهه
+Advanced age:سن بالا
+marked:نشان دا، چشم گیر
+In general:به طور کلی
+lower limb:اندام‌ تحتانی
+Upper:فوقانی
+pathology:آسیب شناسی
+wrapper:بسته
+cross:عبور کردن
+Drug:دارو
+enormous:بزرگ، بی شمار
+couple of days:چند روزی
+diagnosis:تشخیص دادن
+get worse:بدتر شدن
+Blood brain barrier:سد خونی مغزی
+Bound to:متصل به
+concentration:غلظت
+Locate:مکان‌یابی کردن، معین کردن چیزی
+aim:هدف
+Particular:خاص
+Receptor:گیرنده‌
+Revolutionize:دگرگون کردن
+Pick up:بدست آوردن، برداشتن
+Respiratory:تنفسی
+Sepsis:عفونت خونی
+Shut down:از کار افتادن
+Later:بعدا
+Leak:ترشح کردن
+infiltrate:تراوش کردن
+Airsacs:کیسه‌های هوایی
+treatable:قابل درمان
+trigger:باعث‌شدن، شروع کردن 
+Artistic:هنری
+Genius:نابغه
+Imaginary:خیالی
+Brilliance:استعداد، تابش
+most:بیشترین
+Intelligence:هوش
+leading toward:به طرف چیزی رفتن
+recognize:شناسایی کردن
+understood:درک شده
+Logical:منطقی
+master:ماهر و مسلط
+Musical composition:ساختن موزیک
+redefinition:تعریف مجدد
+deduction:استنباط، نتیجه گیری
+leader:رهبر
+social:اجتماعی
+Aspect:جنبه‌، وجه
+Things of beauty:وسایل زیبایی
+organize:تنظیم کردن
+think:فکر کردن
+Figure:شکل، رقم، تصویر
+Filth:آلودگی
+habitats:زیستگاه
+Freedom:آزادی
+lost:گم شده، نبود چیزی
+Journal:مجله
+single handedly:یک تنه و به تنهایی
+State power:قدرت حکومتی
+versus:در مقایسه با
+transformation:دگرگونی و تغییر حالت
+vaccine refusal:پس زدن واکسن
+told:گفته شده
+under recognized:کمتر شناخته شده
+Complicate:پیچیده کردن
+Discontinuous:ناپیوسته
+Forgetfulness:فراموشی
+Growing older:پیرشدن
+Overall rate:میزان کلی
+Undertreated:تحت درمان
+Prevalence:شیوع
+Previously:قبلا
+Subsiding:فروکش کردن
+Underrated:دست کم گرفتن
+Nation:کشور، ملت
+Natural disasters:فجایع طبیعی
+Pathogenic:بیماری زا
+worst:بدترین
+unknown:ناشناخته
+well planned:به خوبی طراحی شده
+achievable:دست یافتنی
+Home schooling:آموزش خانگی
+‎Being forced:مجبور شدن
+Time consuming:زمان بر، وقت گیر
+left:ترک کردن
+linguistic:زبان شناسی
+‎Picking up:چیدن، جمع کردن
+Track:مسیر، ردیابی کردن
+Tutorial:آموزشی
+Agriculture:کشاورزی
+Dirty:آلوده
+Breathe:نفس کشیدن
+Directly:به طور مستقیم
+cook stove:اجاق آشپزی
+fuel:سوخت
+contributor:عامل شرکت کننده
+Circulatory:گردش خون، گردشی
+Climate:آب و هوا
+per:با، به وسیله ی، به ازای
+pollutatnts:مواد آلوده کننده
+‎Polluted:آلوده
+premature:نابالغ
+Inhale:نفس کشیدن
+Malnutrition:سو تغذیه
+Respiratory :تنفسی
+Adding:افزودن
+Battle:جنگ
+Instead of:به جای
+Mismanagement:نبود مدیریت
+Multifaceted:چند وجهی
+Front line:خط مقدم
+Policy:سیاست‌
+Power Supply:منبع برق
+Regular access:دسترسی معمول
+Existing:موجود
+In line with:هم راستا با
+‎In times of:در دوران
+Similarly:به شکل مشابه
+Distancing:فاصله گذاشتن
+Work nonstop:بی وقفه کار کردن
+Becoming stiffened:سفت شدن
+Bedridden:بستری
+Disabling:ناتوان کننده
+strength:قدرت
+local:موضعی
+In order to:به منظور
+Paralyzed limbs:اندام‌های فلج
+Suffer a stroke:مبتلا شدن به سکته مغزی
+Poliomyelitis:فلج اطفال
+Attention deficit:کمبود توجه
+Displeasure:ناراحتی
+Face to face:رو در رو
+False picture:تصویر نادرست
+Frequently:مکررا
+Harm:آسیب زدن
+Life achievement:دستاورد زندگی
+bodily fluids:ترشحات بدنی
+Call for:نیاز داشتن
+presentation:ارائه
+Self confidence:اعتماد به نفس
+Self image:تجسم از خود
+self worth:عزت نفس
+Social media:رسانه‌های اجتماعی
+Unrealistic:غیر واقعی
+worthlessness:بی ارزش بودن
+Well being:رفاه
+present:حاضر، ارائه کردن
+Fit tightly:محکم چسبیدن
+Goggles:عینک های محفاظتی
+put on:انجام دادن، پوشیدن
+Coverall:روپوش
+Droplet:قطره
+sneeze:عطسه
+tab:بند
+Detach:جدا شدن
+Nerve ending:پایانه‌ ی عصبی
+Spirit:روح
+state:وضعیت، بیان کردن
+Thought:فکر، اندیشیدن
+shown:نشان داده شده
+‎Put to work:به کاری مجبور کردن
+At times:گاها
+Called:فراخوانده شده، نامیده شده
+Counterpart:شریک و همتا
+Exhibiting:نمایش دادن‎
+eyeglass:عینک
+Fragment:تکه و قطعه، تکه تکه شدن
+Identity:هویت
+In which:که در آن
+Display:نمایش دادن
+Expression:حالت، بیان
+dissimilar:متفاوت
+Dissociative:گسسته و جدا از هم
+Mean:میانگین، قصد داشتن، مفهومی خاص داشتن
+Fixed:ثابت
+Nearby:نزدیک، مجاور
+Over time:در طی زمان
+posture:حالت
+Psychological condition:اختلال روانی
+Tendency:تمایل و گرایش
+Through which:که ازطریق آن
+Varying:مختلف، متفاوت
+Vice versa:برعکس
+Ascertain:ثابت کردن، معلوم کردن
+Disappoint:ناامید کردن
+Scientific rigor:سخت گرفتن به لحاظ علمی
+Firmly:قاطعانه و محکم
+Subject to:در معرض چیزی بودن
+misunderstood:اشتباه فهمیدن، درک غلط
+Nature :طبیعت
+satisfactory:رضایت بخش
+Self administering:خودتجویزی
+whilst:اگرچه
+Abstinence:خودداری
+Controlled:کنترل شده
+Designed:طراحی شده
+Embrace:استقبال کردن
+Equal to:مساوی با، برابر با
+Exemplify:مثال آوردن
+Expecting mother:مادر باردار
+On the rise:در حال افزایش
+Healthier:سالم تر
+Segment:قسمت
+Different:متفاوت
+serving:ایفای نقش، خدمت کردن، پرس غذا
+Making aware:آگاه ساختن
+prenatal:قبل از زایمان
+Quit:منصرف شدن، ترک کردن
+Randomized:به صورت تصادفی
+Transmitted:منتقل شده
+Monitoring:نظارت کردن
+Quite :نسبتا، کاملا
+Varies:تفاوت دارد
+Weight loss :از دست دادن وزن
+flee:فرار کردن، در رفتن
+analogous:مشابه
+blame:مقصر دانستن، سرزنش کردن، تقصیر
+flaw:نقص
+cite:احضار کردن، ذکر کردن
+scatter:پراکنده
+tear:پارگی، اشک
+petrol:سوخت، بنزین
+bother:زحمت، مشکل، به زحمت انداختن
+knee:زانو
+wipe:تمیز کردن، زدودن
+shoulder:شانه
+sluggish:تنبل، کند
+bold:شجاع، واضح، درشت
+magnitude:بزرگی، مهم بودن
+nightmare:کابوس
+notable:قابل توجه
+note:توجه کردن، ذکر کردن، یادداشت، نت موسیقی
+seed:دانه، بذر
+abstract:خلاصه
+bury:به خاک سپردن، دفن کردن
+manifest:بیانیه، آشکار، لیست
+prophet:پیامبر، معرفی کننده چیزی
+erratic:نامنظم
+pepper:فلفل
+dictate:دیکته کردن ،دستور دادن
+sibling:خواهر و برادر
+gate:دروازه، دریچه
+attain:دستیابی
+fiasco:فاجعه
+falter:لکنت زبان، ضعیف شدن
+skull:جمجمه
+alike:مشابه و یکسان
+cholera:وبا
+arm:بازو، اسلحه، مجهز کردن
+ideology:روشن فکری
+toe:انگشت پا
+nap:چرت زدن
+demise:مردن
+pestilential:بیماری زا، واگیردار
+jaundice:یرقان
+weakly:ضعیف، مریض
+medico:پزشک
+bladder:مثانه
+fever:تب
+hysteria:تشنج
+cataract:آب مروارید
+Dumb:لال
+Hangover:سرگیجه
+Puke:استفراغ
+Fracture:شکستگی
+amnesia:فراموشی
+ache:درد
