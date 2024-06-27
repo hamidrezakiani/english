@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -31,6 +32,10 @@ class User extends Authenticatable
 
     public function getNewUserAttribute(){
         return 0;
+    }
+
+    public function getIsPaidAttribute(){
+        return $this->payStatus || $this->created_at > Carbon::now()->subDays(2);
     }
 
     public function smsVerifications()

@@ -19,7 +19,7 @@ class RegisterResource extends JsonResource
             'name' => $this->name,
             'api_token' => $this->api_token,
             'mobile'    => $this->mobile,
-            'payStatus' => intval($this->payStatus),
+            'payStatus' => $this->isPaid(),
             'new_user' => intval($this->new_user),
             'verify'  => intval($this->mobileVerify),
             'amount'  => $amount

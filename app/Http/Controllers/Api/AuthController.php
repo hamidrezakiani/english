@@ -72,7 +72,7 @@ class AuthController extends Controller
                 $user->save();
                 $this->setData([
                     'api_token' => $user->api_token,
-                    'payStatus' => $user->payStatus,
+                    'payStatus' => $user->isPaid(),
                     'new_user' => $user->new_user,
                     'amount'  => Service::where('type','SUBSCRIPTION')->first()->amount
                 ]);
