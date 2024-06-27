@@ -17,7 +17,7 @@ class ProfileResource extends JsonResource
         $amount = Service::where('type','SUBSCRIPTION')->first()->amount;
         return [
             'name' => $this->name,
-            'payStatus' => intval($this->payStatus),
+            'payStatus' => $this->isPaid,
             'new_user' => intval($this->new_user),
             'verify'  => intval($this->mobileVerify),
             'amount'  => $amount
