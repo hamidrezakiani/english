@@ -14,13 +14,11 @@ class ReadingTestController extends Controller
     public function index(Request $request)
     {
         $this->lastUpdatedAt = $request->lastUpdatedAt;
-        $currentTime = Carbon::now('UTC');
+        $currentTime = Carbon::now()->toDate();
         if (!$this->lastUpdatedAt){
-            \Log::debug($request->lastUpdatedAt);
             $tests = $this->withoutDeleted();
         }
         else{
-            \Log::debug($request->lastUpdatedAt."deleted");
             $tests = $this->withDeleted();
         }
             
