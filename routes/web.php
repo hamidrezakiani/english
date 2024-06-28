@@ -31,6 +31,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['prefix' => 'panel'],function(){
+   dd(Carbon\Carbon::now());
     Route::get('/',function(){
        return view('dashboard');
     });
