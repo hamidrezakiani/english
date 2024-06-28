@@ -151,16 +151,28 @@ active
         <div class="col-12">
              <label for="" class="col-form-label-lg" style="display: block">
                 متن شماره {{$reading->orderIndex}}
-                <a class="fa fa-edit text-primary ml-2 edit-grammar" data-id="{{$reading->id}}" style="cursor: pointer;font-size: 20px"></a>
-                <a class="fa fa-trash text-danger ml-2 delete-grammar" data-toggle="modal" data-target="#delete-modal" data-id="{{$reading->id}}" style="cursor: pointer;font-size: 20px"></a>
+                <a class="fa fa-edit text-primary ml-2 edit-reading" data-id="{{$reading->id}}" style="cursor: pointer;font-size: 20px"></a>
+                <a class="fa fa-trash text-danger ml-2 delete-reading" data-toggle="modal" data-target="#delete-modal" data-id="{{$reading->id}}" style="cursor: pointer;font-size: 20px"></a>
             </label>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 reading-box" data-id="{{$reading->id}}">
             <textarea class="form-control" disabled cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 reading-box" data-id="{{$reading->id}}">
             <textarea class="form-control" disabled cols="30" rows="15">{{$reading->text}}</textarea>
         </div>
+        <form action="" class="form-reading-box" data-id="{{$reading->id}}">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <textarea class="form-control" cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <textarea class="form-control" cols="30" rows="15">{{$reading->text}}</textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">ثبت تغییرات</button>
+          <i class="btn btn-danger edit-reading-cancel-btn" data-id="{{$reading->id}}">انصراف</i>
+        </div>
+        </form>
 
       @foreach ($reading->questions as $item)
           <div class="col-12 bg-white question-box mb-4" data-id="{{$item->id}}" style="direction: ltr !important;text-align:left !important">
@@ -270,6 +282,12 @@ active
         document.querySelector(`.question-box[data-id="${id}"]`).style.display = 'block';
     })
 
+    $(document).on('click','.edit-reading-cancel-btn',function(){
+        var id = $(this).data('id');
+        document.querySelector(`.form-reading-box[data-id="${id}"]`).style.display = 'none';
+        document.querySelector(`.reading-box[data-id="${id}"]`).style.display = 'block';
+    })
+
     $(document).on('click','.edit-translate',function(){
         var id = $(this).data('id');
         document.querySelector(`.form-translate-box[data-id="${id}"]`).style.display = 'block';
@@ -286,6 +304,11 @@ active
     });
     $(document).on('click','.delete-reading',function(){
        document.getElementById('reading-delete-form').setAttribute('action',`{{url('panel/readings/delete')}}/${$(this).data('id')}`);
+    });
+    $(document).on('click','.edit-reading',function(){
+        var id = $(this).data('id');
+        document.querySelector(`.form-reading-box[data-id="${id}"]`).style.display = 'block';
+        document.querySelector(`.reading-box[data-id="${id}"]`).style.display = 'none';
     });
 </script>
 @endsection
