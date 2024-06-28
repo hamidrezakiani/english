@@ -16,7 +16,7 @@ class WordTestController extends Controller
     {
         $this->lastUpdatedAt = Carbon::createFromTimestamp($request->lastUpdatedAt);
         $currentTime = Carbon::now()->timestamp;
-        if (!$this->lastUpdatedAt)
+        if (!$request->lastUpdatedAt)
             $tests = $this->withoutDeleted();
         else
             $tests = $this->withDeleted();
