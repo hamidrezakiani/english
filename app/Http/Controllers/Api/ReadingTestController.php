@@ -25,7 +25,7 @@ class ReadingTestController extends Controller
             $tests = $this->withDeleted();
         }
         $this->setData($tests);
-        $this->setVariable('currentUpdatingAt',$currentTime);
+        $this->setVariable('currentUpdatingAt',$currentTime."");
         return $this->response();
     }
 
