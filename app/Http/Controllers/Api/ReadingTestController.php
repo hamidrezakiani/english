@@ -16,9 +16,11 @@ class ReadingTestController extends Controller
         $this->lastUpdatedAt = $request->lastUpdatedAt;
         $currentTime = Carbon::now()->toDate();
         if (!$this->lastUpdatedAt){
+            \Log::debug($request->lastUpdatedAt);
             $tests = $this->withoutDeleted();
         }
         else{
+            \Log::debug($request->lastUpdatedAt."deleted");
             $tests = $this->withDeleted();
         }
             
