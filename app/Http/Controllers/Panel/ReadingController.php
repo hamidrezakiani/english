@@ -18,4 +18,13 @@ class ReadingController extends Controller
         ]);
         return redirect()->back();
     }
+
+    public function update(Request $request,$id){
+        Reading::find($id)->update($request->all());
+        return redirect()->back();
+    }
+
+    public function destroy($id){
+        
+    }
 }
