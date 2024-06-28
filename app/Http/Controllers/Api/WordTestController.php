@@ -15,7 +15,7 @@ class WordTestController extends Controller
     public function index(Request $request)
     {
         $this->lastUpdatedAt = $request->lastUpdatedAt;
-        $currentTime = Carbon::now()->toDate();
+        $currentTime = Carbon::now()->toDate()['date'];
         if (!$this->lastUpdatedAt)
             $tests = $this->withoutDeleted();
         else
