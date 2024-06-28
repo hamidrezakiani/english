@@ -37,6 +37,7 @@ class ReadingTestController extends Controller
     private function withDeleted()
     {
         $lastUpdate = $this->lastUpdatedAt;
+        \Log::debug($lastUpdate);
         return ReadingTest::where('updated_at','>=',$lastUpdate)->withTrashed()
         ->with([
             'readings' => function ($query)use ($lastUpdate) {
