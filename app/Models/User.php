@@ -35,7 +35,7 @@ class User extends Authenticatable
     }
 
     public function getIsPaidAttribute(){
-        return intval($this->payStatus || $this->created_at > Carbon::now()->subDays(2));
+        return intval($this->payStatus || $this->created_at > Carbon::now()->subDays(6));
     }
 
     public function smsVerifications()
