@@ -155,24 +155,30 @@ active
                 <a class="fa fa-trash text-danger ml-2 delete-reading" data-toggle="modal" data-target="#delete-modal" data-id="{{$reading->id}}" style="cursor: pointer;font-size: 20px"></a>
             </label>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 reading-box" data-id="{{$reading->id}}">
-            <textarea class="form-control" disabled cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 reading-box" data-id="{{$reading->id}}">
-            <textarea class="form-control" disabled cols="30" rows="15">{{$reading->text}}</textarea>
-        </div>
-        <form class="row form-reading-box" action="{{url('panel/readings/'.$reading->id)}}" data-id="{{$reading->id}}" style="display: none">
+        <div class="col-12">
+          <div class="row reading-box" data-id="{{$reading->id}}">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <textarea class="form-control" disabled cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
+          </div>
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <textarea class="form-control" cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
+              <textarea class="form-control" disabled cols="30" rows="15">{{$reading->text}}</textarea>
+          </div>
+          </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <textarea class="form-control" cols="30" rows="15">{{$reading->text}}</textarea>
+        <div class="col-12">
+          <form style="width: 100%" class="row form-reading-box" style="100%" action="{{url('panel/readings/'.$reading->id)}}" data-id="{{$reading->id}}" style="display: none">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <textarea class="form-control" cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <textarea class="form-control" cols="30" rows="15">{{$reading->text}}</textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-success">ثبت تغییرات</button>
+            <i class="btn btn-danger edit-reading-cancel-btn" data-id="{{$reading->id}}">انصراف</i>
+          </div>
+          </form>
         </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-success">ثبت تغییرات</button>
-          <i class="btn btn-danger edit-reading-cancel-btn" data-id="{{$reading->id}}">انصراف</i>
-        </div>
-        </form>
 
       @foreach ($reading->questions as $item)
           <div class="col-12 bg-white question-box mb-4" data-id="{{$item->id}}" style="direction: ltr !important;text-align:left !important">
