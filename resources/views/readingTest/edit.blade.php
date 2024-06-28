@@ -166,7 +166,7 @@ active
           </div>
         </div>
         <div class="col-12 form-reading-box"  data-id="{{$reading->id}}" style="display: none">
-          <form style="width: 100%" class="row" action="{{url('panel/readings/'.$reading->id)}}">
+          <form style="width: 100%" class="row" action="{{url('panel/readings/'.$reading->id)}}" method="POST">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
               <textarea class="form-control" name="translate" cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
           </div>
