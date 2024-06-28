@@ -161,7 +161,7 @@ active
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 reading-box" data-id="{{$reading->id}}">
             <textarea class="form-control" disabled cols="30" rows="15">{{$reading->text}}</textarea>
         </div>
-        <form class="row" action="{{url('panel/readings/'.$reading->id)}}" class="form-reading-box" data-id="{{$reading->id}}" style="display: none">
+        <form class="row form-reading-box" action="{{url('panel/readings/'.$reading->id)}}" data-id="{{$reading->id}}" style="display: none">
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <textarea class="form-control" cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
         </div>
