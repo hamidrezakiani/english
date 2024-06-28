@@ -15,11 +15,16 @@ class ReadingTestController extends Controller
     {
         $this->lastUpdatedAt = $request->lastUpdatedAt;
         $currentTime = Carbon::now();
-        if (!$this->lastUpdatedAt)
+        if (!$this->lastUpdatedAt){
+            \Log::debug($request->lastUpdatedAt);
             $tests = $this->withoutDeleted();
-        else
+        }
+        else{
+            \Log::debug($request->lastUpdatedAt."deleted");
             $tests = $this->withDeleted();
-
+        }
+            
+            
         $this->setData($tests);
         $this->setVariable('currentUpdatingAt',$currentTime);
         return $this->response();
@@ -37,7 +42,6 @@ class ReadingTestController extends Controller
     private function withDeleted()
     {
         $lastUpdate = $this->lastUpdatedAt;
-        \Log::debug($lastUpdate);
         return ReadingTest::where('updated_at','>=',$lastUpdate)->withTrashed()
         ->with([
             'readings' => function ($query)use ($lastUpdate) {
