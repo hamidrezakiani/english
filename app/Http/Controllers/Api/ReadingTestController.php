@@ -14,7 +14,7 @@ class ReadingTestController extends Controller
     public function index(Request $request)
     {
         $this->lastUpdatedAt = $request->lastUpdatedAt;
-        $currentTime = Carbon::now()->setTimezone('Asia/Tehran');
+        $currentTime = Carbon::now()->setTimezone('UTC');
         if (!$this->lastUpdatedAt){
             \Log::debug($request->lastUpdatedAt);
             $tests = $this->withoutDeleted();
