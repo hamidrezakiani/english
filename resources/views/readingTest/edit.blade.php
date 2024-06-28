@@ -168,10 +168,10 @@ active
         <div class="col-12 form-reading-box"  data-id="{{$reading->id}}" style="display: none">
           <form style="width: 100%" class="row" action="{{url('panel/readings/'.$reading->id)}}">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <textarea class="form-control" cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
+              <textarea class="form-control" name="translate" cols="30" style="direction: rtl;text-align: right" rows="15">{{$reading->translate}}</textarea>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-              <textarea class="form-control" cols="30" rows="15">{{$reading->text}}</textarea>
+              <textarea class="form-control" name="text" cols="30" rows="15">{{$reading->text}}</textarea>
           </div>
           <div class="form-group">
             <button type="submit" class="btn btn-success">ثبت تغییرات</button>
