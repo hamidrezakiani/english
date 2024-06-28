@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Lib\ResponseTemplate;
+use App\Models\Reading;
 use App\Models\ReadingTest;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -13,8 +14,8 @@ class ReadingTestController extends Controller
     private $lastUpdatedAt;
     public function index(Request $request)
     {
-        $this->lastUpdatedAt = $request->lastUpdatedAt;
-        $currentTime = Carbon::now()->toDate()['date'];
+        $this->lastUpdatedAt = Carbon::createFromTimestamp($request->lastUpdatedAt);
+        $currentTime = Carbon::now()->timestamp;
         if (!$this->lastUpdatedAt){
             \Log::debug($request->lastUpdatedAt);
             $tests = $this->withoutDeleted();
@@ -23,8 +24,6 @@ class ReadingTestController extends Controller
             \Log::debug($request->lastUpdatedAt."deleted");
             $tests = $this->withDeleted();
         }
-            
-            
         $this->setData($tests);
         $this->setVariable('currentUpdatingAt',$currentTime);
         return $this->response();
@@ -42,15 +41,37 @@ class ReadingTestController extends Controller
     private function withDeleted()
     {
         $lastUpdate = $this->lastUpdatedAt;
-        return ReadingTest::where('updated_at','>=',$lastUpdate)->withTrashed()
+        return ReadingTest::where(function($query)use($lastUpdate){
+             return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
+             ->orWhereHas('readings',function($query)use($lastUpdate){
+                return $query->withTrashed()->where('updated_at','>=',$lastUpdate)->orWhereHas('questions',function($query)use($lastUpdate){
+                    return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
+                    ->orWhereHas('answers',function($query)use($lastUpdate){
+                        return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
+                    });
+                });
+             });
+        })->withTrashed()
         ->with([
             'readings' => function ($query)use ($lastUpdate) {
-                return $query->where('updated_at','>=',$lastUpdate)->withTrashed()
-                ->with([
+                return $query->withTrashed()->where(function($query)use($lastUpdate){
+                    return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
+                    ->orWhereHas('questions',function($query)use($lastUpdate){
+                        return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
+                        ->orWhereHas('answers',function($query)use($lastUpdate){
+                            return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
+                        });
+                });
+            })->with([
                     'questions' => function ($query)use ($lastUpdate) {
-                        return $query->where('updated_at','>=',$lastUpdate)->withTrashed()
+                        return $query->where(function($query)use($lastUpdate){
+                            return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
+                            ->orWhereHas('answers',function($query)use($lastUpdate){
+                                return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
+                            });
+                        })->withTrashed()
                         ->with(['answers' => function($query)use ($lastUpdate){
-                            return $query->where('updated_at','>=',$lastUpdate)->withTrashed();
+                            return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
                         }])->orderBy('orderIndex');
                     }
                 ]);

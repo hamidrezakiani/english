@@ -14,8 +14,8 @@ class WordTestController extends Controller
     private $lastUpdatedAt;
     public function index(Request $request)
     {
-        $this->lastUpdatedAt = $request->lastUpdatedAt;
-        $currentTime = Carbon::now()->toDate()['date'];
+        $this->lastUpdatedAt = Carbon::createFromTimestamp($request->lastUpdatedAt);
+        $currentTime = Carbon::now()->timestamp;
         if (!$this->lastUpdatedAt)
             $tests = $this->withoutDeleted();
         else
@@ -38,7 +38,8 @@ class WordTestController extends Controller
     private function withDeleted()
     {
         $lastUpdate = $this->lastUpdatedAt;
-        return WordTest::withTrashed()->where('updated_at','>=',$lastUpdate)->orWhereHas('questions',function($query)use($lastUpdate){
+        return WordTest::withTrashed()->where('updated_at','>=',$lastUpdate)
+        ->orWhereHas('questions',function($query)use($lastUpdate){
             return $query->withTrashed()->where('updated_at','>=',$lastUpdate)
             ->orWhereHas('answers',function($query)use($lastUpdate){
                 return $query->withTrashed()->where('updated_at','>=',$lastUpdate);
